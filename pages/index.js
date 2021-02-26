@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '@/styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -10,7 +10,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Noorullah Ahmadzai</h1>
-
         <p className={styles.description}>Website is currently under construction.</p>
       </main>
     </div>

@@ -11,11 +11,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            rel='preload'
-            href='https://fonts.googleapis.com/css2?family=Lobster&display=swap'
-            rel='stylesheet'
-            as='font'
-            crossOrigin=''
+            href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>

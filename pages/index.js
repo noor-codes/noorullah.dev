@@ -35,6 +35,16 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div className="flex justify-center px-8">
+          <p className="text-sm mt-6 text-gray-700 leading-5 ">
+            For the better part of the last year, I have been investing heavily in front-end
+            development and design. When I started my new role, I identified a need for a component
+            library and created it. Since then, I have learned a lot about style guides, design
+            systems, component libraries, and their best practices. This post will be a deep-dive on
+            everything I have learned in the past year.
+          </p>
+        </div>
       </main>
     </div>
   )

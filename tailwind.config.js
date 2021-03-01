@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
       },
+      fontSize: {
+        tiny: '0.66rem',
+      },
     },
   },
   variants: {

@@ -68,7 +68,7 @@ const Home = () => (
           everything I have learned in the past year.
         </p>
       </div>
-      <h2 className="ml-8 mt-4 font-semibold mb-2">Why Should You Care?</h2>
+      <h2 className="ml-8 mt-6 font-semibold mb-1">Why Should You Care?</h2>
       <div className="px-8">
         <p className="text-sm text-gray-700 leading-6">
           Every website starts simple. There is maybe one page with a few distinct pieces. It has

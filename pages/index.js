@@ -22,7 +22,7 @@ const Blog = () => (
     </div>
     <main className="container px-2">
       <div className="mt-8 mb-4 px-8">
-        <h1 className="font-bold leading-tight text-2xl">
+        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize">
           Local Authentication Using Passport in Node.js
         </h1>
       </div>
@@ -116,6 +116,17 @@ const Blog = () => (
         <FacebookSVG />
         <LinkedinSVG />
         <TwitterSVG />
+      </div>
+    </div>
+
+    <div className="flex flex-col items-center font-sans ml-8 mr-8 mt-10 text-center">
+      <img className="rounded-full h-24 w-24 mr-3" src="/img/profile.png" alt="profile" />
+      <div>
+        <h2 className="text-lg font-semibold text-gray-800 mt-3">About the Author</h2>
+        <p className="text-sm mt-1 text-gray-500  tracking-tight">
+          My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
+          MongoDB and JamStack. I&apos;m passinate about web development and technology.
+        </p>
       </div>
     </div>
   </div>

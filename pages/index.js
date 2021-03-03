@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import FacebookSVG from '../public/icons/facebook-icon.svg'
+import LinkedinSVG from '../public/icons/linkedin-icon.svg'
+import TwitterSVG from '../public/icons/twitter-icon.svg'
 
-const Home = () => (
+const Blog = () => (
   <div className="pb-44">
     <Head>
       <title>Noorullah Ahmadzai</title>
@@ -100,7 +103,25 @@ const Home = () => (
         later as you scale.
       </p>
     </main>
+
+    <div className="flex items-center justify-between mt-16">
+      <div className="flex items-center">
+        <div className="h-1.5 bg-black w-24 mr-2">&nbsp;</div>
+        <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase">
+          Sharing is Caring
+        </div>
+      </div>
+
+      <div className="align pr-10 space-y-3">
+        <FacebookSVG />
+        <LinkedinSVG />
+        <TwitterSVG />
+      </div>
+    </div>
   </div>
 )
 
-export default Home
+//? 1: Smaller Margin on the sides in mobile view
+//? 2: Switch the profile paragraph in to many flex items to wrap better.
+
+export default Blog

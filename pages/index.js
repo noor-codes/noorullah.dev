@@ -17,7 +17,7 @@ const Blog = () => (
     </Head>
 
     <div className="flex items-center pt-14">
-      <div className="h-1 bg-black w-32 mr-2">&nbsp;</div>
+      <div className="h-1 bg-black w-28 mr-2">&nbsp;</div>
       <div className="font-sans font-medium leading-5">Blog</div>
     </div>
     <main className="container px-2">

@@ -30,7 +30,7 @@ const Blog = () => (
         <img className="rounded-full h-14 w-14 mr-3" src="/img/profile.png" alt="profile" />
         <div>
           <h2 className="text-base font-semibold text-gray-600">Noorullah Ahmadzai</h2>
-          <p className="flex flex-wrap text-xs mt-0.5 text-gray-400">
+          <p className="flex flex-wrap text-xs mt-0.5 text-gray-500">
             <p>16 mins read&nbsp; - &nbsp; </p> <p> 576 views </p>
             <p>May 3rd, 2020</p>
           </p>
@@ -39,28 +39,28 @@ const Blog = () => (
       {/* Set a min with if the tag is too small */}
       <div className="font-sans mt-5">
         <div className="flex flex-wrap gap-2 ml-8 mr-10 text-center">
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             HTML
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             CSS
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             JavaScript
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             React
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             Redux
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             NodeJs
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             MongoDB
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-600 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
             Fireabse
           </div>
         </div>

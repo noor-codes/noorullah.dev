@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",

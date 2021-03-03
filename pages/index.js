@@ -122,10 +122,18 @@ const Blog = () => (
         </div>
       </div>
 
-      <div className="align pr-10 space-y-3">
-        <TwitterBlack />
-        <LinkedinBlack />
-        <FacebookBlack />
+      <div className="flex flex-col pr-10 space-y-2">
+        <a href="#" rel="noreferrer" target="_blank">
+          <TwitterBlack />
+        </a>
+
+        <a href="#" rel="noreferrer" target="_blank">
+          <LinkedinBlack />
+        </a>
+
+        <a href="#" rel="noreferrer" target="_blank">
+          <FacebookBlack />
+        </a>
       </div>
     </div>
 
@@ -142,11 +150,22 @@ const Blog = () => (
 
     <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20">
       <p className="text-white text-3xl mx-10 text-center">Get in Touch</p>
-      <div className="flex justify-center space-x-2">
-        <LinkedinWhite />
-        <InstagramWhite />
-        <TwitterWhite />
-        <GitHubWhite />
+      <div className="flex justify-center flex-row-reverse space-x-2 space-x-reverse">
+        <a href="https://github.com/Noorullah-Ahmadzai" rel="noreferrer" target="_blank">
+          <GitHubWhite />
+        </a>
+
+        <a href="#" rel="noreferrer" target="_blank">
+          <TwitterWhite />
+        </a>
+
+        <a href="#" rel="noreferrer" target="_blank">
+          <InstagramWhite />
+        </a>
+
+        <a href="#" rel="noreferrer" target="_blank">
+          <LinkedinWhite />
+        </a>
       </div>
     </div>
   </div>

@@ -31,7 +31,7 @@ const Blog = () => (
         <div>
           <h2 className="text-base font-semibold text-gray-600">Noorullah Ahmadzai</h2>
           <p className="flex flex-wrap text-xs mt-0.5 text-gray-500">
-            <p>16 mins read&nbsp; - &nbsp; </p> <p> 576 views </p>
+            <p>16 mins read&nbsp; - &nbsp; </p> <p> 576 views - &nbsp;</p>
             <p>May 3rd, 2020</p>
           </p>
         </div>

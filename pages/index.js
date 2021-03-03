@@ -123,7 +123,7 @@ const Blog = () => (
       <img className="rounded-full h-24 w-24 mr-3" src="/img/profile.png" alt="profile" />
       <div>
         <h2 className="text-lg font-semibold text-gray-800 mt-3">About the Author</h2>
-        <p className="text-sm mt-1 text-gray-500  tracking-tight">
+        <p className="text-xs mt-1 text-gray-500  tracking-tight">
           My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
           MongoDB and JamStack. I&apos;m passinate about web development and technology.
         </p>

@@ -26,11 +26,14 @@ const Blog = () => (
           Local Authentication Using Passport in Node.js
         </h1>
       </div>
-      <div className="flex items-center font-sans ml-8">
+      <div className="flex items-center font-sans ml-8 mr-10">
         <img className="rounded-full h-14 w-14 mr-3" src="/img/profile.png" alt="profile" />
         <div>
           <h2 className="text-base font-semibold text-gray-600">Noorullah Ahmadzai</h2>
-          <p className="text-xs mt-0.5 text-gray-400">May 3rd, 20 - 174 views / 16 mins read</p>
+          <p className="flex flex-wrap text-xs mt-0.5 text-gray-400">
+            <p>16 mins read&nbsp; - &nbsp; </p> <p> 576 views </p>
+            <p>May 3rd, 2020</p>
+          </p>
         </div>
       </div>
       {/* Set a min with if the tag is too small */}
@@ -133,6 +136,5 @@ const Blog = () => (
 )
 
 //? 1: Smaller Margin on the sides in mobile view
-//? 2: Switch the profile paragraph in to many flex items to wrap better.
 
 export default Blog

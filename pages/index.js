@@ -1,10 +1,18 @@
 import Head from 'next/head'
-import FacebookSVG from '../public/icons/facebook-icon.svg'
-import LinkedinSVG from '../public/icons/linkedin-icon.svg'
-import TwitterSVG from '../public/icons/twitter-icon.svg'
+
+// Black Icons
+import FacebookBlack from '../public/icons/social media/black/facebook-icon.svg'
+import LinkedinBlack from '../public/icons/social media/black/linkedin-icon.svg'
+import TwitterBlack from '../public/icons/social media/black/twitter-icon.svg'
+
+//White Icons
+import TwitterWhite from '../public/icons/social media/white/twitter-icon.svg'
+import GitHubWhite from '../public/icons/social media/white/github-icon.svg'
+import InstagramWhite from '../public/icons/social media/white/instagram-icon.svg'
+import LinkedinWhite from '../public/icons/social media/white/linkedin-icon.svg'
 
 const Blog = () => (
-  <div className="pb-44">
+  <div>
     <Head>
       <title>Noorullah Ahmadzai</title>
       <>
@@ -27,7 +35,7 @@ const Blog = () => (
         </h1>
       </div>
       <div className="flex items-center font-sans ml-8 mr-10">
-        <img className="rounded-full h-14 w-14 mr-3" src="/img/profile.png" alt="profile" />
+        <img className="rounded-full h-14 w-14 mr-3" src="/img/profile.jpg" alt="profile" />
         <div>
           <h2 className="text-base font-semibold text-gray-600">Noorullah Ahmadzai</h2>
           <p className="flex flex-wrap text-xs mt-0.5 text-gray-500">
@@ -115,20 +123,30 @@ const Blog = () => (
       </div>
 
       <div className="align pr-10 space-y-3">
-        <FacebookSVG />
-        <LinkedinSVG />
-        <TwitterSVG />
+        <TwitterBlack />
+        <LinkedinBlack />
+        <FacebookBlack />
       </div>
     </div>
 
     <div className="flex flex-col items-center font-sans ml-8 mr-8 mt-10 text-center">
-      <img className="rounded-full h-24 w-24 mr-3" src="/img/profile.png" alt="profile" />
+      <img className="rounded-full h-24 w-24 mr-3" src="/img/profile.jpg" alt="profile" />
       <div>
         <h2 className="text-lg font-semibold text-gray-800 mt-3">About the Author</h2>
-        <p className="text-sm mt-1 text-gray-500  tracking-tight">
+        <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5">
           My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
           MongoDB and JamStack. I&apos;m passinate about web development and technology.
         </p>
+      </div>
+    </div>
+
+    <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20">
+      <p className="text-white text-3xl mx-10 text-center">Get in Touch</p>
+      <div className="flex justify-center space-x-2">
+        <LinkedinWhite />
+        <InstagramWhite />
+        <TwitterWhite />
+        <GitHubWhite />
       </div>
     </div>
   </div>

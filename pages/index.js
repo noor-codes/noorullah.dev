@@ -36,7 +36,6 @@ const Blog = () => (
           </p>
         </div>
       </div>
-      {/* Set a min with if the tag is too small */}
       <div className="font-sans mt-5">
         <div className="flex flex-wrap gap-2 ml-8 mr-10 text-center">
           <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
@@ -126,7 +125,7 @@ const Blog = () => (
       <img className="rounded-full h-24 w-24 mr-3" src="/img/profile.png" alt="profile" />
       <div>
         <h2 className="text-lg font-semibold text-gray-800 mt-3">About the Author</h2>
-        <p className="text-xs mt-1 text-gray-500  tracking-tight">
+        <p className="text-sm mt-1 text-gray-500  tracking-tight">
           My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
           MongoDB and JamStack. I&apos;m passinate about web development and technology.
         </p>

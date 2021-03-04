@@ -171,6 +171,4 @@ const Blog = () => (
   </div>
 )
 
-//? 1: Smaller Margin on the sides in mobile view
-
 export default Blog

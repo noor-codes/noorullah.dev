@@ -30,7 +30,7 @@ const Blog = () => (
     </div>
     <main className="xs:px-4 mx-auto md:px-20 md:pt-5 ">
       <div className="mt-8 mb-4 px-8">
-        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl">
+        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl lg:mb-6">
           Local Authentication Using Passport in Node.js
         </h1>
       </div>
@@ -50,7 +50,7 @@ const Blog = () => (
           </p>
         </div>
       </div>
-      <div className="font-sans mt-5">
+      <div className="font-sans mt-5 lg:mb-8">
         <div className="flex flex-wrap gap-2 ml-8 mr-10 text-center">
           <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             HTML
@@ -79,7 +79,7 @@ const Blog = () => (
         </div>
       </div>
       <div className="px-8">
-        <p className="text-sm mt-6 text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+        <p className="text-sm mt-6 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
           For the better part of the last year, I have been investing heavily in front-end
           development and design. When I started my new role, I identified a need for a component
           library and created it. Since then, I have learned a lot about style guides, design
@@ -87,9 +87,11 @@ const Blog = () => (
           everything I have learned in the past year.
         </p>
       </div>
-      <h2 className="ml-8 mt-6 font-semibold mb-1 xs:text-lg">Why Should You Care?</h2>
+      <h2 className="ml-8 mt-6 font-semibold mb-1 xs:text-lg lg:leading-7 lg:text-xl">
+        Why Should You Care?
+      </h2>
       <div className="px-8">
-        <p className="text-sm text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+        <p className="text-sm text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
           Every website starts simple. There is maybe one page with a few distinct pieces. It has
           modest intentions.
         </p>
@@ -98,22 +100,22 @@ const Blog = () => (
         <img className="w-full" src="/img/article.png" alt="article" />
       </div>
 
-      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
         Then, slowly, it begins to scale.
       </p>
 
-      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
         More pages are added and new features are built. There might even be multiple teams devoted
         to specific sections of the site. You could be developing for mobile, too.
       </p>
 
-      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
         You start to notice the buttons in one part of the site are slightly different than
         everywhere else. One team decides to build a feature that another team has (unknowingly)
         already completed. Communication breakdowns happen. Consistency is lost.
       </p>
 
-      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight">
+      <p className="px-8 text-sm mt-2 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
         Is this a preventable problem? Absolutely. Yet, why does it happen over and over again?
         Unless you think about your design and development process upfront, you will run into issues
         later as you scale.

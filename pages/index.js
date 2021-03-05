@@ -24,19 +24,19 @@ const Blog = () => (
       </>
     </Head>
 
-    <div className="flex items-center pt-14">
-      <div className="h-1 bg-black w-32 mr-2 xs:w-40">&nbsp;</div>
-      <div className="font-sans font-medium leading-5">Blog</div>
+    <div className="flex items-center pt-14 md:pt-24">
+      <div className="h-1 md:h-1.5 bg-black w-32 mr-2 xs:w-40 md:w-44">&nbsp;</div>
+      <div className="font-sans font-medium leading-5 md:text-xl md:font-semibold">Blog</div>
     </div>
-    <main className="xs:px-4 mx-auto md:container lg:container">
+    <main className="xs:px-4 mx-auto md:px-20 md:pt-5 ">
       <div className="mt-8 mb-4 px-8">
-        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold">
+        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl">
           Local Authentication Using Passport in Node.js
         </h1>
       </div>
       <div className="flex items-center font-sans ml-8 mr-10">
         <img
-          className="rounded-full h-14 w-14 mr-3 xs:h-16 xs:w-16"
+          className="rounded-full h-14 w-14 mr-3 xs:h-16 xs:w-16 md:h-20 md:w-20"
           src="/img/profile.jpg"
           alt="Noorullah Ahmadzai"
         />
@@ -52,28 +52,28 @@ const Blog = () => (
       </div>
       <div className="font-sans mt-5">
         <div className="flex flex-wrap gap-2 ml-8 mr-10 text-center">
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             HTML
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             CSS
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             JavaScript
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             React
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             Redux
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             NodeJs
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             MongoDB
           </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 rounded-sm">
+          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:px-4 md:text-sm rounded-sm">
             Fireabse
           </div>
         </div>
@@ -122,13 +122,13 @@ const Blog = () => (
 
     <div className="flex items-center justify-between mt-16">
       <div className="flex items-center">
-        <div className="h-1.5 bg-black w-24 mr-2">&nbsp;</div>
-        <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase">
+        <div className="h-1.5 bg-black w-24 mr-2 md:h-2 md:w-32">&nbsp;</div>
+        <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase md:font-bold">
           Sharing is Caring
         </div>
       </div>
 
-      <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3">
+      <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28">
         <a href="#" rel="noreferrer" target="_blank">
           <TwitterBlack />
         </a>
@@ -145,7 +145,7 @@ const Blog = () => (
 
     <div className="flex flex-col items-center font-sans ml-8 mr-8 mt-10 text-center xs:mt-16">
       <img
-        className="rounded-full h-24 w-24 xs:h-32 xs:w-32 mr-3"
+        className="rounded-full h-24 w-24 xs:h-32 xs:w-32 mr-3 md:mb-1"
         src="/img/profile.jpg"
         alt="profile"
       />
@@ -153,16 +153,16 @@ const Blog = () => (
         <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-xl xs:mt-4">
           About the Author
         </h2>
-        <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:text-base">
+        <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:text-base sm:px-14 md:px-14 lg:px-52">
           My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
           MongoDB and JamStack. I&apos;m passinate about web development and technology.
         </p>
       </div>
     </div>
 
-    <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20">
+    <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20 md:h-48">
       <p className="text-white text-3xl mx-10 text-center">Get in Touch</p>
-      <div className="flex justify-center flex-row-reverse space-x-2 space-x-reverse">
+      <div className="flex justify-center flex-row-reverse space-x-2 md:space-x-3 md:space-x-reverse space-x-reverse">
         <a href="https://github.com/Noorullah-Ahmadzai" rel="noreferrer" target="_blank">
           <GitHubWhite />
         </a>

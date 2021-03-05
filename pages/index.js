@@ -23,13 +23,13 @@ const Blog = () => (
         />
       </>
     </Head>
-
+  
     <div className="flex items-center pt-14 md:pt-24">
       <div className="h-1 md:h-1.5 bg-black w-32 mr-2 xs:w-40 md:w-44 xl:h-1.5 xl:w-2/12">
         &nbsp;
       </div>
       <div className="font-sans font-semibold leading-5 md:text-xl md:font-semibold">Blog</div>
-    </div>
+   </div>
     <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
       <div className="mt-8 mb-4 px-8">
         <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl lg:mb-6">

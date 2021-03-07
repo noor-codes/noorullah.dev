@@ -1,15 +1,11 @@
 import Head from 'next/head'
-
-// Black Icons
-import FacebookBlack from '../public/icons/social media/black/facebook-icon.svg'
-import LinkedinBlack from '../public/icons/social media/black/linkedin-icon.svg'
-import TwitterBlack from '../public/icons/social media/black/twitter-icon.svg'
-
-//White Icons
-import TwitterWhite from '../public/icons/social media/white/twitter-icon.svg'
-import GitHubWhite from '../public/icons/social media/white/github-icon.svg'
-import InstagramWhite from '../public/icons/social media/white/instagram-icon.svg'
-import LinkedinWhite from '../public/icons/social media/white/linkedin-icon.svg'
+import SectionTitle from '@/components/blog/SectionTitle'
+import BlogTitle from '@/components/blog/BlogTitle'
+import UserInfo from '@/components/blog/UserInfo'
+import TagsCollection from '@/components/blog/TagsCollection'
+import Sharing from '@/components/blog/Sharing'
+import AboutAuthor from '@/components/blog/AboutAuthor'
+import Footer from '@/components/blog/Footer'
 
 const Blog = () => (
   <div>
@@ -24,62 +20,11 @@ const Blog = () => (
       </>
     </Head>
 
-    <div className="flex items-center pt-14 md:pt-24">
-      <div className="h-1 md:h-1.5 bg-black w-32 mr-2 xs:w-40 md:w-44 xl:h-1.5 xl:w-2/12">
-        &nbsp;
-      </div>
-      <div className="font-sans font-semibold leading-5 md:text-xl md:font-semibold">Blog</div>
-    </div>
+    <SectionTitle name="Blog" />
     <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
-      <div className="mt-8 mb-4 px-8">
-        <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl lg:mb-6">
-          Local Authentication Using Passport in Node.js
-        </h1>
-      </div>
-      <div className="flex items-center font-sans ml-8 mr-10">
-        <img
-          className="rounded-full h-14 w-14 mr-3 xs:h-16 xs:w-16 md:h-20 md:w-20"
-          src="/img/profile.jpg"
-          alt="Noorullah Ahmadzai"
-        />
-        <div>
-          <h2 className="text-base font-semibold text-gray-600 tacking-wide xs:text-lg">
-            Noorullah Ahmadzai
-          </h2>
-          <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm">
-            <p>16 mins read&nbsp; - &nbsp; </p> <p> 576 views - &nbsp;</p>
-            <p>May 3rd, 2020</p>
-          </p>
-        </div>
-      </div>
-      <div className="font-sans mt-5 lg:mb-8">
-        <div className="flex flex-wrap gap-2 ml-8 mr-10 text-center">
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            HTML
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            CSS
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            JavaScript
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            React
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            Redux
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            NodeJs
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            MongoDB
-          </div>
-          <div className="bg-gray-100 flex-1 text-gray-500 text-tiny  px-3 py-1.5 md:text-bigger rounded-sm">
-            Fireabse
-          </div>
-        </div>
-      </div>
+      <BlogTitle title="Local Authentication Using Passport in Node.js" />
+      <UserInfo name="Noorullah Ahmadzai" views="512" readtime="16" date="May 3rd, 2020" />
+      <TagsCollection />
       <div className="px-8">
         <p className="text-sm mt-6 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
           For the better part of the last year, I have been investing heavily in front-end
@@ -124,66 +69,15 @@ const Blog = () => (
       </p>
     </main>
 
-    <div className="flex items-center justify-between mt-16 xl:pt-10">
-      <div className="flex items-center">
-        <div className="h-1.5 bg-black w-24 mr-2 md:h-2 md:w-32  xl:w-60">&nbsp;</div>
-        <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase md:font-bold xl:text-lg">
-          Sharing is Caring
-        </div>
-      </div>
+    <Sharing />
 
-      <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 xl:pr-52">
-        <a href="#" rel="noreferrer" target="_blank">
-          <TwitterBlack />
-        </a>
+    <AboutAuthor
+      name="Noorullah Ahmadzai"
+      description=" My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
+        MongoDB and JamStack. I'm passinate about web development and technology."
+    />
 
-        <a href="#" rel="noreferrer" target="_blank">
-          <LinkedinBlack />
-        </a>
-
-        <a href="#" rel="noreferrer" target="_blank">
-          <FacebookBlack />
-        </a>
-      </div>
-    </div>
-
-    <div className="flex flex-col items-center font-sans ml-8 mr-8 mt-10 text-center xs:mt-16 xl:py-12">
-      <img
-        className="rounded-full h-24 w-24 xs:h-32 xs:w-32 mr-3 md:mb-1 xl:h-40 xl:w-40"
-        src="/img/profile.jpg"
-        alt="Noorullah Ahmadzai"
-      />
-      <div>
-        <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-xl xs:mt-4 xl:text-2xl xl:mt-4">
-          About the Author
-        </h2>
-        <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:text-base sm:px-14 md:px-14 lg:px-52 xl:px-80 xl:text-lg">
-          My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
-          MongoDB and JamStack. I&apos;m passinate about web development and technology.
-        </p>
-      </div>
-    </div>
-
-    <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20 md:h-48 xl:h-60">
-      <p className="text-white text-3xl mx-10 text-center">Get in Touch</p>
-      <div className="flex justify-center flex-row-reverse space-x-2 md:space-x-3 md:space-x-reverse space-x-reverse">
-        <a href="https://github.com/Noorullah-Ahmadzai" rel="noreferrer" target="_blank">
-          <GitHubWhite />
-        </a>
-
-        <a href="#" rel="noreferrer" target="_blank">
-          <TwitterWhite />
-        </a>
-
-        <a href="#" rel="noreferrer" target="_blank">
-          <InstagramWhite />
-        </a>
-
-        <a href="#" rel="noreferrer" target="_blank">
-          <LinkedinWhite />
-        </a>
-      </div>
-    </div>
+    <Footer />
   </div>
 )
 

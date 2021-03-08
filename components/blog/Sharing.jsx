@@ -7,7 +7,7 @@ const Sharing = () => (
       </div>
     </div>
 
-    <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 xl:pr-52">
+    <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 xl:pr-52 xl:space-x-4">
       <a href="#" rel="noreferrer" target="_blank">
         <img
           src="/icons/social/black/twitter-icon.svg"

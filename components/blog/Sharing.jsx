@@ -1,6 +1,6 @@
-import FacebookBlack from '../../public/icons/social media/black/facebook-icon.svg'
-import LinkedinBlack from '../../public/icons/social media/black/linkedin-icon.svg'
-import TwitterBlack from '../../public/icons/social media/black/twitter-icon.svg'
+import FacebookBlack from '@/public/icons/social/black/facebook-icon.svg'
+import LinkedinBlack from '@/public/icons/social/black/linkedin-icon.svg'
+import TwitterBlack from '@/public/icons/social/black/twitter-icon.svg'
 
 const Sharing = () => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">

@@ -8,8 +8,8 @@ const UserInfo = ({ name, views, readtime, date }) => (
     <div>
       <h2 className="text-base font-semibold text-gray-600 tacking-wide xs:text-lg">{name}</h2>
       <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm">
-        <p>{readtime} mins read&nbsp; - &nbsp; </p> <p> {views} views - &nbsp;</p>
-        <p>{date}</p>
+        <span>{readtime} mins read&nbsp; - &nbsp; </span> <span> {views} views - &nbsp;</span>
+        <span>{date}</span>
       </p>
     </div>
   </div>

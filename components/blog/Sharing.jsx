@@ -13,15 +13,15 @@ const Sharing = () => (
 
     <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 xl:pr-52">
       <a href="#" rel="noreferrer" target="_blank">
-        <Twitter />
+        <img src={Twitter} alt="Twitter" />
       </a>
 
       <a href="#" rel="noreferrer" target="_blank">
-        <Linkedin />
+        <img src={Linkedin} alt="Linkedin" />
       </a>
 
       <a href="#" rel="noreferrer" target="_blank">
-        <Facebook />
+        <img src={Facebook} alt="Facebook" />
       </a>
     </div>
   </div>

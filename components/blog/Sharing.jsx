@@ -1,6 +1,6 @@
-import FacebookBlack from '@/public/icons/social/black/facebook-icon.svg'
-import LinkedinBlack from '@/public/icons/social/black/linkedin-icon.svg'
-import TwitterBlack from '@/public/icons/social/black/twitter-icon.svg'
+import Facebook from '@/public/icons/social/black/facebook-icon.svg'
+import Linkedin from '@/public/icons/social/black/linkedin-icon.svg'
+import Twitter from '@/public/icons/social/black/twitter-icon.svg'
 
 const Sharing = () => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
@@ -13,15 +13,15 @@ const Sharing = () => (
 
     <div className="flex flex-col pr-10 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 xl:pr-52">
       <a href="#" rel="noreferrer" target="_blank">
-        <TwitterBlack />
+        <Twitter />
       </a>
 
       <a href="#" rel="noreferrer" target="_blank">
-        <LinkedinBlack />
+        <Linkedin />
       </a>
 
       <a href="#" rel="noreferrer" target="_blank">
-        <FacebookBlack />
+        <Facebook />
       </a>
     </div>
   </div>

@@ -7,5 +7,6 @@
       "@/articles/*": ["components/articles/*"],
       "@/styles/*": ["styles/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }

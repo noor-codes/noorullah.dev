@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import SectionTitle from '@/components/articles/SectionTitle'
-import BlogTitle from '@/components/articles/BlogTitle'
-import UserInfo from '@/components/articles/UserInfo'
-import TagsCollection from '@/components/articles/TagsCollection'
-import Sharing from '@/components/articles/Sharing'
-import AboutAuthor from '@/components/articles/AboutAuthor'
-import Footer from '@/components/articles/Footer'
+import SectionTitle from '@/articles/SectionTitle'
+import ArticleTitle from '@/articles/ArticleTitle'
+import UserInfo from '@/articles/UserInfo'
+import TagsCollection from '@/articles/TagsCollection'
+import Sharing from '@/articles/Sharing'
+import AboutAuthor from '@/articles/AboutAuthor'
+import Footer from '@/articles/Footer'
 
 const Blog = () => (
   <div>
@@ -22,7 +22,7 @@ const Blog = () => (
 
     <SectionTitle name="Blog" />
     <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
-      <BlogTitle title="Local Authentication Using Passport in Node.js" />
+      <ArticleTitle title="Local Authentication Using Passport in Node.js" />
       <UserInfo name="Noorullah Ahmadzai" views="512" readtime="16" date="May 3rd, 2020" />
       <TagsCollection />
       <div className="px-8">

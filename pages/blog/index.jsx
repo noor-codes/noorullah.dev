@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import SectionTitle from '@/components/articles/SectionTitle'
-import BlogTitle from '@/components/articles/BlogTitle'
-import UserInfo from '@/components/articles/UserInfo'
-import TagsCollection from '@/components/articles/TagsCollection'
-import Sharing from '@/components/articles/Sharing'
-import AboutAuthor from '@/components/articles/AboutAuthor'
-import Footer from '@/components/articles/Footer'
+import SectionTitle from '@/articles/SectionTitle'
+import BlogTitle from '@/blog/BlogTitle'
+import UserInfo from '@/articles/UserInfo'
+import TagsCollection from '@/articles/TagsCollection'
+import Sharing from '@/articles/Sharing'
+import AboutAuthor from '@/articles/AboutAuthor'
+import Footer from '@/articles/Footer'
 
 const Blog = () => (
   <div>

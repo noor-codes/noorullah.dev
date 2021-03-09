@@ -4,8 +4,10 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/public/*": ["public/*"],
-      "@/articles/*": ["components/articles/*"],
       "@/styles/*": ["styles/*"]
+
+      "@/articles/*": ["components/articles/*"],
+      "@/blog/*": ["components/blog/*"],
     }
   },
   "exclude": ["node_modules"]

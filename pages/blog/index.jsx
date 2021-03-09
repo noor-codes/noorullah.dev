@@ -2,7 +2,7 @@ import Head from 'next/head'
 import SectionTitle from '@/articles/SectionTitle'
 import BlogTitle from '@/blog/BlogTitle'
 import Sharing from '@/articles/Sharing'
-import Footer from '@/articles/Footer'
+import Footer from '@/components/Footer'
 
 const Blog = () => (
   <div>

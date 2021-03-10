@@ -6,6 +6,7 @@ import Sharing from '@/articles/Sharing'
 import Footer from '@/components/Footer'
 import Description from '@/components/blog/Description'
 import SearchBar from '@/components/blog/SearchBar'
+import ArticleCard from '@/components/blog/ArticleCard'
 
 const Blog = () => (
   <div>
@@ -25,6 +26,8 @@ const Blog = () => (
       <BlogTitle title="I write about Web Development and Modern Technologies" />
       <Description />
       <SearchBar />
+
+      <ArticleCard />
     </main>
 
     <Sharing />

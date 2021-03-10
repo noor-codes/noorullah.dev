@@ -7,8 +7,10 @@ const ArticleCard = ({ title, paragraph }) => (
       <Link href="/blog/article">
         <a>
           <div className="flex flex-col">
-            <h2 className="ml-3 leading-5 text-base font-semibold tracking-tight">{title}</h2>
-            <p className="text-xs pl-3 mt-1">{paragraph}</p>
+            <h2 className="ml-3 leading-5 text-base font-semibold tracking-tight text-gray-700">
+              {title}
+            </h2>
+            <p className="text-xs pl-3 mt-1 text-gray-600">{paragraph}</p>
           </div>
         </a>
       </Link>

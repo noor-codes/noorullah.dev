@@ -5,7 +5,7 @@ import UserInfo from '@/articles/UserInfo'
 import TagsCollection from '@/articles/TagsCollection'
 import Sharing from '@/articles/Sharing'
 import AboutAuthor from '@/articles/AboutAuthor'
-import Footer from '@/articles/Footer'
+import Footer from '@/components/Footer'
 
 const Blog = () => (
   <div>

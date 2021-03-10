@@ -6,15 +6,19 @@ const Footer = () => (
         <img src="/icons/social/white/github-icon.svg" alt="GitHub" className="h-8 xl:h-9" />
       </a>
 
-      <a href="#" rel="noreferrer" target="_blank">
+      <a href="https://twitter.com/Noorullah_Ah" rel="noreferrer" target="_blank">
         <img src="/icons/social/white/twitter-icon.svg" alt="Twitter" className="h-8 xl:h-9" />
       </a>
 
-      <a href="#" rel="noreferrer" target="_blank">
+      <a href="https://www.instagram.com/noorullah.ahmadzai/" rel="noreferrer" target="_blank">
         <img src="/icons/social/white/instagram-icon.svg" alt="Instagram" className="h-8 xl:h-9" />
       </a>
 
-      <a href="#" rel="noreferrer" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/noorullah-ahmadzai-4239a6160/"
+        rel="noreferrer"
+        target="_blank"
+      >
         <img src="/icons/social/white/linkedin-icon.svg" alt="LinkedIn" className="h-8 xl:h-9" />
       </a>
     </div>

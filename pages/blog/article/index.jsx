@@ -72,8 +72,8 @@ const Blog = () => (
     <Sharing />
 
     <AboutAuthor
-      name="Noorullah Ahmadzai"
-      description=" My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
+      name="About the Author"
+      description="I am Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
         MongoDB and JamStack. I'm passinate about web development and technology."
     />
 

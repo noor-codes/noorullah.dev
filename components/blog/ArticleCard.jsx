@@ -1,15 +1,17 @@
-const ArticleCard = () => (
-  <div className="pt-5 mx-8">
+import Link from 'next/link'
+
+const ArticleCard = ({ title, paragraph }) => (
+  <div className="block pt-5 mx-8">
     <div className="flex">
-      <img src="/img/profile.jpg" alt="topic" className="h-24 rounded" />
-      <div className="flex flex-col">
-        <h2 className="ml-3 leading-5 text-sm font-semibold tracking-tight">
-          Local Authentication Using passport in Node.JS
-        </h2>
-        <p className="text-xs pl-3 mt-1">
-          lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur adip
-        </p>
-      </div>
+      <img src="/img/profile.jpg" alt="topic" className="h-16 rounded" />
+      <Link href="/blog/article">
+        <a>
+          <div className="flex flex-col">
+            <h2 className="ml-3 leading-5 text-base font-semibold tracking-tight">{title}</h2>
+            <p className="text-xs pl-3 mt-1">{paragraph}</p>
+          </div>
+        </a>
+      </Link>
     </div>
   </div>
 )

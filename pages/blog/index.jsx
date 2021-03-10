@@ -2,11 +2,11 @@ import Head from 'next/head'
 
 import SectionTitle from '@/articles/SectionTitle'
 import BlogTitle from '@/blog/BlogTitle'
-import Sharing from '@/articles/Sharing'
 import Footer from '@/components/Footer'
-import Description from '@/components/blog/Description'
-import SearchBar from '@/components/blog/SearchBar'
-import ArticleCard from '@/components/blog/ArticleCard'
+import Description from '@/blog/Description'
+import SearchBar from '@/blog/SearchBar'
+import ArticleCard from '@/blog/ArticleCard'
+import LoadMore from '@/blog/LoadMoreButton'
 
 const Blog = () => (
   <div>
@@ -27,10 +27,22 @@ const Blog = () => (
       <Description />
       <SearchBar />
 
-      <ArticleCard />
+      <ArticleCard
+        title="Local Authentication Using passport in Node.JS"
+        paragraph="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur adip"
+      />
+      <ArticleCard
+        title="New Features in Jest"
+        paragraph="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur adip"
+      />
+      <ArticleCard
+        title="5 CSS Tricks you didn't know existed"
+        paragraph="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur adip"
+      />
+
+      <LoadMore />
     </main>
 
-    <Sharing />
     <Footer />
   </div>
 )

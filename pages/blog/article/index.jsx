@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import SectionTitle from '@/articles/SectionTitle'
+
+import SectionTitle from '@/components/SectionTitle'
 import ArticleTitle from '@/articles/ArticleTitle'
 import UserInfo from '@/articles/UserInfo'
 import TagsCollection from '@/articles/TagsCollection'

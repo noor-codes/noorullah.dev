@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import SectionTitle from '@/articles/SectionTitle'
+import SectionTitle from '@/components/SectionTitle'
 import BlogTitle from '@/blog/BlogTitle'
 import Footer from '@/components/Footer'
 import Description from '@/blog/Description'

@@ -3,7 +3,6 @@ import Head from 'next/head'
 import SectionTitle from '@/components/SectionTitle'
 import BlogTitle from '@/blog/BlogTitle'
 import Footer from '@/components/Footer'
-import Description from '@/blog/Description'
 import SearchBar from '@/blog/SearchBar'
 import ArticleCard from '@/blog/ArticleCard'
 import LoadMore from '@/blog/LoadMoreButton'
@@ -23,8 +22,11 @@ const Blog = () => (
 
     <SectionTitle name="Blog" />
     <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
-      <BlogTitle title="I write about Web Development and Modern Technologies" />
-      <Description />
+      <BlogTitle
+        title="I write about Web Development and Modern Technologies"
+        description="  It is a long established fact that a reader will be distracted by the readable content of a
+      page when looking at its layout. The point of using Lorem Ipsum is."
+      />
       <SearchBar />
 
       <ArticleCard

@@ -20,7 +20,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      scale: ['active'],
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 }

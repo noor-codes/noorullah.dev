@@ -21,7 +21,7 @@ const Blog = () => (
     </Head>
 
     <SectionTitle name="Blog" />
-    <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
+    <main className="xs:px-4 mx-auto md:px-20 md:pt-5 xl:px-60">
       <BlogTitle
         title="I write about Web Development and Modern Technologies"
         description="  It is a long established fact that a reader will be distracted by the readable content of a

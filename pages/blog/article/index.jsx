@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import SectionTitle from '@/articles/SectionTitle'
+
+import SectionTitle from '@/components/SectionTitle'
 import ArticleTitle from '@/articles/ArticleTitle'
 import UserInfo from '@/articles/UserInfo'
 import TagsCollection from '@/articles/TagsCollection'
@@ -72,8 +73,8 @@ const Blog = () => (
     <Sharing />
 
     <AboutAuthor
-      name="Noorullah Ahmadzai"
-      description=" My name is Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
+      name="About the Author"
+      description="I am Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
         MongoDB and JamStack. I'm passinate about web development and technology."
     />
 

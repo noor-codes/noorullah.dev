@@ -11,7 +11,7 @@ const ArticleCard = ({ title, paragraph }) => (
       <Link href="/blog/article">
         <a>
           <div className="flex flex-col lg:justify-center h-full">
-            <h2 className="ml-3 lg:ml-8 leading-5 text-base font-semibold tracking-tight text-gray-700 xs:text-lg xs:leading-6 md:text-xl lg:text-2xl">
+            <h2 className="hover:text-blue-600 ml-3 lg:ml-8 leading-5 text-base font-semibold tracking-tight text-gray-700 xs:text-lg xs:leading-6 md:text-xl lg:text-3xl lg:font-bold">
               {title}
             </h2>
             <p className="text-xs lg:ml-5 pl-3 mt-1 text-gray-600 md:text-sm lg:text-lg">

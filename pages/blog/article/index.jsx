@@ -27,7 +27,7 @@ const Blog = () => (
       <UserInfo name="Noorullah Ahmadzai" views="512" readtime="16" date="May 3rd, 2020" />
       <TagsCollection />
       <div className="px-8">
-        <p className="text-sm mt-6 text-gray-700 leading-6 xs:text-base xs:tracking-tight lg:leading-7 lg:tracking-wide">
+        <p className="text-sm md:text-md lg:text-lg mt-6 text-gray-700 leading-5 xs:text-base md:text-md xs:tracking-tight lg:leading-7">
           For the better part of the last year, I have been investing heavily in front-end
           development and design. When I started my new role, I identified a need for a component
           library and created it. Since then, I have learned a lot about style guides, design

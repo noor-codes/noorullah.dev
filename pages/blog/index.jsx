@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import SectionTitle from '@/components/SectionTitle'
+import SectionTitle from '@/components/PageName'
 import BlogTitle from '@/blog/BlogTitle'
 import Footer from '@/components/Footer'
 import SearchBar from '@/blog/SearchBar'

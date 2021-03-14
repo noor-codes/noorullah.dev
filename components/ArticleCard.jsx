@@ -6,10 +6,10 @@ const ArticleCard = ({ title, paragraph }) => (
       <Link href="/blog/article">
         <a>
           <div className="flex flex-col lg:justify-center h-full">
-            <h1 className="mb-2 leading-6 text-xl text-gray-700 bg-blue-50 font-bold xs:leading-6 hover:text-blue-500 xs:text-xl xl:text-3xl xl:font-bold">
+            <h1 className="mb-2 leading-6 text-xl text-gray-700 hover:text-blue-500  font-bold xs:leading-6 xs:text-xl sm:text-2xl xl:text-3xl xl:font-bold">
               {title}
             </h1>
-            <p className="text-sm mt-1 text-gray-600 md:text-sm lg:text-base line-clamp-2">
+            <p className="text-sm mt-1 text-gray-600 sm:text-base sm:leading-5 md:text-sm lg:text-base line-clamp-2 sm:line-clamp-3">
               {paragraph}
             </p>
           </div>

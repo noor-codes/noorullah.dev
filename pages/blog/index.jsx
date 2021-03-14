@@ -11,21 +11,21 @@ const Blog = () => (
           <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-4xl lg:mb-6 lg:pr-36 lg:leading-snug lg:text-5xl">
             All Blog Posts
           </h1>
-          <p className="text-gray-600 text-sm  xs:text-base xs:-mt-3 xl:text-lg -mt-5">
+          <p className="text-gray-600 text-sm -mt-5 xs:text-base xs:-mt-3 sm:text-lg">
             I love blogging about web development and the latest and great technologies that excites
             me.
           </p>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 sm:mt-6">
           <label
             htmlFor="search"
-            className="relative mt-2 text-gray-500 lg:text-xl tracking-normal"
+            className="relative mt-2 text-gray-500 lg:text-xl tracking-normal sm:text-lg"
           >
             Search Blog Posts
             <img
               src="/icons/search-icon.svg"
               alt="Search Icon"
-              className="absolute h-5 lg:h-6 top-8 lg:top-12 lg:text-xl right-3 cursor-pointer bg:gray-300"
+              className="absolute h-5 lg:h-6 top-8 sm:top-9 lg:top-12 lg:text-xl right-3 cursor-pointer bg:gray-300"
             />
             <input
               id="search"
@@ -51,7 +51,7 @@ const Blog = () => (
         <div className="flex justify-center">
           <button
             type="button"
-            className="text-sm mt-14 text-gray-700 hover:bg-gray-200 cursor-pointer rounded-md px-4 py-2 transition duration-500 ease-out select-none focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-red-100 transform active:scale-90"
+            className="text-sm mt-14 px-5 border-2 border-gray-200 text-gray-700 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out select-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-90"
           >
             Load More
           </button>

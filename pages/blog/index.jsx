@@ -8,15 +8,14 @@ const Blog = () => (
     <div className="container min-w-xs mx-auto px-6">
       <main className="mx-auto md:pt-5">
         <div className="mt-8 mb-4">
-          <h1 className="font-bold leading-normal mb-5 text-3xl xs:font-bold xs:text-3xl xs:leading-10 md:text-4xl lg:mb-6 lg:pr-36 lg:leading-snug lg:text-5xl">
+          <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-4xl lg:mb-6 lg:pr-36 lg:leading-snug lg:text-5xl">
             All Blog Posts
           </h1>
-          <p className="text-gray-600 text-sm  xl:text-lg -mt-5">
+          <p className="text-gray-600 text-sm  xs:text-base xs:-mt-3 xl:text-lg -mt-5">
             I love blogging about web development and the latest and great technologies that excites
             me.
           </p>
         </div>
-
         <div className="mt-4">
           <label
             htmlFor="search"

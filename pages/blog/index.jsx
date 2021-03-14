@@ -25,8 +25,8 @@ const Blog = () => (
             All Blog Posts
           </h1>
           <p className="text-gray-600 text-sm  xl:text-lg -mt-5">
-            I love blogging about web development in and the latest and great technologies that
-            excites me
+            I love blogging about web development and the latest and great technologies that excites
+            me.
           </p>
         </div>
 

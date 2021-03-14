@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import PageName from '@/components/PageName'
+import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Footer from '@/components/Footer'
 
@@ -17,7 +17,7 @@ const Blog = () => (
       </>
     </Head>
 
-    <PageName name="Blog" />
+    <PageSection name="Blog" />
     <main className="xs:px-4 mx-auto md:px-24 md:pt-5 xl:px-60">
       <div className="mt-8 mb-4 px-8">
         <h1 className="font-semibold leading-tight text-2xl tracking-wide capitalize xs:font-bold md:text-3xl lg:mb-6">

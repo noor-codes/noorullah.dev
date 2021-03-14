@@ -1,10 +1,10 @@
-import PageName from '@/components/PageName'
+import PageSection from '@/components/PageSection'
 import Footer from '@/components/Footer'
 import ArticleCard from '@/components/ArticleCard'
 
 const Blog = () => (
   <div>
-    <PageName name="Blog" />
+    <PageSection name="Blog" />
     <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl xl:max-w-4xl">
       <main className="mx-auto md:pt-5">
         <div className="mt-8 mb-4">

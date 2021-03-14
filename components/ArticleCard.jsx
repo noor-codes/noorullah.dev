@@ -1,26 +1,22 @@
 import Link from 'next/link'
 
 const ArticleCard = ({ title, paragraph }) => (
-  <div className="block pt-5 mx-8 lg:mb-2">
+  <div className="block pt-4 mb-2">
     <div className="flex">
-      <img
-        src="/img/profile.jpg"
-        alt="topic"
-        className="h-16 w-16 rounded xs:h-20 xs:w-20 md:w-24 md:h-24 lg:h-40 lg:w-40"
-      />
       <Link href="/blog/article">
         <a>
           <div className="flex flex-col lg:justify-center h-full">
-            <h2 className="hover:text-blue-600 ml-3 lg:ml-8 leading-5 text-base font-semibold tracking-tight text-gray-700 xs:text-lg xs:leading-6 md:text-xl lg:text-3xl lg:font-bold">
+            <h1 className="hover:text-blue-500 mb-2 leading-6 text-xl text-gray-700 font-bold tracking-normalxs:text-lg xs:leading-6 md:text-xl xl:text-3xl xl:font-bold">
               {title}
-            </h2>
-            <p className="text-xs lg:ml-5 pl-3 mt-1 text-gray-600 md:text-sm lg:text-lg">
+            </h1>
+            <p className="text-sm mt-1 text-gray-600 md:text-sm lg:text-base line-clamp-2">
               {paragraph}
             </p>
           </div>
         </a>
       </Link>
     </div>
+    <div className="border-b-2 border-gray-100 -mt-4">&nbsp;</div>
   </div>
 )
 

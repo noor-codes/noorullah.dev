@@ -1,22 +1,9 @@
-import Head from 'next/head'
-
 import PageName from '@/components/PageName'
 import Footer from '@/components/Footer'
 import ArticleCard from '@/components/ArticleCard'
 
 const Blog = () => (
   <div>
-    <Head>
-      <title>Noorullah Ahmadzai</title>
-      <>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </>
-    </Head>
-
     <PageName name="Blog" />
     <div className="container min-w-xs mx-auto px-6">
       <main className="mx-auto md:pt-5">

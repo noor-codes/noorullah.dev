@@ -5,10 +5,10 @@ import Footer from '@/components/Footer'
 const Blog = () => (
   <div>
     <PageSection name="Blog" />
-    <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-4xl">
+    <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
       <main className="xs:px-4 mx-auto md:pt-5">
         <article className="mt-8 mb-4">
-          <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-3xl">
+          <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl">
             Local Authentication Using Passport in Node.js
           </h1>
         </article>
@@ -36,7 +36,7 @@ const Blog = () => (
               (name) => (
                 <div
                   key={name}
-                  className="bg-gray-100 px-3 text-2xl flex-1 text-gray-600 rounded-sm text-tiny md:text-sm md:px-4 md:py-2"
+                  className="bg-gray-100 px-2 text-2xl flex-1 text-gray-600 rounded-sm text-tiny md:text-sm md:px-4 md:py-2"
                 >
                   {name}
                 </div>
@@ -91,15 +91,15 @@ const Blog = () => (
     <div className="container min-w-xs mx-auto px-4 sm:px-10 md:max-w-3xl xl:max-w-4xl">
       <div className="flex flex-col items-center font-sans mt-10 text-center xs:mt-16 xl:py-12">
         <img
-          className="rounded-full h-24 w-24 xs:h-32 xs:w-32 md:mb-1 xl:h-40 xl:w-40"
+          className="rounded-full h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40"
           src="/img/profile.jpg"
           alt="Noorullah Ahmadzai"
         />
         <div>
-          <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-xl xs:mt-4 xl:text-2xl xl:mt-4">
+          <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-lg md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4">
             About the Author
           </h2>
-          <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:text-base md:max-w-lg xl:text-lg">
+          <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
             I am Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
             MongoDB and JamStack. I&apos;m passinate about web development and technology.
           </p>

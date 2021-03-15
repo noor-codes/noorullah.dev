@@ -7,7 +7,7 @@
       "@/styles/*": ["styles/*"],
 
       "@/articles/*": ["components/articles/*"],
-      "@/blog/*": ["components/blog/*"],
+      "@/blog/*": ["components/blog/*"]
     }
   },
   "exclude": ["node_modules"]

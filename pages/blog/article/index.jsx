@@ -1,9 +1,43 @@
+import { NextSeo } from 'next-seo'
+
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Footer from '@/components/Footer'
 
 const Blog = () => (
   <div>
+    <NextSeo
+      title="Article Title"
+      description="Article Description goes here"
+      openGraph={{
+        url: 'https://noorullah.dev/articleURL',
+        title: 'The Article Title',
+        description: 'The Article Description Description',
+        images: [
+          {
+            url: 'https://source.unsplash.com/800x600',
+            width: 800,
+            height: 600,
+            alt: 'First Image Tags',
+          },
+          {
+            url: 'https://source.unsplash.com/900x800',
+            width: 900,
+            height: 800,
+            alt: 'Second Image Tag',
+          },
+          { url: 'https://source.unsplash.com/800x600' },
+          { url: 'https://source.unsplash.com/900x800' },
+        ],
+        article: {
+          publishedTime: '2017-06-21T23:04:13Z',
+          modifiedTime: '2018-01-21T18:04:43Z',
+          authors: ['https://noorullah.dev'],
+          tags: ['Tag A', 'Tag B', 'Tag C'],
+          // expirationTime: '2022-12-21T22:04:11Z',
+        },
+      }}
+    />
     <PageSection name="Blog" />
     <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
       <main className="xs:px-4 mx-auto md:pt-5">

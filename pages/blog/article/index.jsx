@@ -103,7 +103,13 @@ const Blog = () => (
             </p>
           </div>
           <div className="pt-5">
-            <img className="w-full" src="/img/article.png" alt="article" />
+            <Image
+              className="w-full"
+              width="1000"
+              height="600"
+              src="/img/article.png"
+              alt="article"
+            />
           </div>
 
           <p>Then, slowly, it begins to scale.</p>

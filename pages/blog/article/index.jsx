@@ -8,22 +8,22 @@ const Blog = () => (
     <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
       <main className="xs:px-4 mx-auto md:pt-5">
         <article className="mt-8 mb-4">
-          <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl">
+          <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight">
             Local Authentication Using Passport in Node.js
           </h1>
         </article>
 
         <div className="flex items-center font-sans">
           <img
-            className="rounded-full h-16 w-16 xs:h-16 xs:w-16 mr-3 mt-2 md:h-20 md:w-20"
+            className="rounded-full h-16 w-16 xs:h-16 xs:w-16 mr-3 mt-2 md:h-20 md:w-20 lg:h-24 lg:w-24"
             src="/img/profile.jpg"
             alt="Noorullah Ahmadzai"
           />
           <div>
-            <h2 className="text-md font-semibold text-gray-600 tacking-wide xs:text-lg md:text-xl">
+            <h2 className="text-md font-semibold text-gray-600 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
               Noorullah Ahmadzai
             </h2>
-            <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm md:text-base">
+            <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm md:text-base lg:text-lg">
               <span>16 mins read&nbsp; - &nbsp; </span> <span> 512 views - &nbsp;</span>
               <span>May 3rd, 2020</span>
             </p>

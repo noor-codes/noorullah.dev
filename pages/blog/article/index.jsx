@@ -10,7 +10,7 @@ const Blog = () => (
       title="Article Title"
       description="Article Description goes here"
       openGraph={{
-        url: 'https://noorullah.dev/image',
+        url: 'https://noorullah.dev/articleURL',
         title: 'The Article Title',
         description: 'The Article Description Description',
         images: [
@@ -29,12 +29,6 @@ const Blog = () => (
           { url: 'https://source.unsplash.com/800x600' },
           { url: 'https://source.unsplash.com/900x800' },
         ],
-        site_name: 'Noorullah Ahmadzai',
-      }}
-      twitter={{
-        handle: '@noorullah_ah',
-        cardType: 'summary_large_image',
-        // site: '@site',
       }}
     />
     <PageSection name="Blog" />

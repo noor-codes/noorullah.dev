@@ -36,7 +36,7 @@ const Blog = () => (
               (name) => (
                 <div
                   key={name}
-                  className="bg-gray-100 px-2 text-2xl flex-1 text-gray-600 rounded-sm text-tiny md:text-sm md:px-4 md:py-2"
+                  className="bg-gray-100 px-2 text-2xl flex-1 text-gray-600 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
                 >
                   {name}
                 </div>

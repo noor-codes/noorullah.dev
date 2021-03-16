@@ -5,3 +5,7 @@
 *::selection {
   @apply text-white bg-black;
 }
+
+img {
+  user-select: none;
+}

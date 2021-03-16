@@ -5,7 +5,7 @@ import ArticleCard from '@/components/ArticleCard'
 const Blog = () => (
   <div>
     <PageSection name="Blog" />
-    <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl xl:max-w-4xl">
+    <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
       <main className="mx-auto md:pt-5">
         <div className="mt-8 mb-4">
           <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-6xl md:mb-6 lg:leading-snug">

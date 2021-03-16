@@ -13,6 +13,7 @@ const Blog = () => (
         url: 'https://noorullah.dev/articleURL',
         title: 'The Article Title',
         description: 'The Article Description Description',
+        type: 'article',
         images: [
           {
             url: 'https://source.unsplash.com/800x600',

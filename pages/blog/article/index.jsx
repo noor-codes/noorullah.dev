@@ -29,6 +29,13 @@ const Blog = () => (
           { url: 'https://source.unsplash.com/800x600' },
           { url: 'https://source.unsplash.com/900x800' },
         ],
+        article: {
+          publishedTime: '2017-06-21T23:04:13Z',
+          modifiedTime: '2018-01-21T18:04:43Z',
+          authors: ['https://noorullah.dev'],
+          tags: ['Tag A', 'Tag B', 'Tag C'],
+          // expirationTime: '2022-12-21T22:04:11Z',
+        },
       }}
     />
     <PageSection name="Blog" />

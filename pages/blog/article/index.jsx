@@ -1,9 +1,42 @@
+import { NextSeo } from 'next-seo'
+
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Footer from '@/components/Footer'
 
 const Blog = () => (
   <div>
+    <NextSeo
+      title="Article Title"
+      description="Article Description goes here"
+      openGraph={{
+        url: 'https://www.url.ie/a',
+        title: 'Open Graph Title',
+        description: 'Open Graph Description',
+        images: [
+          {
+            url: 'https://source.unsplash.com/800x600',
+            width: 800,
+            height: 600,
+            alt: 'First Image Tags',
+          },
+          {
+            url: 'https://source.unsplash.com/900x800',
+            width: 900,
+            height: 800,
+            alt: 'Second Image Tag',
+          },
+          { url: 'https://source.unsplash.com/800x600' },
+          { url: 'https://source.unsplash.com/900x800' },
+        ],
+        site_name: 'Noorullah Ahmadzai',
+      }}
+      twitter={{
+        handle: '@noorullah_ah',
+        cardType: 'summary_large_image',
+        // site: '@site',
+      }}
+    />
     <PageSection name="Blog" />
     <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
       <main className="xs:px-4 mx-auto md:pt-5">

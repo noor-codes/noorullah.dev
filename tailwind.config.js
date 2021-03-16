@@ -19,11 +19,6 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      scale: ['active'],
-    },
-  },
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),

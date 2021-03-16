@@ -10,9 +10,9 @@ const Blog = () => (
       title="Article Title"
       description="Article Description goes here"
       openGraph={{
-        url: 'https://www.url.ie/a',
-        title: 'Open Graph Title',
-        description: 'Open Graph Description',
+        url: 'https://noorullah.dev/image',
+        title: 'The Article Title',
+        description: 'The Article Description Description',
         images: [
           {
             url: 'https://source.unsplash.com/800x600',

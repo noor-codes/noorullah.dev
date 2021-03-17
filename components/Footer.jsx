@@ -14,6 +14,7 @@ const Footer = () => (
         rel="noreferrer"
         target="_blank"
         className="block h-9 w-9 md:h-9 md:w-9"
+        aria-label="github"
       >
         <GitHub />
       </a>
@@ -23,6 +24,7 @@ const Footer = () => (
         rel="noreferrer"
         target="_blank"
         className="block h-9 w-9 md:h-9 md:w-9"
+        aria-label="twitter"
       >
         <Twitter />
       </a>
@@ -32,6 +34,7 @@ const Footer = () => (
         rel="noreferrer"
         target="_blank"
         className="block h-9 w-9 md:h-9 md:w-9"
+        aria-label="instagram"
       >
         <Instagram />
       </a>
@@ -41,6 +44,7 @@ const Footer = () => (
         rel="noreferrer"
         target="_blank"
         className="block h-9 w-9 md:h-9 md:w-9"
+        aria-label="linkedin"
       >
         <LinkedIn />
       </a>

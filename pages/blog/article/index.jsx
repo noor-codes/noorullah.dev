@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo'
+import Image from 'next/image'
 
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
@@ -13,7 +14,7 @@ const Blog = () => (
         url: 'https://noorullah.dev/articleURL',
         title: 'The Article Title',
         description: 'The Article Description Description',
-        type: 'article',
+        type: 'blog',
         images: [
           {
             url: 'https://source.unsplash.com/800x600',
@@ -49,11 +50,16 @@ const Blog = () => (
         </article>
 
         <div className="flex items-center font-sans">
-          <img
-            className="rounded-full h-16 w-16 xs:h-16 xs:w-16 mr-3 mt-2 md:h-20 md:w-20 lg:h-24 lg:w-24"
-            src="/img/profile.jpg"
-            alt="Noorullah Ahmadzai"
-          />
+          <div className="h-16 w-16 xs:h-16 xs:w-16 mr-3 mt-2 md:h-20 md:w-20 lg:h-24 lg:w-24">
+            <Image
+              className="rounded-full"
+              src="/img/profile.jpg"
+              alt="Noorullah Ahmadzai"
+              width={100}
+              height={100}
+            />
+          </div>
+
           <div>
             <h2 className="text-md font-semibold text-gray-600 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
               Noorullah Ahmadzai
@@ -97,7 +103,13 @@ const Blog = () => (
             </p>
           </div>
           <div className="pt-5">
-            <img className="w-full" src="/img/article.png" alt="article" />
+            <Image
+              className="w-full"
+              width="1000"
+              height="600"
+              src="/img/article.png"
+              alt="article"
+            />
           </div>
 
           <p>Then, slowly, it begins to scale.</p>
@@ -125,11 +137,15 @@ const Blog = () => (
     <Sharing />
     <div className="container min-w-xs mx-auto px-4 sm:px-10 md:max-w-3xl xl:max-w-4xl">
       <div className="flex flex-col items-center font-sans mt-10 text-center xs:mt-16 xl:py-12">
-        <img
-          className="rounded-full h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40"
-          src="/img/profile.jpg"
-          alt="Noorullah Ahmadzai"
-        />
+        <div className="h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40">
+          <Image
+            className="rounded-full"
+            src="/img/profile.jpg"
+            alt="Noorullah Ahmadzai"
+            width={200}
+            height={200}
+          />
+        </div>
         <div>
           <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-lg md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4">
             About the Author

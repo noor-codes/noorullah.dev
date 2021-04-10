@@ -3,7 +3,7 @@ import Link from 'next/link'
 const ArticleCard = ({ title, paragraph }) => (
   <div className="block pt-4 mb-5 lg:mb-8">
     <div className="flex flex-col lg:justify-center h-full">
-      <Link href="/blog/article">
+      <Link href="/blog">
         <a>
           <h1 className="mb-2 leading-6 hover:text-blue-500 font-bold text-xl text-gray-900 xs:leading-6 max-w-xl xs:text-xl sm:text-2xl md:text-3xl  md:mb-3 md:leading-10 xl:text-3xl xl:font-bold">
             {title}

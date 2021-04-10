@@ -2,7 +2,7 @@ import PageSection from '@/components/PageSection'
 import ArticleCard from '@/components/ArticleCard'
 import Layout from '@/components/Layout'
 
-const Blog = () => (
+const BlogList = () => (
   <Layout>
     <PageSection name="Blog" />
     <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
@@ -45,4 +45,4 @@ const Blog = () => (
   </Layout>
 )
 
-export default Blog
+export default BlogList

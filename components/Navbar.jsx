@@ -27,7 +27,7 @@ const Navbar = () => {
                   <div className="sm:text-lg lg:text-xl">Noorullah</div>
                 </a>
               </Link>
-              <Link href="/blog">
+              <Link href="/blogs">
                 <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:text-gray-400">
                   Blog
                 </a>

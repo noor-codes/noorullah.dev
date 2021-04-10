@@ -13,7 +13,7 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
-  const menuVisibility = isOpen ? 'visible' : 'hidden'
+  const menuVisibility = isOpen ? '' : 'hidden'
 
   return (
     <nav className="bg-gray-900 text-white">
@@ -21,8 +21,12 @@ const Navbar = () => {
         <div className="flex py-4 px-4 sm:py-6">
           <div className="flex justify-between w-full items-center">
             <div className="flex items-center">
-              <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
-              <div className="sm:text-lg lg:text-xl">Noorullah</div>
+              <Link href="/">
+                <a className="flex hover:text-gray-400">
+                  <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
+                  <div className="sm:text-lg lg:text-xl">Noorullah</div>
+                </a>
+              </Link>
               <Link href="/blog">
                 <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:text-gray-400">
                   Blog

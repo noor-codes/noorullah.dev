@@ -32,11 +32,11 @@ const Navbar = () => {
 
             <button
               type="button"
-              className="sm:hidden focus:outline-none focus:ring-2.5 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
+              className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
             >
               <BurgerIcon
                 onClick={handleMenu}
-                className="h-full hover:cursor-pointer hover:bg-gray-700 hover:rounded-full p-2.5 mr-6"
+                className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
               />
             </button>
 

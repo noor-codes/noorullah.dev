@@ -24,7 +24,9 @@ const Navbar = () => {
               <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
               <div className="sm:text-lg lg:text-xl">Noorullah</div>
               <Link href="/blog">
-                <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl">Blog</a>
+                <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:text-gray-400">
+                  Blog
+                </a>
               </Link>
             </div>
 

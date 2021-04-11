@@ -21,6 +21,7 @@
   "rules": {
     "indent": [0, "space"],
     "no-eval": 0,
+    "arrow-body-style": [0, "never"],
     "import/no-unresolved": 0,
     "react/jsx-props-no-spreading": 0,
     "react/destructuring-assignment": 0,

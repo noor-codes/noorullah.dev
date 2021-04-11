@@ -65,7 +65,7 @@ const Navbar = () => {
           <div
             className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 text-white px-2 pb-2 space-y-2`}
           >
-            <Link href="/blog" onClick={() => setIsOpen(!isOpen)}>
+            <Link href="/blogs" onClick={() => setIsOpen(!isOpen)}>
               <a>
                 <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
                   <BlogIcon className="mr-2 h-6 w-6" />

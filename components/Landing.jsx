@@ -129,6 +129,10 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
+      <div className="bg-gray-900 text-white py-3 pl-6 font-semibold">
+        Need a full stack developer?
+      </div>
     </>
   )
 }

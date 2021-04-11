@@ -96,6 +96,39 @@ const Landing = () => {
           </div>
         </div>
       </div>
+      <LandingSections name="Work Experience" />
+      <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
+        <div className="mb-2">
+          <h2 className="text-gray-900 text-lg mt-4 font-extrabold">Experience</h2>
+          <h3 className="text-gray-600 text-sm mt-2">
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum is.
+          </h3>
+        </div>
+      </div>
+
+      <LandingSections name="Recent Projects" />
+      <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
+        <div>
+          <h3 className="text-gray-600 text-sm mt-2">
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum is.
+          </h3>
+        </div>
+        <div className="flex flex-wrap gap-8 text-center mt-8 pb-20">
+          <div className="flex-1">
+            <div className="bg-gray-100 px-20 text-2xl py-20  text-gray-600 rounded-sm ">
+              &nbsp;
+            </div>
+            <p className="mt-3 text-gray-600">Inventory Management</p>
+          </div>
+
+          <div className="flex-1">
+            <div className="bg-gray-100 px-20 text-2xl py-20 text-gray-600 rounded-sm ">&nbsp;</div>
+            <p className="mt-3 text-gray-600">Personal Portfolio</p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

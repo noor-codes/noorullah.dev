@@ -10,22 +10,24 @@ const Landing = () => {
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <main className="flex flex-col justify-center pt-10">
           <div className="flex items-center mb-4">
-            <Image
-              height="50"
-              width="50"
-              src="/img/profile.jpg"
-              alt="Noorullah Ahmadzai"
-              className="rounded-full"
-            />
-            <div className="ml-2 text-base">@noorullah_ah</div>
+            <div className="h-14 w-14 xs:w-16 xs:h-16">
+              <Image
+                height={100}
+                width={100}
+                src="/img/profile.jpg"
+                alt="Noorullah Ahmadzai"
+                className="rounded-full"
+              />
+            </div>
+            <div className="ml-2 text-base xs:text-lg">@noorullah_ah</div>
           </div>
 
           <div>
-            <h1 className="text-xl font-extrabold mb-4">
+            <h1 className="text-xl font-extrabold mb-4 xs:text-2xl">
               Lorem Ipsum is simply dummy text of the printing!
             </h1>
 
-            <h2 className="text-gray-600 text-sm">
+            <h2 className="text-gray-600 text-sm xs:text-base">
               It is a long established fact that a reader will be distracted by the readable content
               of a page when looking at its layout. The point of using Lorem Ipsum is. It is a long
               established fact that a reader will be distracted by the readable content of a page
@@ -33,7 +35,7 @@ const Landing = () => {
             </h2>
           </div>
 
-          <div className="flex justify-center mt-6 mb-2">
+          <div className="flex justify-center mt-6 mb-2 xs:mt-8">
             <button
               type="button"
               className="flex items-center justify-center w-full py-2 bg-gray-900 text-white  rounded hover:bg-gray-700 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
@@ -47,8 +49,10 @@ const Landing = () => {
       <LandingSections name="Speciality" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
-          <h2 className="text-gray-900 text-lg mt-4 font-extrabold">Framework & Languages</h2>
-          <h3 className="text-gray-600 text-sm mt-2">
+          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl">
+            Framework & Languages
+          </h2>
+          <h3 className="text-gray-600 text-sm mt-2 xs:text-base">
             It is a long established fact that a reader will be distracted by the readable content
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
@@ -101,8 +105,8 @@ const Landing = () => {
       <LandingSections name="Work Experience" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
-          <h2 className="text-gray-900 text-lg mt-4 font-extrabold">Experience</h2>
-          <h3 className="text-gray-600 text-sm mt-2">
+          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl">Experience</h2>
+          <h3 className="text-gray-600 text-sm mt-2 xs:text-base">
             It is a long established fact that a reader will be distracted by the readable content
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
@@ -112,7 +116,7 @@ const Landing = () => {
       <LandingSections name="Recent Projects" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div>
-          <h3 className="text-gray-600 text-sm mt-2">
+          <h3 className="text-gray-600 text-sm mt-2 xs:text-base">
             It is a long established fact that a reader will be distracted by the readable content
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
@@ -137,14 +141,14 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="bg-gray-900 text-white py-3 pl-6 font-semibold">
+      <div className="bg-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg">
         Need a full stack developer?
       </div>
 
-      <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
+      <div className="container min-w-xs mx-auto px-6 xs:px-10 md:max-w-2xl xl:max-w-3xl">
         <fieldset>
           <form className="mt-20">
-            <h2 className="text-2xl text-center font-bold">Get in Touch</h2>
+            <h2 className="text-2xl text-center font-bold xs:text-3xl">Get in Touch</h2>
             <div className="pt-4 pb-8 mb-4 flex flex-col my-2">
               <div className="-mx-3 md:flex mb-6">
                 <div className="px-3 mb-6 md:mb-0">

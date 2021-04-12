@@ -125,42 +125,40 @@ const Landing = () => {
         </div>
         <div className="flex flex-wrap gap-8 text-center mt-8 pb-20">
           <div className="flex-1">
-            <div className="bg-gray-100 px-20 text-2xl py-20  text-gray-600 rounded-sm ">
-              &nbsp;
-            </div>
+            <div className="bg-gray-100 px-20 py-20  text-gray-600 rounded-sm ">&nbsp;</div>
             <p className="mt-3 text-gray-600">Inventory Management</p>
           </div>
 
           <div className="flex-1">
-            <div className="bg-gray-100 px-20 text-2xl py-20 text-gray-600 rounded-sm ">&nbsp;</div>
-            <p className="mt-3 text-gray-600">Personal Portfolio</p>
+            <div className="bg-gray-100 px-20 py-20 text-gray-600 rounded-sm ">&nbsp;</div>
+            <p className="mt-3 text-gray-600">My Portfolio</p>
           </div>
 
           <div className="flex-1">
-            <div className="bg-gray-100 px-20 text-2xl py-20 text-gray-600 rounded-sm ">&nbsp;</div>
+            <div className="bg-gray-100 px-20 py-20 text-gray-600 rounded-sm ">&nbsp;</div>
             <p className="mt-3 text-gray-600">CarBidNow</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6">
+      <div className="bg-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6 xl:py-8">
         <div className="flex items-center justify-between container min-w-xs mx-auto sm:px-4 md:max-w-2xl xl:max-w-3xl">
           Need a full stack developer?
           <button
             type="button"
-            className="sm:flex hidden items-center text-sm px-6 mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
+            className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
           >
             Shoot me a message
           </button>
         </div>
       </div>
 
-      <div className="container min-w-xs mx-auto px-6 xs:px-10 sm:max-w-lg md:max-w-2xl xl:max-w-3xl">
+      <div className="container min-w-xs mx-auto px-6 xs:px-10 sm:max-w-lg md:max-w-2xl">
         <fieldset>
           <form className="mt-20">
             <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2">Get in Touch</h2>
             <div className="pt-4 pb-8 mb-4 flex flex-col my-2">
-              <div className="-mx-3 md:flex mb-6">
+              <div className="-mx-3 md:flex md:justify-between mb-6">
                 <div className="px-3 mb-6 md:mb-0">
                   <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"

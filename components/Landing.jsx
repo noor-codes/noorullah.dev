@@ -10,7 +10,7 @@ const Landing = () => {
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <main className="flex flex-col justify-center pt-10 sm:mt-16 md:mt-24">
           <div className="flex items-center mb-4">
-            <div className="h-14 w-14 xs:w-16 xs:h-16">
+            <div className="h-14 w-14 xs:w-16 xs:h-16 xl:w-20 xl:h-20">
               <Image
                 height={100}
                 width={100}
@@ -19,15 +19,15 @@ const Landing = () => {
                 className="rounded-full"
               />
             </div>
-            <div className="ml-2 text-base xs:text-lg">@noorullah_ah</div>
+            <div className="ml-2 text-base xs:text-lg xl:text-xl xl:ml-4">@noorullah_ah</div>
           </div>
 
           <div>
-            <h1 className="text-xl font-extrabold mb-4 xs:text-2xl sm:text-3xl sm:mt-2">
+            <h1 className="text-xl font-extrabold mb-4 xs:text-2xl sm:text-3xl sm:mt-2 xl:text-4xl">
               Lorem Ipsum is simply dummy text of the printing!
             </h1>
 
-            <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg">
+            <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4">
               It is a long established fact that a reader will be distracted by the readable content
               of a page when looking at its layout. The point of using Lorem Ipsum is. It is a long
               established fact that a reader will be distracted by the readable content of a page
@@ -49,7 +49,7 @@ const Landing = () => {
       <LandingSections name="Speciality" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
-          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl">
+          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
             Framework & Languages
           </h2>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">
@@ -105,7 +105,7 @@ const Landing = () => {
       <LandingSections name="Work Experience" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
-          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl">
+          <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
             Experience
           </h2>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">

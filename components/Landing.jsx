@@ -144,12 +144,12 @@ const Landing = () => {
               <div className="-mx-3 md:flex mb-6">
                 <div className="px-3 mb-6 md:mb-0">
                   <label
-                    className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="name"
                   >
                     Name
                     <input
-                      className="appearance-none block w-full mt-2 bg-grey-lighter text-grey-darker border border-red rounded py-2 px-4 mb-2"
+                      className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400"
                       id="name"
                       type="text"
                       placeholder="Jane Doe"
@@ -159,12 +159,12 @@ const Landing = () => {
                 </div>
                 <div className="px-3">
                   <label
-                    className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="email"
                   >
                     Email
                     <input
-                      className="appearance-none mt-2 block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-2 px-4"
+                      className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400"
                       id="email"
                       type="email"
                       placeholder="email@example.com"
@@ -175,12 +175,12 @@ const Landing = () => {
               <div className="-mx-3 mb-2">
                 <div className="px-3">
                   <label
-                    className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     htmlFor="message"
                   >
                     Message
                     <textarea
-                      className="appearance-none block mt-2 w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-2 px-4"
+                      className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400"
                       id="message"
                       type="text"
                       rows="7"

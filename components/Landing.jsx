@@ -158,7 +158,7 @@ const Landing = () => {
       <div className="container min-w-xs mx-auto px-6 xs:px-10 sm:max-w-lg md:max-w-2xl xl:max-w-3xl">
         <fieldset>
           <form className="mt-20">
-            <h2 className="text-2xl text-center font-bold xs:text-3xl">Get in Touch</h2>
+            <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2">Get in Touch</h2>
             <div className="pt-4 pb-8 mb-4 flex flex-col my-2">
               <div className="-mx-3 md:flex mb-6">
                 <div className="px-3 mb-6 md:mb-0">

@@ -13,7 +13,7 @@ const Footer = () => (
         href="https://github.com/Noorullah-Ahmadzai"
         rel="noreferrer"
         target="_blank"
-        className="block h-9 w-9 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9"
         aria-label="github"
       >
         <GitHub />
@@ -23,7 +23,7 @@ const Footer = () => (
         href="https://twitter.com/Noorullah_Ah"
         rel="noreferrer"
         target="_blank"
-        className="block h-9 w-9 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9"
         aria-label="twitter"
       >
         <Twitter />
@@ -33,7 +33,7 @@ const Footer = () => (
         href="https://www.instagram.com/noorullah.ahmadzai/"
         rel="noreferrer"
         target="_blank"
-        className="block h-9 w-9 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9"
         aria-label="instagram"
       >
         <Instagram />
@@ -43,7 +43,7 @@ const Footer = () => (
         href="https://www.linkedin.com/in/noorullah-ahmadzai-4239a6160/"
         rel="noreferrer"
         target="_blank"
-        className="block h-9 w-9 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9"
         aria-label="linkedin"
       >
         <LinkedIn />

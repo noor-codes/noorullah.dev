@@ -129,6 +129,11 @@ const Landing = () => {
             <div className="bg-gray-100 px-20 text-2xl py-20 text-gray-600 rounded-sm ">&nbsp;</div>
             <p className="mt-3 text-gray-600">Personal Portfolio</p>
           </div>
+
+          <div className="flex-1">
+            <div className="bg-gray-100 px-20 text-2xl py-20 text-gray-600 rounded-sm ">&nbsp;</div>
+            <p className="mt-3 text-gray-600">CarBidNow</p>
+          </div>
         </div>
       </div>
 

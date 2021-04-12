@@ -57,46 +57,34 @@ const Landing = () => {
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
 
-          <div className="flex flex-wrap gap-3 text-center mt-8">
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+          <div className="flex flex-wrap gap-3 justify-center xs:justify-start text-center mt-8">
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">HTML</div>
             </div>
 
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">CSS</div>
             </div>
 
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">JavaScript</div>
             </div>
 
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">React</div>
             </div>
 
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">NodeJS</div>
             </div>
 
-            <div className="flex-1">
-              <div className="bg-gray-100 px-10 text-2xl py-10  text-gray-600 rounded-sm ">
-                &nbsp;
-              </div>
+            <div className="">
+              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
               <div className="text-sm text-gray-500 mt-2">MongoDB</div>
             </div>
           </div>

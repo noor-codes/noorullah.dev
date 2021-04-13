@@ -2,6 +2,21 @@ import Image from 'next/image'
 import DownloadIcon from '@/public/icons/landing/download-icon.svg'
 import PaperPlaneIcon from '@/public/icons/landing/paperplane-icon.svg'
 
+import HTMLIcon from '@/public/icons/landing/tech/html-icon.svg'
+import CSSIcon from '@/public/icons/landing/tech/css-icon.svg'
+import SASSIcon from '@/public/icons/landing/tech/sass-icon.svg'
+import TAILWINDCSSIcon from '@/public/icons/landing/tech/tailwindcss-icon.svg'
+import JAVASCRIPTIcon from '@/public/icons/landing/tech/js-icon.svg'
+import REACTIcon from '@/public/icons/landing/tech/react-icon.svg'
+import REDUXIcon from '@/public/icons/landing/tech/redux-icon.svg'
+import EXPRESSIcon from '@/public/icons/landing/tech/express-icon.svg'
+import MONGODBIcon from '@/public/icons/landing/tech/mongodb-icon.svg'
+import RESTAPIIcon from '@/public/icons/landing/tech/api-icon.svg'
+import GRAGHQLIcon from '@/public/icons/landing/tech/graphql-icon.svg'
+import GITHUBLIcon from '@/public/icons/landing/tech/github-icon.svg'
+import HOSTINGIcon from '@/public/icons/landing/tech/hosting-icon.svg'
+import NPMIcon from '@/public/icons/landing/tech/npm-icon.svg'
+import VSCODEIcon from '@/public/icons/landing/tech/vscode-icon.svg'
 import LandingSections from './LandingSections'
 
 const Landing = () => {
@@ -57,35 +72,110 @@ const Landing = () => {
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
 
-          <div className="flex flex-wrap gap-3 justify-center xs:justify-start text-center mt-8">
-            <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
+          <div className="flex flex-wrap gap-4 justify-center xs:justify-start text-center mt-8">
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <HTMLIcon className="h-16 w-16 fill-current" />
+              </div>
               <div className="text-sm text-gray-500 mt-2">HTML</div>
             </div>
 
-            <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <CSSIcon className="h-16 w-16 fill-current" />
+              </div>
               <div className="text-sm text-gray-500 mt-2">CSS</div>
             </div>
 
-            <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <SASSIcon className="h-16 w-16 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">Sass</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <TAILWINDCSSIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">TailwindCSS</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <JAVASCRIPTIcon className="h-16 w-16 fill-current" />
+              </div>
               <div className="text-sm text-gray-500 mt-2">JavaScript</div>
             </div>
 
-            <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <REACTIcon className="h-20 w-20 fill-current" />
+              </div>
               <div className="text-sm text-gray-500 mt-2">React</div>
             </div>
 
-            <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
-              <div className="text-sm text-gray-500 mt-2">NodeJS</div>
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <REDUXIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">Redux</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <EXPRESSIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">ExpressJS</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <MONGODBIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">MongoDB</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <RESTAPIIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">REST API</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <GRAGHQLIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">GraphQL</div>
             </div>
 
             <div className="">
-              <div className="bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">&nbsp;</div>
-              <div className="text-sm text-gray-500 mt-2">MongoDB</div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <GITHUBLIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">Git & GitHub</div>
+            </div>
+
+            <div className="">
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <HOSTINGIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">Web Hosting</div>
+            </div>
+
+            <div className="">
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <NPMIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">NPM</div>
+            </div>
+
+            <div className="">
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <VSCODEIcon className="h-16 w-16 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">VSCode</div>
             </div>
           </div>
         </div>

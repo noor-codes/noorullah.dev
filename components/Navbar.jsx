@@ -47,7 +47,7 @@ const Navbar = () => {
               </button>
 
               <div className="space-x-4 hidden sm:block">
-                <button type="button" className="focus:outline-none">
+                <button type="button" aria-label="dark mode" className="focus:outline-none">
                   <MoonIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8" />
                 </button>
 

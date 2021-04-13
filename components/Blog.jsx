@@ -58,6 +58,7 @@ const Blog = () => (
                 alt="Noorullah Ahmadzai"
                 width={100}
                 height={100}
+                layout="responsive"
               />
             </div>
 
@@ -110,6 +111,7 @@ const Blog = () => (
                 height="600"
                 src="/img/article.png"
                 alt="article"
+                layout="responsive"
               />
             </div>
 
@@ -145,6 +147,7 @@ const Blog = () => (
               alt="Noorullah Ahmadzai"
               width={200}
               height={200}
+              layout="responsive"
             />
           </div>
           <div>

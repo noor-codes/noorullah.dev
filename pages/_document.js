@@ -12,8 +12,11 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
+            rel="preload"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
+            type="font/woff2"
+            as="font"
+            crossOrigin
           />
         </Head>
         <body>

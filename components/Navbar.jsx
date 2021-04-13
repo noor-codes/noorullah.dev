@@ -37,6 +37,7 @@ const Navbar = () => {
 
               <button
                 type="button"
+                aria-label="menu"
                 className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
               >
                 <BurgerIcon

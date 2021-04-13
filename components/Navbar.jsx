@@ -3,15 +3,17 @@ import Link from 'next/link'
 
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
 import BurgerIcon from '@/public/icons/menu/burger-icon.svg'
+import CloseMenuIcon from '@/public/icons/menu/closemenu-icon.svg'
 import MoonIcon from '@/public/icons/menu/moon-icon.svg'
+import SunIcon from '@/public/icons/menu/sun-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/white/twitter-icon.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const handleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+
+  //? Dark Mode Toggle
+  const [isDark, setIsDark] = useState(false)
 
   const menuVisibility = isOpen ? '' : 'hidden'
 
@@ -40,15 +42,32 @@ const Navbar = () => {
                 aria-label="menu"
                 className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
               >
-                <BurgerIcon
-                  onClick={handleMenu}
-                  className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
-                />
+                {!isOpen ? (
+                  <BurgerIcon
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
+                  />
+                ) : (
+                  <CloseMenuIcon
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
+                  />
+                )}
               </button>
 
               <div className="space-x-4 hidden sm:block">
                 <button type="button" aria-label="dark mode" className="focus:outline-none">
-                  <MoonIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8" />
+                  {isDark ? (
+                    <MoonIcon
+                      onClick={() => setIsDark(!isDark)}
+                      className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:text-gray-400"
+                    />
+                  ) : (
+                    <SunIcon
+                      onClick={() => setIsDark(!isDark)}
+                      className="inline h-7 w-7 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:text-gray-400"
+                    />
+                  )}
                 </button>
 
                 <a
@@ -57,7 +76,7 @@ const Navbar = () => {
                   target="_blank"
                   aria-label="twitter"
                 >
-                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2" />
+                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:text-gray-400" />
                 </a>
               </div>
             </div>

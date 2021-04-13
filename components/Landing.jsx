@@ -6,9 +6,11 @@ import HTMLIcon from '@/public/icons/landing/tech/html-icon.svg'
 import CSSIcon from '@/public/icons/landing/tech/css-icon.svg'
 import SASSIcon from '@/public/icons/landing/tech/sass-icon.svg'
 import TAILWINDCSSIcon from '@/public/icons/landing/tech/tailwindcss-icon.svg'
-import JAVASCRIPTIcon from '@/public/icons/landing/tech/js-icon.svg'
+import JAVASCRIPTIcon from '@/public/icons/landing/tech/javascript-icon.svg'
+import TYPESCRIPTIcon from '@/public/icons/landing/tech/typescript-icon.svg'
 import REACTIcon from '@/public/icons/landing/tech/react-icon.svg'
 import REDUXIcon from '@/public/icons/landing/tech/redux-icon.svg'
+import NEXTJSIcon from '@/public/icons/landing/tech/nextjs-icon.svg'
 import EXPRESSIcon from '@/public/icons/landing/tech/express-icon.svg'
 import MONGODBIcon from '@/public/icons/landing/tech/mongodb-icon.svg'
 import RESTAPIIcon from '@/public/icons/landing/tech/api-icon.svg'
@@ -17,6 +19,11 @@ import GITHUBLIcon from '@/public/icons/landing/tech/github-icon.svg'
 import HOSTINGIcon from '@/public/icons/landing/tech/hosting-icon.svg'
 import NPMIcon from '@/public/icons/landing/tech/npm-icon.svg'
 import KEYSTONEJSIcon from '@/public/icons/landing/tech/keystonejs-icon.svg'
+
+import INVENTORYIcon from '@/public/icons/landing/projects/inventory-icon.svg'
+import PORTFOLIOIcon from '@/public/icons/landing/projects/portfolio-icon.svg'
+import CARBIDNOWIcon from '@/public/icons/landing/projects/carbidnow-icon.svg'
+
 import LandingSections from './LandingSections'
 
 const Landing = () => {
@@ -65,7 +72,7 @@ const Landing = () => {
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
           <h2 className="text-gray-900 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
-            Framework & Languages
+            Frameworks & Languages
           </h2>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">
             It is a long established fact that a reader will be distracted by the readable content
@@ -110,6 +117,13 @@ const Landing = () => {
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <TYPESCRIPTIcon className="h-16 w-16 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">TypeScript</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
                 <REACTIcon className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">React</div>
@@ -120,6 +134,13 @@ const Landing = () => {
                 <REDUXIcon className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Redux</div>
+            </div>
+
+            <div>
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <NEXTJSIcon className="h-20 w-20 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">NextJS</div>
             </div>
 
             <div>
@@ -166,16 +187,16 @@ const Landing = () => {
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
-                <HOSTINGIcon className="h-20 w-20 fill-current" />
+                <NPMIcon className="h-20 w-20 fill-current" />
               </div>
-              <div className="text-sm text-gray-500 mt-2">Web Hosting</div>
+              <div className="text-sm text-gray-500 mt-2">NPM</div>
             </div>
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
-                <NPMIcon className="h-20 w-20 fill-current" />
+                <HOSTINGIcon className="h-20 w-20 fill-current" />
               </div>
-              <div className="text-sm text-gray-500 mt-2">NPM</div>
+              <div className="text-sm text-gray-500 mt-2">Web Hosting</div>
             </div>
           </div>
         </div>
@@ -201,20 +222,26 @@ const Landing = () => {
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
         </div>
-        <div className="flex flex-wrap gap-8 text-center mt-8 pb-20">
-          <div className="flex-1">
-            <div className="bg-gray-100 px-20 py-20  text-gray-600 rounded-sm ">&nbsp;</div>
-            <p className="mt-3 text-gray-600">Inventory Management</p>
+        <div className="flex flex-wrap gap-5 justify-center xs:justify-start text-center mt-8 mb-10">
+          <div>
+            <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md">
+              <INVENTORYIcon className="h-20 w-h-20 fill-current" />
+            </div>
+            <div className="text-sm text-gray-500 mt-2 ">Inventory</div>
           </div>
 
-          <div className="flex-1">
-            <div className="bg-gray-100 px-20 py-20 text-gray-600 rounded-sm ">&nbsp;</div>
-            <p className="mt-3 text-gray-600">My Portfolio</p>
+          <div>
+            <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md">
+              <PORTFOLIOIcon className="h-20 w-h-20 fill-current" />
+            </div>
+            <div className="text-sm text-gray-500 mt-2">My Portfolio</div>
           </div>
 
-          <div className="flex-1">
-            <div className="bg-gray-100 px-20 py-20 text-gray-600 rounded-sm ">&nbsp;</div>
-            <p className="mt-3 text-gray-600">CarBidNow</p>
+          <div>
+            <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md">
+              <CARBIDNOWIcon className="h-24 w-h-24 fill-current" />
+            </div>
+            <div className="text-sm text-gray-500 mt-2">CarBidNow</div>
           </div>
         </div>
       </div>
@@ -224,7 +251,7 @@ const Landing = () => {
           Need a full stack developer?
           <button
             type="button"
-            className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
+            className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 xl:text-base mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
           >
             Shoot me a message
           </button>

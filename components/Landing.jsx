@@ -16,7 +16,7 @@ import GRAGHQLIcon from '@/public/icons/landing/tech/graphql-icon.svg'
 import GITHUBLIcon from '@/public/icons/landing/tech/github-icon.svg'
 import HOSTINGIcon from '@/public/icons/landing/tech/hosting-icon.svg'
 import NPMIcon from '@/public/icons/landing/tech/npm-icon.svg'
-import VSCODEIcon from '@/public/icons/landing/tech/vscode-icon.svg'
+import KEYSTONEJSIcon from '@/public/icons/landing/tech/keystonejs-icon.svg'
 import LandingSections from './LandingSections'
 
 const Landing = () => {
@@ -152,6 +152,13 @@ const Landing = () => {
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
+                <KEYSTONEJSIcon className="h-16 w-16 fill-current" />
+              </div>
+              <div className="text-sm text-gray-500 mt-2">KeystoneJS</div>
+            </div>
+
+            <div className="">
+              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
                 <GITHUBLIcon className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Git & GitHub</div>
@@ -169,13 +176,6 @@ const Landing = () => {
                 <NPMIcon className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">NPM</div>
-            </div>
-
-            <div className="">
-              <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 rounded-md">
-                <VSCODEIcon className="h-16 w-16 fill-current" />
-              </div>
-              <div className="text-sm text-gray-500 mt-2">VSCode</div>
             </div>
           </div>
         </div>

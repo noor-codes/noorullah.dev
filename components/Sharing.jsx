@@ -1,6 +1,6 @@
-import Facebook from '@/public/icons/social/black/facebook-icon.svg'
-import Twitter from '@/public/icons/social/black/twitter-icon.svg'
-import LinkedIn from '@/public/icons/social/black/linkedin-icon.svg'
+import Facebook from '@/public/icons/social/facebook-icon.svg'
+import Twitter from '@/public/icons/social/twitter-icon.svg'
+import LinkedIn from '@/public/icons/social/linkedin-icon.svg'
 
 const Sharing = () => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
@@ -17,7 +17,7 @@ const Sharing = () => (
         rel="noreferrer"
         target="_blank"
         aria-label="twitter"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <Twitter />
       </a>
@@ -27,7 +27,7 @@ const Sharing = () => (
         rel="noreferrer"
         target="_blank"
         aria-label="linkedin"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <LinkedIn />
       </a>
@@ -37,7 +37,7 @@ const Sharing = () => (
         rel="noreferrer"
         target="_blank"
         aria-label="facebook"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <Facebook />
       </a>

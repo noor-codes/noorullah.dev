@@ -19,19 +19,19 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-gray-900 text-white absolute w-full z-50">
+      <nav className="bg-gray-900 text-white absolute w-full z-50 dark:text-gray-900 dark:bg-white">
         <div className="min-w-xs mx-auto sm:px-10 md:max-w-4xl xl:max-w-6xl">
           <div className="flex py-4 px-4 sm:py-6">
             <div className="flex justify-between w-full items-center">
               <div className="flex items-center">
                 <Link href="/">
-                  <a className="flex hover:text-gray-400">
+                  <a className="flex items-center hover:opacity-60">
                     <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
-                    <div className="sm:text-lg lg:text-xl">Noorullah</div>
+                    <div className="font-bold sm:text-lg lg:text-xl">Noorullah</div>
                   </a>
                 </Link>
                 <Link href="/blogs">
-                  <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:text-gray-400">
+                  <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:opacity-60">
                     Blog
                   </a>
                 </Link>

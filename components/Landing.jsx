@@ -62,7 +62,7 @@ const Landing = () => {
           <div className="flex justify-center mt-6 mb-2 xs:mt-8 sm:w-60">
             <button
               type="button"
-              className="flex items-center justify-center w-full py-2 bg-gray-900 dark:bg-gray-200 dark:text-gray-800 text-white  rounded hover:bg-gray-700 dark:hover:bg-gray-500 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
+              className="flex items-center justify-center w-full py-2 bg-gray-900 dark:bg-gray-200 dark:text-gray-800 text-white dark:hover:text-white  rounded hover:bg-gray-700 dark:hover:bg-gray-600 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
             >
               Download Resume
               <DownloadIcon className="h-5 w-5 fill-current ml-2" />

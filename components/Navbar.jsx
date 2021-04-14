@@ -7,7 +7,7 @@ import CloseMenuIcon from '@/public/icons/menu/closemenu-icon.svg'
 import MoonIcon from '@/public/icons/menu/moon-icon.svg'
 import SunIcon from '@/public/icons/menu/sun-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
-import TwitterIcon from '@/public/icons/social/white/twitter-icon.svg'
+import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,12 +60,12 @@ const Navbar = () => {
                   {isDark ? (
                     <MoonIcon
                       onClick={() => setIsDark(!isDark)}
-                      className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:text-gray-400"
+                      className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50"
                     />
                   ) : (
                     <SunIcon
                       onClick={() => setIsDark(!isDark)}
-                      className="inline h-7 w-7 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:text-gray-400"
+                      className="inline h-7 w-7 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50"
                     />
                   )}
                 </button>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   target="_blank"
                   aria-label="twitter"
                 >
-                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:text-gray-400" />
+                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:opacity-50" />
                 </a>
               </div>
             </div>

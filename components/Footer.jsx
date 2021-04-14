@@ -1,7 +1,7 @@
-import Twitter from '@/public/icons/social/white/twitter-icon.svg'
-import Instagram from '@/public/icons/social/white/instagram-icon.svg'
-import LinkedIn from '@/public/icons/social/white/linkedin-icon.svg'
-import GitHub from '@/public/icons/social/white/github-icon.svg'
+import Twitter from '@/public/icons/social/twitter-icon.svg'
+import Instagram from '@/public/icons/social/instagram-icon.svg'
+import LinkedIn from '@/public/icons/social/linkedin-icon.svg'
+import GitHub from '@/public/icons/social/github-icon.svg'
 
 const Footer = () => (
   <div className="flex flex-col justify-center bg-gray-900 gap-y-2 w-full h-44 mt-20 md:h-60 xl:h-60">
@@ -13,7 +13,7 @@ const Footer = () => (
         href="https://github.com/Noorullah-Ahmadzai"
         rel="noreferrer"
         target="_blank"
-        className="block h-8 w-8 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9 fill-current hover:opacity-50 text-white"
         aria-label="github"
       >
         <GitHub />
@@ -23,7 +23,7 @@ const Footer = () => (
         href="https://twitter.com/Noorullah_Ah"
         rel="noreferrer"
         target="_blank"
-        className="block h-8 w-8 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9 fill-current hover:opacity-50 text-white"
         aria-label="twitter"
       >
         <Twitter />
@@ -33,7 +33,7 @@ const Footer = () => (
         href="https://www.instagram.com/noorullah.ahmadzai/"
         rel="noreferrer"
         target="_blank"
-        className="block h-8 w-8 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9 hover:opacity-50 text-black"
         aria-label="instagram"
       >
         <Instagram />
@@ -43,7 +43,7 @@ const Footer = () => (
         href="https://www.linkedin.com/in/noorullah-ahmadzai-4239a6160/"
         rel="noreferrer"
         target="_blank"
-        className="block h-8 w-8 md:h-9 md:w-9"
+        className="block h-8 w-8 md:h-9 md:w-9 fill-current hover:opacity-50 text-white"
         aria-label="linkedin"
       >
         <LinkedIn />

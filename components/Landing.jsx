@@ -24,7 +24,7 @@ import INVENTORYIcon from '@/public/icons/landing/projects/inventory-icon.svg'
 import PORTFOLIOIcon from '@/public/icons/landing/projects/portfolio-icon.svg'
 import CARBIDNOWIcon from '@/public/icons/landing/projects/carbidnow-icon.svg'
 
-import LandingSections from './LandingSections'
+import LandingSections from '@/components/LandingSections'
 
 const Landing = () => {
   return (

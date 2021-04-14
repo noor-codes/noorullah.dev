@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
 import BurgerIcon from '@/public/icons/menu/burger-icon.svg'
@@ -10,6 +11,8 @@ import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 
 const Navbar = () => {
+  const { setTheme } = useTheme()
+
   const [isOpen, setIsOpen] = useState(false)
 
   //? Dark Mode Toggle
@@ -59,12 +62,18 @@ const Navbar = () => {
                 <button type="button" aria-label="dark mode" className="focus:outline-none">
                   {isDark ? (
                     <MoonIcon
-                      onClick={() => setIsDark(!isDark)}
+                      onClick={() => {
+                        setIsDark(!isDark)
+                        setTheme('dark')
+                      }}
                       className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50"
                     />
                   ) : (
                     <SunIcon
-                      onClick={() => setIsDark(!isDark)}
+                      onClick={() => {
+                        setIsDark(!isDark)
+                        setTheme('light')
+                      }}
                       className="inline h-7 w-7 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50"
                     />
                   )}

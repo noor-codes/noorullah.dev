@@ -45,7 +45,7 @@ const Blog = () => (
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <main className="xs:px-4 mx-auto md:pt-5">
           <article className="mt-8 mb-4">
-            <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight">
+            <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight text-gray-900">
               Local Authentication Using Passport in Node.js
             </h1>
           </article>
@@ -97,7 +97,7 @@ const Blog = () => (
                 will be a deep-dive on everything I have learned in the past year.
               </p>
             </div>
-            <h2>Why Should You Care?</h2>
+            <h2 className="text-gray-900">Why Should You Care?</h2>
             <div>
               <p>
                 Every website starts simple. There is maybe one page with a few distinct pieces. It
@@ -155,7 +155,7 @@ const Blog = () => (
               About the Author
             </h2>
             <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
-              I am Noorullah Ahmadzi. A full stack web developer who specializes in React, NodeJs,
+              I am Noorullah Ahmadzai. A full stack web developer who specializes in React, NodeJs,
               MongoDB and JamStack. I&apos;m passinate about web development and technology.
             </p>
           </div>

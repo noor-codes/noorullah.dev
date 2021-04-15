@@ -45,7 +45,7 @@ const Blog = () => (
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <main className="xs:px-4 mx-auto md:pt-5">
           <article className="mt-8 mb-4">
-            <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight text-gray-900">
+            <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight text-gray-900 dark:text-gray-200">
               Local Authentication Using Passport in Node.js
             </h1>
           </article>
@@ -63,10 +63,10 @@ const Blog = () => (
             </div>
 
             <div>
-              <h2 className="text-md font-semibold text-gray-600 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
+              <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
                 Noorullah Ahmadzai
               </h2>
-              <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm md:text-base lg:text-lg">
+              <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm md:text-base lg:text-lg">
                 <span>16 mins read&nbsp; - &nbsp; </span> <span> 512 views - &nbsp;</span>
                 <span>May 3rd, 2020</span>
               </p>
@@ -79,7 +79,7 @@ const Blog = () => (
                 (name) => (
                   <div
                     key={name}
-                    className="bg-gray-100 px-2 text-2xl flex-1 text-gray-600 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                    className="bg-gray-100 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
                   >
                     {name}
                   </div>
@@ -87,7 +87,7 @@ const Blog = () => (
               )}
             </div>
           </div>
-          <article className="prose prose-sm sm:prose-md md:prose-lg">
+          <article className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400">
             <div>
               <p>
                 For the better part of the last year, I have been investing heavily in front-end
@@ -97,7 +97,7 @@ const Blog = () => (
                 will be a deep-dive on everything I have learned in the past year.
               </p>
             </div>
-            <h2 className="text-gray-900">Why Should You Care?</h2>
+            <h2 className="text-gray-900 dark:text-gray-300">Why Should You Care?</h2>
             <div>
               <p>
                 Every website starts simple. There is maybe one page with a few distinct pieces. It
@@ -151,10 +151,10 @@ const Blog = () => (
             />
           </div>
           <div>
-            <h2 className="text-lg font-semibold text-gray-800 mt-3 xs:text-lg md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4">
+            <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3 xs:text-lg md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4">
               About the Author
             </h2>
-            <p className="text-sm mt-1 text-gray-500 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
+            <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
               I am Noorullah Ahmadzai. A full stack web developer who specializes in React, NodeJs,
               MongoDB and JamStack. I&apos;m passinate about web development and technology.
             </p>

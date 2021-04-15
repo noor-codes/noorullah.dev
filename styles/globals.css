@@ -1,7 +1,9 @@
+//.? Tailwind Core Styles
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+//. Style of Selection
 *::selection {
   @apply text-white bg-black;
 }
@@ -10,6 +12,7 @@ img {
   user-select: none;
 }
 
+//. Custom Scrollbar
 body::-webkit-scrollbar {
   @apply w-2;
 }

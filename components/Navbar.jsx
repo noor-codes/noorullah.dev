@@ -111,7 +111,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
             >
               <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                <TwitterIcon className="mr-2 h-6 w-6" />
+                <TwitterIcon className="mr-2 h-6 w-6 fill-current dark:text-gray-200" />
                 Twitter
               </div>
             </a>

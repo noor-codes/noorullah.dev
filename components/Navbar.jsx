@@ -126,7 +126,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/** Space under the navbar */}
-      <div className="block mb-12 bg-green-500">&nbsp;</div>
+      <div className="block mb-12">&nbsp;</div>
     </>
   )
 }

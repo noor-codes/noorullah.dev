@@ -48,12 +48,12 @@ const Navbar = () => {
                 {!isOpen ? (
                   <BurgerIcon
                     onClick={() => setIsOpen(!isOpen)}
-                    className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
+                    className="hover:cursor-pointer hover:bg-gray-700 dark:hover:bg-white hover:rounded-full h-9 w-9 p-2"
                   />
                 ) : (
                   <CloseMenuIcon
                     onClick={() => setIsOpen(!isOpen)}
-                    className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
+                    className="hover:cursor-pointer hover:bg-gray-700 dark:hover:bg-white hover:rounded-full h-9 w-9 p-2"
                   />
                 )}
               </button>
@@ -92,12 +92,12 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 text-white px-2 pb-2 space-y-2`}
+            className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-900 px-2 pb-2 space-y-2`}
           >
             <Link href="/blogs" onClick={() => setIsOpen(!isOpen)}>
               <a>
-                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                  <BlogIcon className="mr-2 h-6 w-6" />
+                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                  <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />
                   Blog
                 </div>
               </a>
@@ -110,15 +110,15 @@ const Navbar = () => {
               aria-label="twitter"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                <TwitterIcon className="mr-2 h-6 w-6 fill-current dark:text-gray-200" />
+              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                <TwitterIcon className="mr-2 h-6 w-6 fill-current dark:text-gray-900" />
                 Twitter
               </div>
             </a>
 
             <a href="#" onClick={() => setIsOpen(!isOpen)}>
-              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                <MoonIcon className="mr-2 h-6 w-6" />
+              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                <MoonIcon className="mr-2 h-6 w-6 fill-current " />
                 Dark Mode
               </div>
             </a>

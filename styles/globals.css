@@ -9,3 +9,14 @@
 img {
   user-select: none;
 }
+
+body::-webkit-scrollbar {
+  @apply w-2;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 rounded border-gray-200;
+}

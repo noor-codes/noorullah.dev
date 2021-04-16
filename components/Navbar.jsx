@@ -11,7 +11,7 @@ import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
 
   //? Dark Mode Toggle
   const [isDark, setIsDark] = useState(false)
@@ -115,27 +115,33 @@ const Navbar = () => {
               </div>
             </a>
 
-            <div
-              onKeyDown={() => setIsOpen(!isOpen)}
-              onClick={() => {
-                setIsOpen(!isOpen)
-                if (theme === 'light') {
-                  setTheme('dark')
-                }
-
-                if (theme === 'dark') {
-                  setTheme('light')
-                }
-              }}
-              className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
-            >
+            <button type="button" aria-label="dark mode" className="focus:outline-none">
               {isDark ? (
-                <SunIcon className="mr-2 h-6 w-6 fill-current " />
+                <a
+                  href="#"
+                  className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
+                  onClick={() => {
+                    setIsDark(!isDark)
+                    setTheme('dark')
+                  }}
+                >
+                  <MoonIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50 mr-2" />
+                  Dark Mode
+                </a>
               ) : (
-                <MoonIcon className="mr-2 h-6 w-6 fill-current " />
+                <a
+                  href="#"
+                  onClick={() => {
+                    setIsDark(!isDark)
+                    setTheme('light')
+                  }}
+                  className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
+                >
+                  <SunIcon className="inline h-7 w-7 sm:w-7 sm:h-7 lg:h-8 lg:w-8 fill-current hover:opacity-50 mr-1" />
+                  Light Mode
+                </a>
               )}
-              Dark Mode
-            </div>
+            </button>
           </div>
         </div>
       </nav>

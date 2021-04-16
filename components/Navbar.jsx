@@ -122,6 +122,7 @@ const Navbar = () => {
                   className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
                   onClick={() => {
                     setIsDark(!isDark)
+                    setIsOpen(!isOpen)
                     setTheme('dark')
                   }}
                 >
@@ -133,6 +134,7 @@ const Navbar = () => {
                   href="#"
                   onClick={() => {
                     setIsDark(!isDark)
+                    setIsOpen(!isOpen)
                     setTheme('light')
                   }}
                   className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"

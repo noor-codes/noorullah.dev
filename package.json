@@ -14,9 +14,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cd && sw.js && next dev",
     "build": "next build",
     "start": "next start",
+    "trash": "cd public && trash sw.js workbox-ea903bce.js",
     "serve": "npm run build && npm run start"
   },
   "dependencies": {

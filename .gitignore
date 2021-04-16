@@ -33,3 +33,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#ignore pwa files in dev
+/public/sw.js
+/public/workbox-ea903bce.js

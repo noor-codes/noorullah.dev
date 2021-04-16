@@ -11,14 +11,13 @@ import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 
 const Navbar = () => {
-  const { setTheme } = useTheme()
-
-  const [isOpen, setIsOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   //? Dark Mode Toggle
   const [isDark, setIsDark] = useState(false)
 
-  const menuVisibility = isOpen ? '' : 'hidden'
+  const [isOpen, setIsOpen] = useState(false)
+  const menuVisibility = isOpen ? '' : 'sr-only' // sr-only instead of hidden class for accessibility
 
   return (
     <>
@@ -116,12 +115,27 @@ const Navbar = () => {
               </div>
             </a>
 
-            <a href="#" onClick={() => setIsOpen(!isOpen)}>
-              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+            <div
+              onKeyDown={() => setIsOpen(!isOpen)}
+              onClick={() => {
+                setIsOpen(!isOpen)
+                if (theme === 'light') {
+                  setTheme('dark')
+                }
+
+                if (theme === 'dark') {
+                  setTheme('light')
+                }
+              }}
+              className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
+            >
+              {isDark ? (
+                <SunIcon className="mr-2 h-6 w-6 fill-current " />
+              ) : (
                 <MoonIcon className="mr-2 h-6 w-6 fill-current " />
-                Dark Mode
-              </div>
-            </a>
+              )}
+              Dark Mode
+            </div>
           </div>
         </div>
       </nav>

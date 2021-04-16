@@ -1,0 +1,26 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+
+  "redirects": [
+    {
+      "source": "/resume.pdf",
+      "destination": "/Noorullah-Ahmadzai-Resume-2021.pdf"
+    },
+
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/Noorullah_Ah"
+    }
+  ]
+}

@@ -1,5 +1,16 @@
 {
-  "name": "nextjs",
+  "name": "noorullah.dev",
+  "description": "Web Developer, Blogger, Tech Enthusiast",
+  "author": {
+    "name": "Noorullah Ahmadzai",
+    "email": "Noorullah.Ahmadzai@outlook.com",
+    "url": "https://noorullah.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leerob/leerob.io.git"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {

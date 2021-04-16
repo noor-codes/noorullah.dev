@@ -23,3 +23,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   @apply bg-gray-500 rounded border-gray-200;
 }
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}

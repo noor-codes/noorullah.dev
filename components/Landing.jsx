@@ -255,6 +255,7 @@ const Landing = () => {
                       id="name"
                       type="text"
                       placeholder="Jane Doe"
+                      autoComplete="off"
                     />
                   </label>
                   {/*<p className="text-red text-xs italic">Please fill out this field.</p>*/}
@@ -270,6 +271,7 @@ const Landing = () => {
                       id="email"
                       type="email"
                       placeholder="email@example.com"
+                      autoComplete="off"
                     />
                   </label>
                 </div>
@@ -287,6 +289,7 @@ const Landing = () => {
                       type="text"
                       rows="7"
                       placeholder="Please type your message!"
+                      autoComplete="off"
                     />
                   </label>
                 </div>

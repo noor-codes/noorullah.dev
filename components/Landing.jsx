@@ -1,30 +1,6 @@
 import Image from 'next/image'
-import DownloadIcon from '@/public/icons/landing/download-icon.svg'
-import PaperPlaneIcon from '@/public/icons/landing/paperplane-icon.svg'
-
-import HTMLIcon from '@/public/icons/landing/tech/html-icon.svg'
-import CSSIcon from '@/public/icons/landing/tech/css-icon.svg'
-import SASSIcon from '@/public/icons/landing/tech/sass-icon.svg'
-import TAILWINDCSSIcon from '@/public/icons/landing/tech/tailwindcss-icon.svg'
-import JAVASCRIPTIcon from '@/public/icons/landing/tech/javascript-icon.svg'
-import TYPESCRIPTIcon from '@/public/icons/landing/tech/typescript-icon.svg'
-import REACTIcon from '@/public/icons/landing/tech/react-icon.svg'
-import REDUXIcon from '@/public/icons/landing/tech/redux-icon.svg'
-import NEXTJSIcon from '@/public/icons/landing/tech/nextjs-icon.svg'
-import EXPRESSIcon from '@/public/icons/landing/tech/express-icon.svg'
-import MONGODBIcon from '@/public/icons/landing/tech/mongodb-icon.svg'
-import RESTAPIIcon from '@/public/icons/landing/tech/api-icon.svg'
-import GRAGHQLIcon from '@/public/icons/landing/tech/graphql-icon.svg'
-import GITHUBLIcon from '@/public/icons/landing/tech/github-icon.svg'
-import HOSTINGIcon from '@/public/icons/landing/tech/hosting-icon.svg'
-import NPMIcon from '@/public/icons/landing/tech/npm-icon.svg'
-import KEYSTONEJSIcon from '@/public/icons/landing/tech/keystonejs-icon.svg'
-
-import INVENTORYIcon from '@/public/icons/landing/projects/inventory-icon.svg'
-import PORTFOLIOIcon from '@/public/icons/landing/projects/portfolio-icon.svg'
-import CARBIDNOWIcon from '@/public/icons/landing/projects/carbidnow-icon.svg'
-
 import LandingSections from '@/components/LandingSections'
+import * as icons from '@/components/icons/landingIcons'
 
 const Landing = () => {
   return (
@@ -65,7 +41,7 @@ const Landing = () => {
               className="flex items-center justify-center w-full py-2 bg-gray-900 dark:bg-gray-200 dark:text-gray-800 text-white dark:hover:text-white  rounded hover:bg-gray-700 dark:hover:bg-gray-600 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
             >
               Download Resume
-              <DownloadIcon className="h-5 w-5 fill-current ml-2" />
+              <icons.download className="h-5 w-5 fill-current ml-2" />
             </button>
           </div>
         </main>
@@ -84,119 +60,119 @@ const Landing = () => {
           <div className="flex flex-wrap gap-4 justify-center xs:justify-start text-center mt-8">
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <HTMLIcon className="h-16 w-16 fill-current" />
+                <icons.html className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">HTML</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <CSSIcon className="h-16 w-16 fill-current" />
+                <icons.css className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">CSS</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <SASSIcon className="h-16 w-16 fill-current" />
+                <icons.sass className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Sass</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <TAILWINDCSSIcon className="h-20 w-20 fill-current" />
+                <icons.tailwind className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">TailwindCSS</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <JAVASCRIPTIcon className="h-16 w-16 fill-current" />
+                <icons.javascript className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">JavaScript</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <TYPESCRIPTIcon className="h-16 w-16 fill-current" />
+                <icons.typescript className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">TypeScript</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <REACTIcon className="h-20 w-20 fill-current" />
+                <icons.react className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">React</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <REDUXIcon className="h-20 w-20 fill-current" />
+                <icons.redux className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Redux</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <NEXTJSIcon className="h-20 w-20 fill-current" />
+                <icons.nextjs className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">NextJS</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <EXPRESSIcon className="h-20 w-20 fill-current" />
+                <icons.expressjs className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">ExpressJS</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <MONGODBIcon className="h-20 w-20 fill-current" />
+                <icons.mongodb className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">MongoDB</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <RESTAPIIcon className="h-20 w-20 fill-current" />
+                <icons.restapi className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">REST API</div>
             </div>
 
             <div>
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <GRAGHQLIcon className="h-20 w-20 fill-current" />
+                <icons.graphqL className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">GraphQL</div>
             </div>
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <KEYSTONEJSIcon className="h-16 w-16 fill-current" />
+                <icons.keystonejs className="h-16 w-16 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">KeystoneJS</div>
             </div>
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <GITHUBLIcon className="h-20 w-20 fill-current" />
+                <icons.github className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Git & GitHub</div>
             </div>
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <NPMIcon className="h-20 w-20 fill-current" />
+                <icons.npm className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">NPM</div>
             </div>
 
             <div className="">
               <div className="flex justify-center items-center bg-gray-100 h-28 w-28 text-2xl text-gray-600 dark:bg-gray-800 dark: dark:text-gray-400 rounded-md">
-                <HOSTINGIcon className="h-20 w-20 fill-current" />
+                <icons.hosting className="h-20 w-20 fill-current" />
               </div>
               <div className="text-sm text-gray-500 mt-2">Web Hosting</div>
             </div>
@@ -227,21 +203,21 @@ const Landing = () => {
         <div className="flex flex-wrap gap-5 justify-center xs:justify-start text-center mt-8 mb-10">
           <div>
             <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
-              <INVENTORYIcon className="h-20 w-h-20 fill-current" />
+              <icons.inventory className="h-20 w-h-20 fill-current" />
             </div>
             <div className="text-sm text-gray-500 mt-2 ">Inventory</div>
           </div>
 
           <div>
             <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
-              <PORTFOLIOIcon className="h-20 w-h-20 fill-current" />
+              <icons.portfolio className="h-20 w-h-20 fill-current" />
             </div>
             <div className="text-sm text-gray-500 mt-2">My Portfolio</div>
           </div>
 
           <div>
             <div className="flex justify-center items-center bg-gray-100 h-36 w-36 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
-              <CARBIDNOWIcon className="h-24 w-h-24 fill-current" />
+              <icons.carbidnow className="h-24 w-h-24 fill-current" />
             </div>
             <div className="text-sm text-gray-500 mt-2">CarBidNow</div>
           </div>
@@ -325,7 +301,7 @@ const Landing = () => {
                   className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed"
                 >
                   Submit
-                  <PaperPlaneIcon className="ml-1 h-5 w-4 fill-current -mt-1" />
+                  <icons.paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
                 </button>
               </div>
             </div>

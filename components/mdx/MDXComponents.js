@@ -14,11 +14,11 @@ const CustomLink = (props) => {
     )
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return <a target="_blank" rel="noopener noreferrer" {...props} className="text-blue-500" />
 }
 
 const MDXComponents = {
-  img: Image,
+  Image,
   a: CustomLink,
 }
 

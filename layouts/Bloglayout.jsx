@@ -34,12 +34,6 @@ const Blog = (props) => {
             { url: 'https://source.unsplash.com/800x600' },
             { url: 'https://source.unsplash.com/900x800' },
           ],
-          article: {
-            publishedTime: '2017-06-21T23:04:13Z',
-            modifiedTime: '2018-01-21T18:04:43Z',
-            authors: ['https://noorullah.dev'],
-            tags: ['Tag A', 'Tag B', 'Tag C'],
-          },
         }}
       />
       <Layout>
@@ -87,7 +81,7 @@ const Blog = (props) => {
                 ))}
               </div>
             </div>
-            <article className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400">
+            <article className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400 mt-10">
               {props.children}
             </article>
           </main>

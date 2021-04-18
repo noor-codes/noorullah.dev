@@ -10,12 +10,19 @@ const CustomLink = (props) => {
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a className="dark:text-blue-900" {...props} />
+        <a className="dark:text-blue-700 dark:hover:text-bluee-800" {...props} />
       </Link>
     )
   }
 
-  return <a target="_blank" rel="noopener noreferrer" className="dark:text-blue-900" {...props} />
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="dark:text-blue-700 dark:hover:text-bluee-800"
+      {...props}
+    />
+  )
 }
 
 const MDXComponents = {

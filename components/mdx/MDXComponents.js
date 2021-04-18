@@ -4,18 +4,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const CustomLink = (props) => {
+  console.log(props)
   const href = props.href
   const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'))
 
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a {...props} />
+        <a className="dark:text-blue-900" {...props} />
       </Link>
     )
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} className="text-blue-500" />
+  return <a target="_blank" rel="noopener noreferrer" className="dark:text-blue-900" {...props} />
 }
 
 const MDXComponents = {

@@ -10,6 +10,11 @@ module.exports = withOffline({
 
     return config
   },
+
+  // images: {
+  //   domains: ['awebsite.com'],
+  // },
+
   workboxOpts: {
     swDest: process.env.NEXT_EXPORT ? 'service-worker.js' : 'static/service-worker.js',
     runtimeCaching: [

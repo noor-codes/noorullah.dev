@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const ArticleCard = ({ title, summary, slug }) => (
+const Blogpost = ({ title, summary, slug }) => (
   <div className="block pt-4 mb-5 lg:mb-8">
     <div className="flex flex-col lg:justify-center h-full">
       <Link href={`/blog/${slug}`}>
@@ -21,4 +21,4 @@ const ArticleCard = ({ title, summary, slug }) => (
   </div>
 )
 
-export default ArticleCard
+export default Blogpost

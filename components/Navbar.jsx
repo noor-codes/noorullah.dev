@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className="font-bold sm:text-lg lg:text-xl">Noorullah</div>
                   </a>
                 </Link>
-                <Link href="/blogs">
+                <Link href="/blog">
                   <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:opacity-60">
                     Blog
                   </a>
@@ -93,7 +93,7 @@ const Navbar = () => {
           <div
             className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-900 px-2 pb-2 space-y-2`}
           >
-            <Link href="/blogs" onClick={() => setIsOpen(!isOpen)}>
+            <Link href="/blog" onClick={() => setIsOpen(!isOpen)}>
               <a>
                 <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
                   <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />

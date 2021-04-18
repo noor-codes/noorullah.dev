@@ -1,6 +1,6 @@
 import PageSection from '@/components/PageSection'
 import Blogpost from '@/components/Blogpost'
-import Layout from '@/components/Layout'
+import Layout from 'layouts/Layout'
 
 const BlogList = () => (
   <Layout>

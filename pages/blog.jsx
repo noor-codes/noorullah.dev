@@ -1,5 +1,5 @@
-import Blog from '@/components/Blog'
+import BlogList from '@/components/BlogList'
 
-const BlogPage = () => <Blog />
+const BlogsPage = () => <BlogList />
 
-export default BlogPage
+export default BlogsPage

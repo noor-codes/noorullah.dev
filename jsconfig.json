@@ -6,7 +6,7 @@
       "@/public/*": ["public/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
-      "@/layout/*": ["layout/*"],
+      "@/layouts/*": ["layouts/*"],
 
       "@/articles/*": ["components/articles/*"],
       "@/blog/*": ["components/blog/*"]

@@ -1,5 +1,5 @@
 import PageSection from '@/components/PageSection'
-import ArticleCard from '@/components/ArticleCard'
+import Blogpost from '@/components/Blogpost'
 import Layout from '@/components/Layout'
 
 const BlogList = () => (
@@ -19,17 +19,17 @@ const BlogList = () => (
 
         <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
 
-        <ArticleCard
+        <Blogpost
           title="Local Authentication Using passport in Node.JS"
-          paragraph="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet sit amet adip lorem ipsum dolor sit amet sit ametlorem ipsum dolor sit amet, sit amet, adip"
+          summary="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet sit amet adip lorem ipsum dolor sit amet sit ametlorem ipsum dolor sit amet, sit amet, adip"
         />
-        <ArticleCard
+        <Blogpost
           title="New Features in Jest"
-          paragraph="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
+          summary="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
         />
-        <ArticleCard
+        <Blogpost
           title="5 CSS Tricks you didn't know existed"
-          paragraph="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
+          summary="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
         />
 
         <div className="flex justify-center">

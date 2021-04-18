@@ -5,7 +5,12 @@ import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Layout from '@/components/Layout'
 
-const Blog = () => (
+const Blog = ({
+  read = '16 mins read',
+  title = 'Local Authentication Using Passport in Node.js',
+  tags = ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'NodeJS', 'MongoDB', 'Firebase'],
+  children = 'content goes here',
+}) => (
   <div>
     <NextSeo
       title="Article Title"
@@ -36,7 +41,6 @@ const Blog = () => (
           modifiedTime: '2018-01-21T18:04:43Z',
           authors: ['https://noorullah.dev'],
           tags: ['Tag A', 'Tag B', 'Tag C'],
-          // expirationTime: '2022-12-21T22:04:11Z',
         },
       }}
     />
@@ -46,7 +50,7 @@ const Blog = () => (
         <main className="xs:px-4 mx-auto md:pt-5">
           <article className="mt-8 mb-4">
             <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight text-gray-900 dark:text-gray-200">
-              Local Authentication Using Passport in Node.js
+              {title}
             </h1>
           </article>
 
@@ -67,72 +71,26 @@ const Blog = () => (
                 Noorullah Ahmadzai
               </h2>
               <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm md:text-base lg:text-lg">
-                <span>16 mins read&nbsp; - &nbsp; </span> <span> 512 views - &nbsp;</span>
-                <span>May 3rd, 2020</span>
+                <span>May 3rd, 2020</span> &nbsp;-&nbsp;
+                <span>{read}&nbsp; </span>
               </p>
             </div>
           </div>
 
           <div className="font-sans mt-5 lg:mb-8">
             <div className="flex flex-wrap gap-2 text-center">
-              {['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'NodeJS', 'MongoDB', 'Firebase'].map(
-                (name) => (
-                  <div
-                    key={name}
-                    className="bg-gray-100 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
-                  >
-                    {name}
-                  </div>
-                )
-              )}
+              {tags.map((name) => (
+                <div
+                  key={name}
+                  className="bg-gray-100 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                >
+                  {name}
+                </div>
+              ))}
             </div>
           </div>
           <article className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400">
-            <div>
-              <p>
-                For the better part of the last year, I have been investing heavily in front-end
-                development and design. When I started my new role, I identified a need for a
-                component library and created it. Since then, I have learned a lot about style
-                guides, design systems, component libraries, and their best practices. This post
-                will be a deep-dive on everything I have learned in the past year.
-              </p>
-            </div>
-            <h2 className="text-gray-900 dark:text-gray-300">Why Should You Care?</h2>
-            <div>
-              <p>
-                Every website starts simple. There is maybe one page with a few distinct pieces. It
-                has modest intentions.
-              </p>
-            </div>
-            <div className="pt-5">
-              <Image
-                className="w-full"
-                width="1000"
-                height="600"
-                src="/img/article.png"
-                alt="article"
-                layout="responsive"
-              />
-            </div>
-
-            <p>Then, slowly, it begins to scale.</p>
-
-            <p>
-              More pages are added and new features are built. There might even be multiple teams
-              devoted to specific sections of the site. You could be developing for mobile, too.
-            </p>
-
-            <p>
-              You start to notice the buttons in one part of the site are slightly different than
-              everywhere else. One team decides to build a feature that another team has
-              (unknowingly) already completed. Communication breakdowns happen. Consistency is lost.
-            </p>
-
-            <p>
-              Is this a preventable problem? Absolutely. Yet, why does it happen over and over
-              again? Unless you think about your design and development process upfront, you will
-              run into issues later as you scale.
-            </p>
+            {children}
           </article>
         </main>
       </div>

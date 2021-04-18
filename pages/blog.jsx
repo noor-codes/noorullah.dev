@@ -4,7 +4,6 @@ import Layout from 'layouts/Layout'
 import { getAllFilesFrontMatter } from '@/utils/mdx'
 
 const Blog = ({ posts }) => {
-  console.log(posts)
   return (
     <Layout>
       <PageSection name="Blog" />

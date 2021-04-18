@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Blogpost = ({ title, summary, slug }) => (
+const Blogpost = ({ title, summary, read, slug }) => (
   <div className="block pt-4 mb-5 lg:mb-8">
     <div className="flex flex-col lg:justify-center h-full">
       <Link href={`/blog/${slug}`}>
@@ -15,9 +15,7 @@ const Blogpost = ({ title, summary, slug }) => (
       </p>
     </div>
 
-    <span className="block text-xs text-gray-400 mt-2 xs:text-sm lg:text-base">
-      10 mins of read
-    </span>
+    <span className="block text-xs text-gray-400 mt-2 xs:text-sm lg:text-base">{read}</span>
   </div>
 )
 

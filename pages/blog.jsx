@@ -1,48 +1,56 @@
 import PageSection from '@/components/PageSection'
 import Blogpost from '@/components/Blogpost'
 import Layout from 'layouts/Layout'
+import { getAllFilesFrontMatter } from '@/utils/mdx'
 
-const BlogList = () => (
-  <Layout>
-    <PageSection name="Blog" />
-    <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
-      <main className="mx-auto md:pt-5">
-        <div className="mt-8 mb-4">
-          <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-6xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
-            All Blog Posts
-          </h1>
-          <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
-            I love blogging about web development and the latest and great technologies that excites
-            me.
-          </p>
-        </div>
+const Blog = ({ posts }) => {
+  console.log(posts)
+  return (
+    <Layout>
+      <PageSection name="Blog" />
+      <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
+        <main className="mx-auto md:pt-5">
+          <div className="mt-8 mb-4">
+            <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-6xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
+              All Blog Posts
+            </h1>
+            <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
+              I love blogging about web development and the latest and great technologies that
+              excites me.
+            </p>
+          </div>
 
-        <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
+          <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
+          {posts.map((post) => {
+            return (
+              <Blogpost
+                slug={post.slug}
+                key={post.title}
+                title={post.title}
+                summary={post.summary}
+                read={post.readingTime.text}
+              />
+            )
+          })}
 
-        <Blogpost
-          title="Local Authentication Using passport in Node.JS"
-          summary="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet sit amet adip lorem ipsum dolor sit amet sit ametlorem ipsum dolor sit amet, sit amet, adip"
-        />
-        <Blogpost
-          title="New Features in Jest"
-          summary="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
-        />
-        <Blogpost
-          title="5 CSS Tricks you didn't know existed"
-          summary="lorem ipsum dolor sit amet, sit amet,lorem ipsum dolor sit amet sit amet adip"
-        />
+          {/*<div className="flex justify-center">
+            <button
+              type="button"
+              className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed"
+            >
+              Load More
+            </button>
+        </div>*/}
+        </main>
+      </div>
+    </Layout>
+  )
+}
 
-        <div className="flex justify-center">
-          <button
-            type="button"
-            className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed"
-          >
-            Load More
-          </button>
-        </div>
-      </main>
-    </div>
-  </Layout>
-)
+export const getStaticProps = async () => {
+  const posts = await getAllFilesFrontMatter('blog')
 
-export default BlogList
+  return { props: { posts } }
+}
+
+export default Blog

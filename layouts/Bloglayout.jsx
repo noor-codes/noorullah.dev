@@ -7,32 +7,26 @@ import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
 
 const Blog = (props) => {
-  const { publishedAt, readingTime, slug, title, tags } = props.frontMatter
+  const { publishedAt, description, slug, readingTime, title, tags, banner } = props.frontMatter
   return (
     <div>
       <NextSeo
-        title={`Noorullah - ${slug}`}
-        description="Article Description goes here"
+        title={`${title} - Noorullah Ahmadzai`}
+        description={description}
         openGraph={{
-          url: 'https://noorullah.dev/articleURL',
-          title: 'The Article Title',
-          description: 'The Article Description Description',
+          url: `https://noorullah.dev/blog/${slug}`,
+          title,
+          description,
           type: 'blog',
           images: [
             {
-              url: 'https://source.unsplash.com/800x600',
+              url: `http://noorullah.dev${banner}`,
               width: 800,
               height: 600,
-              alt: 'First Image Tags',
+              alt: title,
             },
-            {
-              url: 'https://source.unsplash.com/900x800',
-              width: 900,
-              height: 800,
-              alt: 'Second Image Tag',
-            },
-            { url: 'https://source.unsplash.com/800x600' },
-            { url: 'https://source.unsplash.com/900x800' },
+
+            { url: `http://noorullah.dev${banner}` },
           ],
         }}
       />

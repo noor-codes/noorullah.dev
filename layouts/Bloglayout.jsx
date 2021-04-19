@@ -7,16 +7,17 @@ import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
 
 const Blog = (props) => {
-  const { publishedAt, description, slug, readingTime, title, tags, banner } = props.frontMatter
+  const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
+
   return (
     <div>
       <NextSeo
         title={`${title} - Noorullah Ahmadzai`}
-        description={description}
+        description={summary}
         openGraph={{
           url: `https://noorullah.dev/blog/${slug}`,
-          title,
-          description,
+          title: title,
+          description: summary,
           type: 'blog',
           images: [
             {

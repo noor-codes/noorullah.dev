@@ -57,7 +57,7 @@ const Blog = (props) => {
                 <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
                   Noorullah Ahmadzai
                 </h2>
-                <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm md:text-base lg:text-lg">
+                <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm md:text-base">
                   <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;
                   <span>{readingTime.text} &nbsp; </span>
                 </p>

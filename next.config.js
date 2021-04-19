@@ -3,7 +3,7 @@ const withOffline = require('next-offline')
 
 module.exports = withOffline({
   future: {
-    webpack5: true,
+    webpack5: false,
   },
 
   webpack(config) {

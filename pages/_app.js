@@ -1,8 +1,10 @@
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'
+import { MDXProvider } from '@mdx-js/react'
 
 import '@/styles/globals.css'
 import Head from 'next/head'
+import MDXComponents from '@/components/mdx/MDXComponents'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -35,20 +37,22 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <ThemeProvider defaultTheme="system" attribute="class">
-        <DefaultSeo
-          openGraph={{
-            type: 'website',
-            locale: 'en_US',
-            url: 'https://noorullah.dev/',
-            site_name: 'Noorullah Ahmadzai',
-          }}
-          twitter={{
-            handle: '@noorullah_ah',
-            cardType: 'summary_large_image',
-            site: '@noorullah_ah',
-          }}
-        />
-        <Component {...pageProps} />
+        <MDXProvider components={MDXComponents}>
+          <DefaultSeo
+            openGraph={{
+              type: 'website',
+              locale: 'en_US',
+              url: 'https://noorullah.dev/',
+              site_name: 'Noorullah Ahmadzai',
+            }}
+            twitter={{
+              handle: '@noorullah_ah',
+              cardType: 'summary_large_image',
+              site: '@noorullah_ah',
+            }}
+          />
+          <Component {...pageProps} />
+        </MDXProvider>
       </ThemeProvider>
     </>
   )

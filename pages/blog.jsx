@@ -1,4 +1,3 @@
-import PageSection from '@/components/PageSection'
 import Blogpost from '@/components/Blogpost'
 import Layout from 'layouts/Layout'
 import { getAllFilesFrontMatter } from '@/utils/mdx'
@@ -6,11 +5,10 @@ import { getAllFilesFrontMatter } from '@/utils/mdx'
 const Blog = ({ posts }) => {
   return (
     <Layout>
-      <PageSection name="Blog" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
         <main className="mx-auto md:pt-5">
           <div className="mt-8 mb-4">
-            <h1 className="font-bold leading-normal mb-5 text-3xl xs:text-4xl xs:leading-10 md:text-6xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
+            <h1 className=" xl:mt-20 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
               All Blog Posts
             </h1>
             <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
@@ -21,15 +19,7 @@ const Blog = ({ posts }) => {
 
           <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
           {posts.map((post) => {
-            return (
-              <Blogpost
-                slug={post.slug}
-                key={post.title}
-                title={post.title}
-                summary={post.summary}
-                read={post.readingTime.text}
-              />
-            )
+            return <Blogpost key={post.slug} post={post} />
           })}
 
           {/*<div className="flex justify-center">

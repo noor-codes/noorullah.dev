@@ -18,6 +18,14 @@ const Blog = ({ posts }) => {
           </div>
 
           <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
+
+          {posts.length === 0 ? (
+            <h1 className="text-center py-32 text-sm xs:text-base md:text-lg lg:text-xl dark:text-gray-200">
+              No Posts Found! 😥
+            </h1>
+          ) : (
+            ''
+          )}
           {posts.map((post) => {
             return <Blogpost key={post.slug} post={post} />
           })}

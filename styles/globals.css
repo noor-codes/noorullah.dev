@@ -4,8 +4,9 @@
 @tailwind utilities;
 
 /* Style of Selection */
-*::selection {
-  @apply text-white bg-black;
+::selection {
+  background-color: #47a3f3;
+  color: #fefefe;
 }
 
 img {
@@ -26,7 +27,15 @@ body::-webkit-scrollbar-thumb {
 
 /* Smooth Scroll */
 html {
+  min-width: 360px;
   scroll-behavior: smooth;
+}
+
+/* Basic Reset */
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .prose pre {
@@ -69,7 +78,7 @@ html {
 .token.char,
 .token.builtin,
 .token.inserted {
-  @apply text-purple-400;
+  @apply text-purple-500;
 }
 
 .token.operator,

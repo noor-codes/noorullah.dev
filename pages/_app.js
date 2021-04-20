@@ -1,12 +1,27 @@
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'
 import { MDXProvider } from '@mdx-js/react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import * as gtag from '@/lib/google-analytics/gtag'
 
 import '@/styles/globals.css'
 import Head from 'next/head'
 import MDXComponents from '@/components/mdx/MDXComponents'
 
 function MyApp({ Component, pageProps }) {
+  //. Google Analytics
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <>
       <Head>

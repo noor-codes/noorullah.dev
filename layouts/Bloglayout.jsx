@@ -82,7 +82,7 @@ const Blog = (props) => {
           </main>
         </div>
 
-        <Sharing />
+        <Sharing slug={slug} title={title} />
         <div className="container min-w-xs mx-auto px-4 sm:px-10 md:max-w-3xl xl:max-w-4xl">
           <div className="flex flex-col items-center font-sans mt-10 text-center xs:mt-16 xl:py-12">
             <div className="h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40">

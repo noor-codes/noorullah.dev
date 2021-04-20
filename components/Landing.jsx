@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import LandingSections from '@/components/LandingSections'
 import Download from '@/public/icons/landing/download-icon.svg'
-import ContactForm from './ContactForm'
-import TechStack from './TechStack'
-import RecentProjects from './RecentProjects'
+import ContactForm from '@/components/ContactForm'
+import TechStack from '@/components/TechStack'
+import RecentProjects from '@/components/RecentProjects'
 
 const Landing = () => {
   return (

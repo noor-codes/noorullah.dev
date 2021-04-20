@@ -1,6 +1,7 @@
 import Facebook from '@/public/icons/social/facebook-icon.svg'
 import Twitter from '@/public/icons/social/twitter-icon.svg'
 import LinkedIn from '@/public/icons/social/linkedin-icon.svg'
+import Email from '@/public/icons/social/email-icon.svg'
 
 const Sharing = ({ slug, title }) => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
@@ -42,6 +43,16 @@ const Sharing = ({ slug, title }) => (
         className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
       >
         <Facebook />
+      </a>
+
+      <a
+        href={`mailto:?&subject=%22${title}%22%20a%20blog%20by%20Noorullah%20Ahmadzai&body=https://noorullah.dev/blog/${slug}`}
+        rel="noreferrer noopener"
+        target="_blank"
+        aria-label="facebook"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
+      >
+        <Email />
       </a>
     </div>
   </div>

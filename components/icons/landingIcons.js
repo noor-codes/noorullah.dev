@@ -16,22 +16,89 @@ import hosting from '@/public/icons/landing/tech/hosting-icon.svg'
 import npm from '@/public/icons/landing/tech/npm-icon.svg'
 import keystonejs from '@/public/icons/landing/tech/keystonejs-icon.svg'
 
-export {
-  html,
-  css,
-  sass,
-  tailwind,
-  javascript,
-  typescript,
-  react,
-  redux,
-  nextjs,
-  expressjs,
-  mongodb,
-  restapi,
-  graphqL,
-  github,
-  hosting,
-  npm,
-  keystonejs,
-}
+export const details = [
+  {
+    name: 'HTML',
+    icon: html,
+  },
+
+  {
+    name: 'CSS',
+    icon: css,
+  },
+
+  {
+    name: 'Sass',
+    icon: sass,
+  },
+
+  {
+    name: 'TailwindCSS',
+    icon: tailwind,
+  },
+
+  {
+    name: 'JavaScript',
+    icon: javascript,
+  },
+
+  {
+    name: 'TypeScript',
+    icon: typescript,
+  },
+
+  {
+    name: 'React',
+    icon: react,
+  },
+
+  {
+    name: 'Redux',
+    icon: redux,
+  },
+
+  {
+    name: 'NextJS',
+    icon: nextjs,
+  },
+
+  {
+    name: 'Expressjs',
+    icon: expressjs,
+  },
+
+  {
+    name: 'Mongodb',
+    icon: mongodb,
+  },
+
+  {
+    name: 'Restapi',
+    icon: restapi,
+  },
+
+  {
+    name: 'GraphQL',
+    icon: graphqL,
+  },
+
+  {
+    name: 'KeystoneJS',
+    icon: keystonejs,
+  },
+
+  {
+    name: 'Git & GitHub',
+    icon: github,
+  },
+
+  {
+    name: 'NPM',
+    icon: npm,
+  },
+
+  {
+    name: 'Web Hosting',
+    icon: hosting,
+  },
+]

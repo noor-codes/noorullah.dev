@@ -14,7 +14,7 @@ const Sharing = ({ slug, title }) => (
       </div>
     </div>
 
-    <div className="flex flex-col pr-8 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 lg:pr-52 lg:space-x-4">
+    <div className="flex items-center flex-col pr-8 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 lg:pr-52 lg:space-x-4">
       <a
         href={`https://twitter.com/intent/tweet?text=${title}&url=https://noorullah.dev/blog/${slug}`}
         rel="noreferrer noopener"

@@ -2,7 +2,7 @@ import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
 
 const ContactForm = () => {
   return (
-    <fieldset>
+    <fieldset id="contact">
       <form className="mt-20">
         <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2 text-gray-900 dark:text-gray-200">
           Get in Touch

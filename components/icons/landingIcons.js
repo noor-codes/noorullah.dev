@@ -16,13 +16,6 @@ import hosting from '@/public/icons/landing/tech/hosting-icon.svg'
 import npm from '@/public/icons/landing/tech/npm-icon.svg'
 import keystonejs from '@/public/icons/landing/tech/keystonejs-icon.svg'
 
-import inventory from '@/public/icons/landing/projects/inventory-icon.svg'
-import portfolio from '@/public/icons/landing/projects/portfolio-icon.svg'
-import carbidnow from '@/public/icons/landing/projects/carbidnow-icon.svg'
-
-import download from '@/public/icons/landing/download-icon.svg'
-import paperplane from '@/public/icons/landing/paperplane-icon.svg'
-
 export {
   html,
   css,
@@ -41,9 +34,4 @@ export {
   hosting,
   npm,
   keystonejs,
-  inventory,
-  portfolio,
-  carbidnow,
-  download,
-  paperplane,
 }

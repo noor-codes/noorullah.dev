@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes'
 
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
-import BurgerIcon from '@/public/icons/menu/burger-icon.svg'
-import CloseMenuIcon from '@/public/icons/menu/closemenu-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 
@@ -37,25 +35,36 @@ const Navbar = () => {
                   </a>
                 </Link>
               </div>
-
               <button
                 type="button"
                 aria-label="menu"
                 className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
               >
-                {!isOpen ? (
-                  <BurgerIcon
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="hover:cursor-pointer hover:bg-gray-700 dark:hover:bg-white hover:rounded-full h-9 w-9 p-2"
-                  />
-                ) : (
-                  <CloseMenuIcon
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="hover:cursor-pointer hover:bg-gray-700 dark:hover:bg-white hover:rounded-full h-9 w-9 p-2"
-                  />
-                )}
+                <svg
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="hover:cursor-pointer hover:bg-gray-700 dark:hover:bg-white hover:rounded-full h-9 w-9 p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="{2}"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
               </button>
-
               <div className="sm:flex sm:items-center space-x-4 hidden">
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -158,7 +167,7 @@ const Navbar = () => {
                     )}
                   </svg>
                 )}
-                &nbsp; {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                &nbsp; {mounted && theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
               </a>
             </button>
           </div>

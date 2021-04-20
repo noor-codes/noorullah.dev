@@ -140,7 +140,10 @@ const Navbar = () => {
               <a
                 href="#"
                 className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                onClick={() => {
+                  setTheme(theme === 'dark' ? 'light' : 'dark')
+                  setIsOpen(!isOpen)
+                }}
               >
                 {mounted && (
                   <svg

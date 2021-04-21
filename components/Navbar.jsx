@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
 import { useTheme } from 'next-themes'
 
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
@@ -120,14 +121,22 @@ const Navbar = () => {
           <div
             className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-900 px-2 pb-2 space-y-2`}
           >
-            <Link href="/blog" onClick={() => setIsOpen(!isOpen)}>
-              <a>
-                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
-                  <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />
-                  Blog
-                </div>
-              </a>
-            </Link>
+            <a
+              className="hover:cursor-pointer"
+              onKeyDown={() => {
+                setIsOpen(!isOpen)
+                Router.push('/blog')
+              }}
+              onClick={() => {
+                setIsOpen(!isOpen)
+                Router.push('/blog')
+              }}
+            >
+              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />
+                Blog
+              </div>
+            </a>
 
             <a
               href="https://twitter.com/Noorullah_Ah"

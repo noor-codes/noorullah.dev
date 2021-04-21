@@ -87,13 +87,15 @@ const ContactForm = () => {
             <button
               name="submit button"
               type="submit"
-              className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed"
+              className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:disabled:bg-gray-900 dark:disabled:text-gray-200 dark:hover:text-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed disabled:px-12"
             >
-              Submit
               {disabled ? (
                 <Spinner className="ml-1 h-5 w-4 animate-spin" />
               ) : (
-                <Paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
+                <>
+                  Submit
+                  <Paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
+                </>
               )}
             </button>
           </div>

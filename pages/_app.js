@@ -2,16 +2,31 @@ import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'
 import { MDXProvider } from '@mdx-js/react'
 import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import Router, { useRouter } from 'next/router'
 import * as gtag from '@/lib/google-analytics/gtag'
+import NProgressBar from 'nprogress'
 
 import '@/styles/globals.css'
+
 import Head from 'next/head'
 import MDXComponents from '@/components/mdx/MDXComponents'
 
 function MyApp({ Component, pageProps }) {
-  //. Google Analytics
   const router = useRouter()
+  //. NProgress Loader
+  Router.events.on('routeChangeStart', () => {
+    NProgressBar.start()
+  })
+
+  Router.events.on('routeChangeComplete', () => {
+    NProgressBar.done()
+  })
+
+  Router.events.on('routeChangeError', () => {
+    NProgressBar.done()
+  })
+
+  //. Google Analytics
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)

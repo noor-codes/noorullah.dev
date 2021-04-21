@@ -137,3 +137,8 @@ input[type='email'] {
   -moz-appearance: none;
   appearance: none;
 }
+
+/* NProgress Dark and Light Mode */
+#nprogress .bar {
+  @apply dark:bg-gray-900 bg-gray-200 fixed z-50 top-0 left-0 w-full h-1;
+}

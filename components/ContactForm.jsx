@@ -25,8 +25,8 @@ const ContactForm = () => {
         <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2 text-gray-900 dark:text-gray-200">
           Get in Touch
         </h2>
-        <div className="pt-4 pb-8 mb-4 flex flex-col my-2">
-          <div className="-mx-3 md:flex md:justify-between mb-6">
+        <div className="pt-4 pb-8 mb-4 my-2">
+          <div className="-mx-3 md:justify-between mb-6">
             <div className="px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-gray-700 dark:text-gray-200 text-xs font-bold mb-2"

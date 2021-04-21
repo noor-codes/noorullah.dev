@@ -26,7 +26,13 @@ const Navbar = () => {
                 <Link href="/">
                   <a className="flex items-center hover:opacity-60">
                     <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
-                    <div className="font-bold sm:text-lg lg:text-xl">Noorullah</div>
+                    <div
+                      className="font-bold sm:text-lg lg:text-xl"
+                      onClick={() => setIsOpen(false)}
+                      onKeyDown={() => setIsOpen(false)}
+                    >
+                      Noorullah
+                    </div>
                   </a>
                 </Link>
                 <Link href="/blog">

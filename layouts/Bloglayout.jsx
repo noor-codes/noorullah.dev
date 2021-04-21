@@ -41,8 +41,8 @@ const Blog = (props) => {
               </h1>
             </article>
 
-            <div className="flex items-center font-sans">
-              <div className="h-16 w-16 xs:h-16 xs:w-16 mr-3 mt-2 md:h-20 md:w-20 lg:h-24 lg:w-24">
+            <div className="flex items-center">
+              <div className="h-12 w-12 mr-3 mt-2 xs:h-16 xs:w-16">
                 <Image
                   className="rounded-full"
                   src="/img/profile.jpg"
@@ -54,17 +54,17 @@ const Blog = (props) => {
               </div>
 
               <div>
-                <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl lg:text-2xl">
+                <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl">
                   Noorullah Ahmadzai
                 </h2>
-                <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm md:text-base">
+                <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
                   <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;
                   <span>{readingTime.text} &nbsp; </span>
                 </p>
               </div>
             </div>
 
-            <div className="font-sans mt-5 lg:mb-8">
+            <div className="mt-5 lg:mb-8">
               <div className="flex flex-wrap gap-2 text-center">
                 {tags.map((name) => (
                   <div
@@ -84,7 +84,7 @@ const Blog = (props) => {
 
         <Sharing slug={slug} title={title} />
         <div className="container min-w-xs mx-auto px-4 sm:px-10 md:max-w-3xl xl:max-w-4xl">
-          <div className="flex flex-col items-center font-sans mt-10 text-center xs:mt-16 xl:py-12">
+          <div className="flex flex-col items-center mt-10 text-center xs:mt-16 xl:py-12">
             <div className="h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40">
               <Image
                 className="rounded-full"

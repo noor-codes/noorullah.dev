@@ -142,3 +142,10 @@ input[type='email'] {
 #nprogress .bar {
   @apply dark:bg-gray-900 bg-gray-300 fixed z-50 top-0 left-0 w-full h-1;
 }
+
+/* Sticky Nav */
+.sticky-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}

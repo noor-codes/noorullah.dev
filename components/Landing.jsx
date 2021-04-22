@@ -30,9 +30,9 @@ const Landing = () => {
         }}
       />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
-        <main className="flex flex-col justify-center pt-10 sm:mt-16 md:mt-24 lg:mt-28">
+        <main className="flex flex-col justify-center pt-10 sm:mt-10 md:mt-16 ">
           <div className="flex items-center mb-4">
-            <div className="h-14 w-14 xs:w-16 xs:h-16 xl:w-20 xl:h-20">
+            <div className="h-12 w-12 xs:w-14 xs:h-14">
               <Image
                 height={100}
                 width={100}

@@ -29,7 +29,7 @@ const ContactForm = () => {
           <div className="-mx-3 md:justify-between mb-6">
             <div className="px-3 mb-6 md:mb-0">
               <label
-                className="block uppercase tracking-wide text-gray-700 dark:text-gray-200 text-xs font-bold mb-2"
+                className="block uppercase tracking-wide text-gray-700 dark:text-gray-200 text-xs font-bold mb-2 md:mb-4"
                 htmlFor="name"
               >
                 Name

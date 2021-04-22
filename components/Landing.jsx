@@ -80,11 +80,12 @@ const Landing = () => {
             It is a long established fact that a reader will be distracted by the readable content
             of a page when looking at its layout. The point of using Lorem Ipsum is.
           </h3>
+          <TechStack />
         </div>
       </div>
+
       <LandingSections name="Work Experience" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
-        <TechStack />
         <div className="mb-2">
           <h2 className="text-gray-900 dark:text-gray-200 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
             Experience

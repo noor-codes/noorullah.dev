@@ -4,10 +4,31 @@ import Download from '@/public/icons/landing/download-icon.svg'
 import ContactForm from '@/components/ContactForm'
 import TechStack from '@/components/TechStack'
 import RecentProjects from '@/components/RecentProjects'
+import { NextSeo } from 'next-seo'
 
 const Landing = () => {
   return (
     <>
+      <NextSeo
+        title="Noorullah Ahmadzai"
+        description="Software Developer, Writer and Instructor"
+        openGraph={{
+          url: 'https://noorullah.dev/',
+          title: 'Noorullah Ahmadzai',
+          description: 'Software Developer, Writer and Instructor',
+          type: 'blog',
+          images: [
+            {
+              url: 'http://noorullah.dev',
+              width: 800,
+              height: 600,
+              alt: 'Noorullah Ahmadzai',
+            },
+
+            { url: 'http://noorullah.dev' },
+          ],
+        }}
+      />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <main className="flex flex-col justify-center pt-10 sm:mt-16 md:mt-24 lg:mt-28">
           <div className="flex items-center mb-4">

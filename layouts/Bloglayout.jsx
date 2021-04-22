@@ -65,11 +65,11 @@ const Blog = (props) => {
             </div>
 
             <div className="mt-5 lg:mb-8">
-              <div className="flex flex-wrap gap-2 text-center">
+              <div className="flex flex-wrap text-center -mx-1">
                 {tags.map((name) => (
                   <div
                     key={name}
-                    className="bg-gray-100 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                    className="bg-gray-100 m-1 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
                   >
                     {name}
                   </div>

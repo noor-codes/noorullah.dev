@@ -77,7 +77,7 @@ const Navbar = () => {
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                   type="button"
                   aria-label="dark mode"
-                  className="focus:outline-none"
+                  className="focus:outline-none hover:opacity-50"
                 >
                   {mounted && (
                     <svg

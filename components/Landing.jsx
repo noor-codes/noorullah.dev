@@ -107,7 +107,7 @@ const Landing = () => {
         <RecentProjects />
       </div>
 
-      <div className="bg-gray-900 dark:bg-white dark:text-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6 xl:py-8">
+      <div className="bg-gray-900 dark:bg-gray-200 dark:text-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6 xl:py-8">
         <div className="flex items-center justify-between container min-w-xs mx-auto sm:px-4 md:max-w-2xl xl:max-w-3xl">
           Need a full stack developer?
           <a

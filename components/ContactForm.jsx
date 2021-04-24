@@ -28,7 +28,7 @@ const ContactForm = () => {
     }
   }
   return (
-    <fieldset id="contact" onSubmit={handleSubmit(submit)}>
+    <fieldset id="contact" onSubmit={handleSubmit(submit)} disabled={isSubmitting}>
       <form className="mt-20 lg:mt-32">
         <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2 text-gray-900 dark:text-gray-200">
           Get in Touch

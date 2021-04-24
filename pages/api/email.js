@@ -24,22 +24,22 @@ export default async (req, res) => {
   if (req.method === 'POST') {
     //.1 Check If there is a name
     if (!req.body.name) {
-      return res.json({ msg: 'Please provide your name!' })
+      return res.status(400).json({ msg: 'Please provide your name!' })
     }
 
     //.2 Check If there is an email
     if (!req.body.email) {
-      return res.json({ msg: 'Please provide your email!' })
+      return res.status(400).json({ msg: 'Please provide your email!' })
     }
 
     //.3 Check if the email is valid
     if (!isEmail(req.body.email)) {
-      return res.json({ msg: 'Please provide a valid email' })
+      return res.status(400).json({ msg: 'Please provide a valid email' })
     }
 
     //.4 Check If there is a msg
     if (!req.body.msg) {
-      return res.json({ msg: 'Please provide your message!' })
+      return res.status(400).json({ msg: 'Please provide your message!' })
     }
 
     //.5 SEND EMAIL

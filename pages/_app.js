@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
 import * as gtag from '@/lib/google-analytics/gtag'
 import NProgressBar from 'nprogress'
+import SnackbarProvider from 'react-simple-snackbar'
 
 import '@/styles/globals.css'
 
@@ -67,22 +68,24 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <ThemeProvider defaultTheme="system" attribute="class">
-        <MDXProvider components={MDXComponents}>
-          <DefaultSeo
-            openGraph={{
-              type: 'website',
-              locale: 'en_US',
-              url: 'https://noorullah.dev/',
-              site_name: 'Noorullah Ahmadzai',
-            }}
-            twitter={{
-              handle: '@noorullah_ah',
-              cardType: 'summary_large_image',
-              site: '@noorullah_ah',
-            }}
-          />
-          <Component {...pageProps} />
-        </MDXProvider>
+        <SnackbarProvider>
+          <MDXProvider components={MDXComponents}>
+            <DefaultSeo
+              openGraph={{
+                type: 'website',
+                locale: 'en_US',
+                url: 'https://noorullah.dev/',
+                site_name: 'Noorullah Ahmadzai',
+              }}
+              twitter={{
+                handle: '@noorullah_ah',
+                cardType: 'summary_large_image',
+                site: '@noorullah_ah',
+              }}
+            />
+            <Component {...pageProps} />
+          </MDXProvider>
+        </SnackbarProvider>
       </ThemeProvider>
     </>
   )

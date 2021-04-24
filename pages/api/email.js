@@ -3,22 +3,13 @@ import isEmail from 'validator/lib/isEmail'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-const SendGrid = async ({ from, subject, text }, res) => {
-  const msg = {
-    to: process.env.EMAIL,
-    from,
-    subject,
-    text,
-  }
-
-  try {
-    await sgMail.send(msg)
-    res.send({ msg: 'Thank You!' })
-  } catch (e) {
-    console.log(e.response.body)
-    res.send({ msg: 'There was a problem sending the email, Please try again later' })
-  }
-}
+// try {
+//   await sgMail.send(msg)
+//   res.send({ msg: 'Thank You!' })
+// } catch (e) {
+//   console.log(e.response.body)
+//   res.send({ msg: 'There was a problem sending the email, Please try again later' })
+// }
 
 export default async (req, res) => {
   if (req.method === 'POST') {
@@ -42,11 +33,19 @@ export default async (req, res) => {
       return res.status(400).json({ msg: 'Please provide your message!' })
     }
 
-    //.5 SEND EMAIL
-    await SendGrid(
-      { from: req.body.email, subject: `${req.body.name} sent you email`, text: req.body.msg },
-      res
-    )
+    try {
+      //. SEND EMAILS
+      await sgMail.send({
+        to: process.env.EMAIL,
+        from: req.body.email,
+        subject: `${req.body.name} sent you a message`,
+        text: req.body.msg,
+      })
+
+      res.json({ msg: 'Thank You!' })
+    } catch (err) {
+      console.log(err.response.body)
+    }
   } else {
     res.status(400).json({ msg: 'Route not defined' })
   }

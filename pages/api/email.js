@@ -91,9 +91,9 @@ export default async (req, res) => {
                                             <p style="text-align:center;flex; align-items:center; justify-content:center;">
                                               <img style="text-align:center" src="https://user-images.githubusercontent.com/806104/98771085-46d8f180-23a9-11eb-9caf-9d4c0f605749.png" style="height:50px">
                                             </p>
-                                            <p style="text-align:center;font-size:14px;line-height:1.5;color:#999999; text-decoration: none; color: cornflowerblue;     display: flex; align-items: center; justify-content: center;">
-                                            Noorullah Ahmadzai
-                                            </p>
+                                            <a href="http://noorullah.dev/" style="text-align:center;font-size:14px;line-height:1.5;color:#999999; text-decoration: none; color: cornflowerblue;     display: flex; align-items: center; justify-content: center;">
+                                              Noorullah Ahmadzai
+                                            </a>
                                           </p>
 
                                       </div>

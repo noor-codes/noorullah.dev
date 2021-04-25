@@ -3,14 +3,6 @@ import isEmail from 'validator/lib/isEmail'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-// try {
-//   await sgMail.send(msg)
-//   res.send({ msg: 'Thank You!' })
-// } catch (e) {
-//   console.log(e.response.body)
-//   res.send({ msg: 'There was a problem sending the email, Please try again later' })
-// }
-
 export default async (req, res) => {
   if (req.method === 'POST') {
     //.1 Check If there is a name

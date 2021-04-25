@@ -110,8 +110,13 @@ export default async (req, res) => {
 
       res.json({ msg: 'Received! Thank You! 😍' })
     } catch (err) {
+      if (err.response.body?.errors[0]?.message?.includes('credits exceeded')) {
+        return res.status(400).json({
+          msg: 'Oh snap, Sorry 😢. I can receive only 100 emails / day. Please try again tomorrow!',
+        })
+      }
+
       res.status(500).json({ msg: 'uh oh 🤯, Something went wrong. Please try again later!' })
-      console.log(err.response.body)
     }
   } else {
     res.status(400).json({ msg: 'Route not defined' })

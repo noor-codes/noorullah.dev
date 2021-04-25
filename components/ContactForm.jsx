@@ -21,7 +21,7 @@ const ContactForm = () => {
         email: data.email,
         msg: data.message,
       })
-      openSnackbar('Message Recieved.  Thank You! 😍')
+      openSnackbar('Received. Thank You! 😍')
       reset()
     } catch (e) {
       openSnackbar('uh oh 🤯, Something went wrong. Please try again later!')

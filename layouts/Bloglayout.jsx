@@ -32,6 +32,7 @@ const Blog = (props) => {
         }}
       />
       <Layout>
+        <div className="mt-12 md:mt-20" />
         <PageSection name="Blog" />
         <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
           <main className="xs:px-4 mx-auto md:pt-5">

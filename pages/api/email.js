@@ -42,8 +42,9 @@ export default async (req, res) => {
         text: req.body.msg,
       })
 
-      res.json({ msg: 'Thank You!' })
+      res.json({ msg: 'Received! Thank You! 😍' })
     } catch (err) {
+      res.status(500).json({ msg: 'uh oh 🤯, Something went wrong. Please try again later!' })
       console.log(err.response.body)
     }
   } else {

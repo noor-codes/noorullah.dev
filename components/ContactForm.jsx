@@ -16,15 +16,18 @@ const ContactForm = () => {
 
   const submit = async (data) => {
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/email`, {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/email`, {
         name: data.name,
         email: data.email,
         msg: data.message,
       })
-      openSnackbar('Received. Thank You! 😍')
+
+      openSnackbar(res.data.msg)
       reset()
-    } catch (e) {
-      openSnackbar('uh oh 🤯, Something went wrong. Please try again later!')
+    } catch (err) {
+      openSnackbar(
+        'Either your internet connection is down or my website 🤯 Please try again later!'
+      )
     }
   }
   return (

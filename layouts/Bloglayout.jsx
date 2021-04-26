@@ -21,13 +21,13 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `https://noorullahdev-git-seo-noorullah.vercel.app/static${banner}`,
+              url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/static${banner}`,
               width: 800,
               height: 600,
               alt: title,
             },
 
-            { url: `https://noorullahdev-git-seo-noorullah.vercel.app/static${banner}` },
+            { url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/static${banner}` },
           ],
         }}
       />

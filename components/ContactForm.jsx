@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   const submit = async (data) => {
     try {
-      const res = await axios.post(`${process.env.NEXT_DOMAIN_URL}/api/email`, {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/email`, {
         name: data.name,
         email: data.email,
         msg: data.message,

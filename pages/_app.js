@@ -1,16 +1,16 @@
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'
 import { MDXProvider } from '@mdx-js/react'
+import Head from 'next/head'
 import { useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
-import * as gtag from '@/lib/google-analytics/gtag'
 import NProgressBar from 'nprogress'
 import SnackbarProvider from 'react-simple-snackbar'
 
-import '@/styles/globals.css'
-
-import Head from 'next/head'
+import SEO from '@/lib/SEO/global'
+import * as gtag from '@/lib/google-analytics/gtag'
 import MDXComponents from '@/components/mdx/MDXComponents'
+import '@/styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -70,19 +70,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider defaultTheme="system" attribute="class">
         <SnackbarProvider>
           <MDXProvider components={MDXComponents}>
-            <DefaultSeo
-              openGraph={{
-                type: 'website',
-                locale: 'en_US',
-                url: 'https://noorullah.dev/',
-                site_name: 'Noorullah Ahmadzai',
-              }}
-              twitter={{
-                handle: '@noorullah_ah',
-                cardType: 'summary_large_image',
-                site: '@noorullah_ah',
-              }}
-            />
+            <DefaultSeo {...SEO} />
             <Component {...pageProps} />
           </MDXProvider>
         </SnackbarProvider>

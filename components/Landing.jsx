@@ -10,12 +10,8 @@ const Landing = () => {
   return (
     <>
       <NextSeo
-        title="Noorullah Ahmadzai"
-        description="Software Developer, Writer and Instructor"
         openGraph={{
           url: 'https://noorullah.dev/',
-          title: 'Noorullah Ahmadzai',
-          description: 'Software Developer, Writer and Instructor',
           type: 'blog',
           images: [
             {

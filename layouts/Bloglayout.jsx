@@ -21,13 +21,13 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `${banner}`,
+              url: `https://noorullahdev-git-seo-noorullah.vercel.app${banner}`,
               width: 800,
               height: 600,
               alt: title,
             },
 
-            { url: `${banner}` },
+            { url: `https://noorullahdev-git-seo-noorullah.vercel.app${banner}` },
           ],
         }}
       />

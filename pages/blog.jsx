@@ -9,7 +9,7 @@ const Blog = ({ posts }) => {
       <NextSeo
         title="Noorullah Ahmadzai - Blog"
         openGraph={{
-          url: 'https://noorullah.dev/',
+          url: 'https://noorullah.dev/blog',
           type: 'blog',
           images: [
             {

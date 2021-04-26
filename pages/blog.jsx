@@ -13,13 +13,13 @@ const Blog = ({ posts }) => {
           type: 'blog',
           images: [
             {
-              url: 'http://noorullah.dev',
+              url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Blog.png`,
               width: 800,
               height: 600,
               alt: 'Noorullah Ahmadzai',
             },
 
-            { url: 'http://noorullah.dev' },
+            { url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Blog.png` },
           ],
         }}
       />

@@ -18,7 +18,6 @@ const ContactForm = () => {
     try {
       const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/email`, {
         name: data.name,
-        email: data.email,
         msg: data.message,
       })
 
@@ -61,27 +60,6 @@ const ContactForm = () => {
                   </span>
                 )}
               </label>
-            </div>
-            <div className="px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 dark:text-gray-200 text-xs font-bold mb-2"
-                htmlFor="email"
-              >
-                Email
-                <input
-                  className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 dark:text-gray-200 dark:bg-gray-900 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
-                  id="email"
-                  type="email"
-                  placeholder="email@example.com"
-                  autoComplete="off"
-                  {...register('email', { required: true })}
-                />
-              </label>
-              {errors.email && (
-                <span className="text-red mb-20 italic text-red-400">
-                  Please fill out this field.
-                </span>
-              )}
             </div>
           </div>
           <div className="-mx-3 mb-2">

@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
-import isEmail from 'validator/lib/isEmail'
 import { format } from 'date-fns'
+// import isEmail from 'validator/lib/isEmail'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
@@ -16,15 +16,15 @@ export default async (req, res) => {
       return res.status(400).json({ msg: 'Please provide your name!' })
     }
 
-    //.2 Check If there is an email
-    if (!req.body.email) {
-      return res.status(400).json({ msg: 'Please provide your email!' })
-    }
+    // //.2 Check If there is an email
+    // if (!req.body.email) {
+    //   return res.status(400).json({ msg: 'Please provide your email!' })
+    // }
 
-    //.3 Check if the email is valid
-    if (!isEmail(req.body.email)) {
-      return res.status(400).json({ msg: 'Please provide a valid email' })
-    }
+    // //.3 Check if the email is valid
+    // if (!isEmail(req.body.email)) {
+    //   return res.status(400).json({ msg: 'Please provide a valid email' })
+    // }
 
     //.4 Check If there is a msg
     if (!req.body.msg) {
@@ -35,8 +35,8 @@ export default async (req, res) => {
       //. SEND EMAILS
       await sgMail.send({
         to: process.env.EMAIL,
-        from: req.body.email,
-        subject: `${req.body.name} | noorullah.dev`,
+        from: 'noorullah.ahmadzai76@gmail.com',
+        subject: `noorullah.dev`,
         html: `
         <html>
           <body style="margin:0;padding:0;">

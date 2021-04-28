@@ -24,14 +24,14 @@ const Blog = ({ posts }) => {
         }}
       />
       <Layout>
-        <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
+        <div className="container min-w-xs mx-auto mt-14 px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
           <main className="mx-auto">
             <div className="mt-4 md:m-0 mb-4">
-              <h1 className=" xl:mt-8 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
+              <h1 className="xl:mt-8 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
                 All Blog Posts
               </h1>
               <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
-                I love blogging about web development and the latest and great technologies that
+                I love blogging about web development, the latest and great technologies that
                 excites me.
               </p>
             </div>
@@ -39,8 +39,9 @@ const Blog = ({ posts }) => {
             <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
 
             {posts.length === 0 ? (
-              <h1 className="text-center py-32 text-sm xs:text-base md:text-lg lg:text-xl dark:text-gray-200">
-                No Posts Found! 😥
+              <h1 className="text-center text-gray-500 py-16 text-sm xs:text-base md:text-lg lg:text-xl dark:text-gray-200">
+                No Posts published yet! 😄 <br /> Keep an eye out. I will post my very first one
+                soon...
               </h1>
             ) : (
               ''

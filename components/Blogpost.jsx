@@ -4,7 +4,7 @@ const Blogpost = ({ post }) => {
   const { title, summary, read, slug } = post
 
   return (
-    <div className="block pt-4 mb-5 lg:mb-8">
+    <div className="block pt-4 lg:mb-8">
       <div className="flex flex-col lg:justify-center h-full">
         <Link href={`/blog/${slug}`}>
           <a>

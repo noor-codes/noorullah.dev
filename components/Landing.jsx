@@ -90,9 +90,8 @@ const Landing = () => {
           </h2>
           <h3 className="text-gray-600 dark:text-gray-200 text-sm mt-2 xs:text-base sm:text-lg">
             I explored different fields in Computer Science and finally settled with Software
-            Engineering and explored modern Web Development in details. I have ever since learnt a
-            lot and built various projects. I have 3 years of professional web development
-            experience.
+            Engineering. I studied modern Web Development in details. I have ever since learnt a lot
+            and built various projects. I have 3 years of professional web development experience.
           </h3>
         </div>
       </div>

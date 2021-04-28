@@ -13,6 +13,7 @@ const Landing = () => {
         openGraph={{
           url: 'https://noorullah.dev/',
           type: 'blog',
+          canonical: process.env.NEXT_PUBLIC_DOMAIN_URL,
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Landing.png`,

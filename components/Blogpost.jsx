@@ -18,7 +18,7 @@ const Blogpost = ({ post }) => {
         </p>
       </div>
 
-      <span className="block text-xs text-gray-400 mt-2 lg:text-base">{readingTime.text}</span>
+      <span className="block text-xs text-gray-400 mt-1">{readingTime.text}</span>
     </div>
   )
 }

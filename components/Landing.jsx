@@ -44,14 +44,12 @@ const Landing = () => {
 
           <div>
             <h1 className="text-xl font-extrabold mb-4 xs:text-2xl sm:text-3xl sm:mt-2 xl:text-4xl text-gray-900 dark:text-gray-200">
-              Lorem Ipsum is simply dummy text of the printing!
+              Hi, I am Noorullah Ahmadzai
             </h1>
 
             <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4 dark:text-gray-200">
-              It is a long established fact that a reader will be distracted by the readable content
-              of a page when looking at its layout. The point of using Lorem Ipsum is. It is a long
-              established fact that a reader will be distracted by the readable content of a page
-              when
+              Software Engineer, Web Developer, Writer and Bachelor of Computer Science. I am
+              passionate about building quality software that everybody loves and admires.
             </h2>
           </div>
 
@@ -66,15 +64,16 @@ const Landing = () => {
           </div>
         </main>
       </div>
-      <LandingSections name="Speciality" />
+      <LandingSections name="Specialty" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div className="mb-2">
           <h2 className="text-gray-900 dark:text-gray-200 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
             Frameworks & Languages
           </h2>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg dark:text-gray-200">
-            It is a long established fact that a reader will be distracted by the readable content
-            of a page when looking at its layout. The point of using Lorem Ipsum is.
+            For the last couple of years, I&apos;ve been learning about modern web development and
+            building fast, reliable and quality websites. Here are the list of technologies I love
+            to work with.
           </h3>
           <TechStack />
         </div>
@@ -87,8 +86,10 @@ const Landing = () => {
             Experience
           </h2>
           <h3 className="text-gray-600 dark:text-gray-200 text-sm mt-2 xs:text-base sm:text-lg">
-            It is a long established fact that a reader will be distracted by the readable content
-            of a page when looking at its layout. The point of using Lorem Ipsum is.
+            I explored different fields in Computer Science and finally settled with Software
+            Engineering and explored modern Web Development in details. I have ever since learnt a
+            lot and built various projects. I have 3 years of professional web development
+            experience.
           </h3>
         </div>
       </div>
@@ -97,8 +98,9 @@ const Landing = () => {
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
         <div>
           <h3 className="text-gray-600 dark:text-gray-200 text-sm mt-2 xs:text-base sm:text-lg">
-            It is a long established fact that a reader will be distracted by the readable content
-            of a page when looking at its layout. The point of using Lorem Ipsum is.
+            These are some of my latest projects I have worked on. A very small Inventory Management
+            System, My personal portfolio and contributed to international project
+            &quot;CarBidNow&quot; at Risa Hall Web Inc.
           </h3>
         </div>
         <RecentProjects />

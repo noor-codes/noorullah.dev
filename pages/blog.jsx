@@ -28,7 +28,7 @@ const Blog = ({ posts }) => {
           <main className="mx-auto">
             <div className="mt-4 md:m-0 mb-4">
               <h1 className="xl:mt-8 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
-                All Blog Posts
+                My Blog Posts
               </h1>
               <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
                 I love blogging about web development, the latest and great technologies that

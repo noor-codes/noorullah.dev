@@ -10,7 +10,8 @@ import nextjs from '@/public/icons/landing/tech/nextjs-icon.svg'
 import expressjs from '@/public/icons/landing/tech/express-icon.svg'
 import mongodb from '@/public/icons/landing/tech/mongodb-icon.svg'
 import restapi from '@/public/icons/landing/tech/api-icon.svg'
-import graphqL from '@/public/icons/landing/tech/graphql-icon.svg'
+// import graphql from '@/public/icons/landing/tech/graphql-icon.svg'
+import apollo from '@/public/icons/landing/tech/apollo-icon.svg'
 import github from '@/public/icons/landing/tech/github-icon.svg'
 import hosting from '@/public/icons/landing/tech/hosting-icon.svg'
 import npm from '@/public/icons/landing/tech/npm-icon.svg'
@@ -77,9 +78,14 @@ export const details = [
     icon: restapi,
   },
 
+  // {
+  //   name: 'GraphQL',
+  //   icon: graphql,
+  // },
+
   {
-    name: 'GraphQL',
-    icon: graphqL,
+    name: 'Apollo-Client',
+    icon: apollo,
   },
 
   {

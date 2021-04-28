@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
 const Blogpost = ({ post }) => {
-  const { title, summary, read, slug } = post
+  const { title, summary, readingTime, slug } = post
 
   return (
-    <div className="block pt-4 lg:mb-8">
+    <div className="block pt-4">
       <div className="flex flex-col lg:justify-center h-full">
         <Link href={`/blog/${slug}`}>
           <a>
-            <h1 className="mb-2 leading-6 hover:text-blue-600 font-bold text-base text-gray-900 dark:text-gray-200 dark:hover:text-blue-600 xs:leading-6 max-w-xl xs:text-lg sm:text-xl md:text-2xl  md:mb-3 md:leading-10 xl:font-bold">
+            <h1 className="mb-2 leading-6 hover:text-blue-600 font-bold text-base text-gray-900 dark:text-gray-200 dark:hover:text-blue-600 xs:leading-6 max-w-xl xs:text-lg sm:text-xl md:text-2xl md:leading-10 xl:font-bold">
               {title}
             </h1>
           </a>
@@ -18,7 +18,7 @@ const Blogpost = ({ post }) => {
         </p>
       </div>
 
-      <span className="block text-xs text-gray-400 mt-2 lg:text-base">{read}</span>
+      <span className="block text-xs text-gray-400 mt-2 lg:text-base">{readingTime.text}</span>
     </div>
   )
 }

@@ -86,7 +86,7 @@ const ContactForm = () => {
               )}
             </div>
           </div>
-          <div className="flex justify-center sm:mt-4">
+          <div className="flex justify-center mt-4">
             <button
               name="submit button"
               type="submit"

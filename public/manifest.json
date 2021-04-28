@@ -4,8 +4,8 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "fullscreen",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "http://noorullah.dev/",
+  "start_url": "http://noorullah.dev/",
   "description": "Software Engineer, Web Developer, Writer and JavaScript Enthusiast",
   "icons": [
     {

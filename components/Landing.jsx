@@ -51,7 +51,7 @@ const Landing = () => {
 
             <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4 dark:text-gray-200">
               Software Engineer, Web Developer, Writer and Bachelor of Computer Science. I am
-              passionate about building quality software that everybody loves and admires.
+              passionate about building quality software that you would love and admire.
             </h2>
           </div>
 

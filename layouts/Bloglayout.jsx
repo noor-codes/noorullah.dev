@@ -37,7 +37,7 @@ const Blog = (props) => {
         <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
           <main className="xs:px-4 mx-auto md:pt-5">
             <article className="mt-8 mb-4">
-              <h1 className="font-bold leading-tight text-2xl tracking-wide capitalize md:text-4xl lg:leading-tight text-gray-900 dark:text-gray-200">
+              <h1 className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl text-gray-900 dark:text-gray-200">
                 {title}
               </h1>
             </article>
@@ -101,9 +101,9 @@ const Blog = (props) => {
                 About the Author
               </h2>
               <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
-                I am Noorullah Ahmadzai. A full stack web developer who specializes in React,
-                NodeJs, MongoDB and JamStack. I&apos;m passinate about web development and
-                technology.
+                I am Noorullah Ahmadzai Software Engineer, Web Developer, Writer and Bachelor of
+                Computer Science. I am passionate about building quality software that you would
+                love and admire.
               </p>
             </div>
           </div>

@@ -28,6 +28,7 @@ const NotFound = () => {
       />
 
       <Layout>
+        <div className="mt-20" />
         <PageSection name="404" />
         <div>
           <div className="container min-w-xs mx-auto px-6 sm:px-32 sm:mt-10 md:max-w-2xl xl:max-w-3xl">

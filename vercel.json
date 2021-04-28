@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/fonts/inter-var-latin.woff2",
+      "source": "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap",
       "headers": [
         {
           "key": "Cache-Control",
@@ -15,7 +15,7 @@
 
   "redirects": [
     {
-      "source": "/resume.pdf",
+      "source": "/cv",
       "destination": "/Noorullah-Ahmadzai-Resume-2021.pdf"
     },
 

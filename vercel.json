@@ -16,7 +16,7 @@
   "redirects": [
     {
       "source": "/cv",
-      "destination": "/Noorullah-Ahmadzai-Resume-2021.pdf"
+      "destination": "/static/Noorullah Ahmadzai - Resume 2021.pdf"
     },
 
     {

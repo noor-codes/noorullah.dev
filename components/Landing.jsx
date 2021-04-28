@@ -34,6 +34,7 @@ const Landing = () => {
                 width={100}
                 src="/img/profile.jpg"
                 alt="Noorullah Ahmadzai"
+                layout="responsive"
                 className="rounded-full"
               />
             </div>

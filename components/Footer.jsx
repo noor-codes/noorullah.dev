@@ -4,41 +4,41 @@ import GitHub from '@/public/icons/social/github-icon.svg'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center bg-gray-900 dark:bg-gray-200 gap-y-2 w-full h-44 mt-20 md:h-60 xl:h-60">
-      <p className="text-white text-3xl mx-10 text-center md:mb-1 xl:text-4xl xl:mb-2 dark:text-gray-900">
-        Say &ldquo;Hi&ldquo;
-      </p>
+    <footer className="flex flex-col justify-center py-10 bg-gray-100 dark:bg-black dark:bg-opacity-20 w-full mt-20 lg:h-44">
       <div className="flex justify-center flex-row-reverse space-x-2 space-x-reverse md:space-x-3 md:space-x-reverse">
         <a
           href="https://github.com/Noorullah-Ahmadzai"
           rel="noreferrer"
           target="_blank"
-          className="block h-8 w-8 md:h-9 md:w-9 text-white "
+          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900 "
           aria-label="github"
         >
-          <GitHub className="fill-current hover:opacity-50 dark:text-gray-900" />
+          <GitHub className="fill-current hover:opacity-50 dark:text-gray-200" />
         </a>
 
         <a
           href="https://twitter.com/Noorullah_Ah"
           rel="noreferrer"
           target="_blank"
-          className="block h-8 w-8 md:h-9 md:w-9 text-white"
+          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900"
           aria-label="twitter"
         >
-          <Twitter className="fill-current hover:opacity-50  dark:text-gray-900" />
+          <Twitter className="fill-current hover:opacity-50  dark:text-gray-200" />
         </a>
 
         <a
           href="https://www.linkedin.com/in/noorullah-ahmadzai-4239a6160/"
           rel="noreferrer"
           target="_blank"
-          className="block h-8 w-8 md:h-9 md:w-9"
+          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9"
           aria-label="linkedin"
         >
-          <LinkedIn className="fill-current hover:opacity-50 text-white dark:text-gray-900" />
+          <LinkedIn className="fill-current hover:opacity-50 text-gray-900 dark:text-gray-200" />
         </a>
       </div>
+      <p className="text-gray-900 text-base mx-10 text-center mt-1 dark:text-gray-200 md:text-lg lg:text-xl lg:mt-2">
+        Join me on
+      </p>
     </footer>
   )
 }

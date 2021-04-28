@@ -24,7 +24,7 @@ const Blog = ({ posts }) => {
         }}
       />
       <Layout>
-        <div className="container min-w-xs mx-auto mt-14 xs:mt-20 px-6 sm:px-10 md:max-w-3xl lg:flex lg:justify-center xl:max-w-4xl">
+        <div className="container min-w-xs mx-auto mt-14 xs:mt-20 px-6 sm:px-10 md:max-w-3xl lg:flex  xl:max-w-4xl">
           <main className="mx-auto">
             <div className="mt-4 md:m-0 mb-4">
               <h1 className="xl:mt-8 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900 dark:text-gray-200">
@@ -36,7 +36,7 @@ const Blog = ({ posts }) => {
               </p>
             </div>
 
-            <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-8">&nbsp;</div>
+            <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-2">&nbsp;</div>
 
             {posts.length === 0 ? (
               <h1 className="text-center text-gray-500 py-16 text-sm xs:text-base md:text-lg lg:text-xl dark:text-gray-200">

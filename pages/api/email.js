@@ -20,8 +20,8 @@ export default async (req, res) => {
       //. SEND EMAILS
       await sgMail.send({
         to: process.env.EMAIL,
-        from: 'info@noorullah.dev',
-        subject: `message`,
+        from: 'feedback@noorullah.dev',
+        subject: `Feedback`,
         html: `
         <html>
           <body style="margin:0;padding:0;">

@@ -10,21 +10,21 @@ const RecentProjects = () => {
           <div className="flex justify-center items-center m-3 bg-gray-100 h-24 w-24 sm:h-28 sm:w-28 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
             <Inventory className="h-16 w-16 fill-current" />
           </div>
-          <div className="text-sm text-gray-500 mt-2 ">Inventory</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400 mt-2 ">Inventory</div>
         </div>
 
         <div>
           <div className="flex justify-center items-center m-3 bg-gray-100 h-24 w-24 sm:h-28 sm:w-28 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
             <Portfolio className="h-14 w-14 sm:h-16 sm:w-16 fill-current" />
           </div>
-          <div className="text-sm text-gray-500 mt-2">My Portfolio</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400 mt-2">My Portfolio</div>
         </div>
 
         <div>
           <div className="flex justify-center items-center m-3 bg-gray-100 h-24 w-24 sm:h-28 sm:w-28 text-2xl text-gray-600 rounded-md dark:bg-gray-800 dark: dark:text-gray-400 ">
             <CarbidNow className="h-16 w-16 sm:h-20 sm:w-20 fill-current" />
           </div>
-          <div className="text-sm text-gray-500 mt-2">CarBidNow</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400 mt-2">CarBidNow</div>
         </div>
       </div>
     </>

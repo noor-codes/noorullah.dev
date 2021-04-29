@@ -59,7 +59,7 @@ const Landing = () => {
             <a
               href="/cv"
               target="_blank"
-              className="flex items-center justify-center w-full py-2 bg-gray-900 dark:bg-gray-200 dark:text-gray-800 text-white dark:hover:text-white  rounded hover:bg-gray-700 dark:hover:bg-gray-600 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
+              className="flex items-center justify-center w-full py-2 bg-gray-900 dark:bg-gray-200 dark:text-gray-800 text-white dark:hover:text-white  rounded hover:bg-gray-700 dark:hover:bg-gray-600 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white dark:focus:ring-offset-gray-500 transform active:scale-95"
             >
               Download Resume
               <Download className="h-5 w-5 fill-current ml-2" />

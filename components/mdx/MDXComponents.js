@@ -10,7 +10,7 @@ const CustomLink = (props) => {
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a className="dark:text-blue-500 dark:hover:text-bluee-800" {...props} />
+        <a className="dark:text-blue-500 dark:hover:text-blue-800" {...props} />
       </Link>
     )
   }
@@ -19,7 +19,7 @@ const CustomLink = (props) => {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className="dark:text-blue-500 dark:hover:text-bluee-800"
+      className="dark:text-blue-500 dark:hover:text-blue-800"
       {...props}
     />
   )

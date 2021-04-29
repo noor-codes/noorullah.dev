@@ -1,13 +1,8 @@
 /* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
 import { format } from 'date-fns'
-// import isEmail from 'validator/lib/isEmail'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
-/* ROBOB HASH URL */
-const RandomNumber = Math.floor(Math.random() * 145216412114646842)
-const RoboHashURL = `https://robohash.org/${RandomNumber}`
 
 export default async (req, res) => {
   if (req.method === 'POST') {
@@ -16,17 +11,7 @@ export default async (req, res) => {
       return res.status(400).json({ msg: 'Please provide your name!' })
     }
 
-    // //.2 Check If there is an email
-    // if (!req.body.email) {
-    //   return res.status(400).json({ msg: 'Please provide your email!' })
-    // }
-
-    // //.3 Check if the email is valid
-    // if (!isEmail(req.body.email)) {
-    //   return res.status(400).json({ msg: 'Please provide a valid email' })
-    // }
-
-    //.4 Check If there is a msg
+    //.2 Check If there is a msg
     if (!req.body.msg) {
       return res.status(400).json({ msg: 'Please provide your message!' })
     }
@@ -48,7 +33,7 @@ export default async (req, res) => {
                                   <td>
                                       <div style="max-width:100%;box-sizing:border-box; background:#161616">
                                           <div style="width:100%;max-width:575px;min-width:300px;margin:auto;text-align:center;padding:15px">
-                                              <img src=${RoboHashURL} style="height: 110px;">
+                                              <img src="https://waspwebsite-wpengine.netdna-ssl.com/wp-content/uploads/2014/03/web-dev-icon.png" style="height: 110px;">
                                           </div>
                                           <div style="width:100%;max-width:575px;min-width:300px;background:#fff;margin:auto;box-sizing:border-box;border-radius:4px;border-bottom-left-radius:0;border-bottom-right-radius:0;padding:50px 30px 10px;">
                                               <h1 style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';color:#3d4852;font-size:18px;font-weight:bold;margin-top:0;text-align:left">
@@ -108,7 +93,7 @@ export default async (req, res) => {
         `,
       })
 
-      res.json({ msg: 'Received! Thank You! 😍' })
+      return res.json({ msg: 'Received! Thank You! 😍' })
     } catch (err) {
       if (err.response.body?.errors[0]?.message?.includes('credits exceeded')) {
         return res.status(400).json({
@@ -116,11 +101,13 @@ export default async (req, res) => {
         })
       }
 
-      res.status(500).json({ msg: 'uh oh 🤯, Something went wrong. Please try again later!' })
+      return res
+        .status(500)
+        .json({ msg: 'uh oh 🤯, Something went wrong. Please try again later!' })
     }
-  } else {
-    res.status(400).json({ msg: 'Route not defined' })
   }
+
+  return res.status(400).json({ msg: 'Not allowed' })
 }
 
 export const config = {

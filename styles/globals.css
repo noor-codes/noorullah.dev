@@ -68,7 +68,7 @@ html {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  @apply text-green-500;
+  @apply text-green-700 dark:text-green-500;
 }
 
 .token.selector,
@@ -77,7 +77,7 @@ html {
 .token.char,
 .token.builtin,
 .token.inserted {
-  @apply text-purple-500;
+  @apply text-purple-600 dark:text-purple-400;
 }
 
 .token.operator,
@@ -91,12 +91,12 @@ html {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  @apply text-blue-500;
+  @apply text-blue-600 dark:text-blue-500;
 }
 
 .token.function,
 .token.class-name {
-  @apply text-pink-500;
+  @apply text-pink-700 dark:text-pink-500;
 }
 
 .token.regex,

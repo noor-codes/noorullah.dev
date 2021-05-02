@@ -1,15 +1,66 @@
 {
-  "name": "nextjs",
+  "name": "noorullah.dev",
+  "description": "Web Developer, Blogger, Tech Enthusiast",
+  "author": {
+    "name": "Noorullah Ahmadzai",
+    "email": "Noorullah.Ahmadzai@outlook.com",
+    "url": "https://noorullah.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leerob/leerob.io.git"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "preinstall": "mkdir md && cd md && mkdir blog && cd ..",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "trash": "cd public && trash sw.js workbox-ea903bce.js",
+    "serve": "npm run build && npm run start"
   },
   "dependencies": {
-    "next": "10.0.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "@mdx-js/react": "^1.6.22",
+    "@sendgrid/mail": "^7.4.2",
+    "@svgr/webpack": "^5.5.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/jit": "^0.1.1",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
+    "axios": "^0.21.1",
+    "date-fns": "^2.21.1",
+    "gray-matter": "^4.0.2",
+    "mdx-prism": "^0.3.3",
+    "next": "^10.2.0",
+    "next-mdx-remote": "^2.1.4",
+    "next-pwa": "^5.2.15",
+    "next-seo": "^4.20.0",
+    "next-themes": "^0.0.14",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.3.0",
+    "react-simple-snackbar": "^1.1.11",
+    "reading-time": "^1.3.0",
+    "remark-autolink-headings": "^6.0.1",
+    "remark-code-titles": "^0.1.1",
+    "remark-slug": "^6.0.0",
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "postcss": "^8.2.6",
+    "prettier": "^2.2.1",
+    "rehype": "^11.0.0"
   }
 }

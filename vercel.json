@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+
+  "redirects": [
+    {
+      "source": "/cv",
+      "destination": "/static/Noorullah Ahmadzai - Resume 2021.pdf"
+    },
+
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/Noorullah_Ah"
+    }
+  ]
+}

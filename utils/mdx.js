@@ -44,18 +44,6 @@ export async function getFileBySlug(type, slug) {
 }
 
 export async function getAllFilesFrontMatter(type) {
-  //. create new directory if doesn't exist
-  const dir = './md'
-
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir)
-    fs.mkdirSync(`${dir}/${type}`)
-    console.log(`Folders Created! \n ${dir} \n ${dir}/${type}`)
-
-    //. If folder were just created, there is no files in it. Return Empty Array
-    return []
-  }
-
   const files = fs.readdirSync(path.join(root, 'md', type))
 
   return files.reduce((allPosts, postSlug) => {

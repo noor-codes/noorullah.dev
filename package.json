@@ -15,6 +15,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "preinstall": "mkdir md && cd md && mkdir blog && cd ..",
     "build": "next build",
     "start": "next start",
     "trash": "cd public && trash sw.js workbox-ea903bce.js",

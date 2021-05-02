@@ -13,8 +13,6 @@ import restapi from '@/public/icons/landing/tech/api-icon.svg'
 // import graphql from '@/public/icons/landing/tech/graphql-icon.svg'
 import apollo from '@/public/icons/landing/tech/apollo-icon.svg'
 import github from '@/public/icons/landing/tech/github-icon.svg'
-import hosting from '@/public/icons/landing/tech/hosting-icon.svg'
-import npm from '@/public/icons/landing/tech/npm-icon.svg'
 import keystonejs from '@/public/icons/landing/tech/keystonejs-icon.svg'
 
 export const details = [
@@ -64,17 +62,17 @@ export const details = [
   },
 
   {
-    name: 'Expressjs',
+    name: 'ExpressJS',
     icon: expressjs,
   },
 
   {
-    name: 'Mongodb',
+    name: 'MongoDb',
     icon: mongodb,
   },
 
   {
-    name: 'Restapi',
+    name: 'Rest API',
     icon: restapi,
   },
 
@@ -96,15 +94,5 @@ export const details = [
   {
     name: 'Git & GitHub',
     icon: github,
-  },
-
-  {
-    name: 'NPM',
-    icon: npm,
-  },
-
-  {
-    name: 'Web Hosting',
-    icon: hosting,
   },
 ]

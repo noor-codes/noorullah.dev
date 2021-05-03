@@ -15,10 +15,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "preinstall": "mkdir md && cd md && mkdir blog && cd ..",
     "build": "next build",
     "start": "next start",
-    "trash": "cd public && trash sw.js workbox-ea903bce.js",
     "serve": "npm run build && npm run start"
   },
   "dependencies": {
@@ -62,5 +60,8 @@
     "postcss": "^8.2.6",
     "prettier": "^2.2.1",
     "rehype": "^11.0.0"
+  },
+  "engines": {
+    "node": "^12.22.1"
   }
 }

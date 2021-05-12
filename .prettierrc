@@ -2,6 +2,7 @@
   "singleQuote": true,
   "printWidth": 100,
   "trailing": false,
+  "endOfLine": "auto",
   "semi": false,
   "overrides": [
     {

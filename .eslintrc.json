@@ -29,7 +29,7 @@
     "no-alert": 0,
     "no-restricted-globals": 0,
     "endOfLine": 0,
-    "linebreak-style": [2, "unix"],
+    "linebreak-style": [2, "linux"],
     "quotes": [2, "single"],
     "semi": [2, "never"],
     "react/react-in-jsx-scope": 0,

@@ -37,8 +37,3 @@ yarn-error.log*
 #ignore pwa files in dev
 /public/sw.js
 /public/workbox-ea903bce.js
-
-# Except this file
-!.gitignore
-/md
-/md/blog

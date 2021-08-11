@@ -31,7 +31,7 @@
     "date-fns": "^2.21.1",
     "gray-matter": "^4.0.2",
     "mdx-prism": "^0.3.3",
-    "next": "^10.2.0",
+    "next": "^11.1.0",
     "next-mdx-remote": "^2.1.4",
     "next-pwa": "^5.2.15",
     "next-seo": "^4.20.0",
@@ -45,6 +45,7 @@
     "remark-autolink-headings": "^6.0.1",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0",
+    "sharp": "^0.28.3",
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {

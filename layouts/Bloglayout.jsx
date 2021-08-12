@@ -16,7 +16,6 @@ const Blog = (props) => {
         description={summary}
         openGraph={{
           url: `https://noorullah.dev/blog/${slug}`,
-          type: 'blog',
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/blogs${banner}`,

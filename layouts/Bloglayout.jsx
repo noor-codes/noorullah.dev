@@ -21,7 +21,7 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: 'https://noorullah.dev/img/SEO/Landing.png',
+              url: 'https://noorullah.dev/blogs/portfolio_for_software_engineers/banner.png',
               alt: title,
               width: 1920,
               height: 1060,

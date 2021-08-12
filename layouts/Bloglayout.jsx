@@ -21,13 +21,13 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `https://noorullah.dev/statics${banner}`,
+              url: `https://noorullah.dev/blogs${banner}`,
               width: 800,
               height: 600,
               alt: title,
             },
 
-            { url: `https://noorullah.dev/statics${banner}` },
+            { url: `https://noorullah.dev/blogs${banner}` },
           ],
         }}
       />

@@ -11,6 +11,11 @@
     {
       "source": "/twitter",
       "destination": "https://twitter.com/Noorullah_Ah"
+    },
+
+    {
+      "source": "/github",
+      "destination": "https://github.com/Noorullah-Ahmadzai"
     }
   ]
 }

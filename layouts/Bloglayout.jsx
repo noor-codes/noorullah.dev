@@ -21,13 +21,11 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `https://noorullah.dev/img/SEO/Landing.png`,
-              width: 800,
-              height: 600,
+              url: 'https://noorullah.dev/img/SEO/Landing.png',
               alt: title,
+              width: 1920,
+              height: 1060,
             },
-
-            { url: `https://noorullah.dev/img/SEO/Landing.png` },
           ],
         }}
       />

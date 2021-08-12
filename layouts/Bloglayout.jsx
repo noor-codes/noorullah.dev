@@ -16,19 +16,20 @@ const Blog = (props) => {
         description={summary}
         openGraph={{
           url: `https://noorullah.dev/blog/${slug}`,
-          title: title,
-          description: summary,
           type: 'blog',
           images: [
             {
-              url: `https://noorullah.dev/blogs${banner}`,
-              alt: title,
+              url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/blogs${banner}`,
               width: 1920,
               height: 1060,
+              alt: title,
             },
+
+            { url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/blogs${banner}` },
           ],
         }}
       />
+
       <Layout>
         <div className="mt-12 md:mt-20" />
         <PageSection name="Blog" />

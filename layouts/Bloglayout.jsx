@@ -21,13 +21,13 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/static${banner}`,
+              url: `https://noorullah.dev/statics${banner}`,
               width: 800,
               height: 600,
               alt: title,
             },
 
-            { url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/static${banner}` },
+            { url: `https://noorullah.dev/statics${banner}` },
           ],
         }}
       />
@@ -101,9 +101,9 @@ const Blog = (props) => {
                 About the Author
               </h2>
               <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
-                I am Noorullah Ahmadzai Software Engineer, Web Developer, Writer and Bachelor of
-                Computer Science. I am passionate about building quality software that you would
-                love and admire.
+                Noorullah Ahmadzai is a Software Engineer, Web Developer, Writer and Bachelor of
+                Computer Science. He is passionate about building quality software that everyone
+                loves.
               </p>
             </div>
           </div>

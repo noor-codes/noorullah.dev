@@ -8,7 +8,6 @@ import Layout from 'layouts/Layout'
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
-
   return (
     <div>
       <NextSeo

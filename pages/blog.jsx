@@ -14,8 +14,8 @@ const Blog = ({ posts }) => {
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Blog.png`,
-              width: 800,
-              height: 600,
+              width: 1920,
+              height: 1060,
               alt: 'Noorullah Ahmadzai',
             },
 

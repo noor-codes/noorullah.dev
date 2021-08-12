@@ -70,7 +70,7 @@ const Blog = (props) => {
                 {tags.map((name) => (
                   <div
                     key={name}
-                    className="bg-gray-100 m-1 dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                    className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
                   >
                     {name}
                   </div>

@@ -8,8 +8,7 @@ import Layout from 'layouts/Layout'
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
-  console.log(process.env.NEXT_PUBLIC_ASSETS_URL)
-  console.log(banner)
+
   return (
     <div>
       <NextSeo
@@ -22,13 +21,13 @@ const Blog = (props) => {
           type: 'blog',
           images: [
             {
-              url: `https://noorullah.dev/static${banner}`,
+              url: `https://noorullah.dev/statics${banner}`,
               width: 800,
               height: 600,
               alt: title,
             },
 
-            { url: `https://noorullah.dev/static${banner}` },
+            { url: `https://noorullah.dev/statics${banner}` },
           ],
         }}
       />

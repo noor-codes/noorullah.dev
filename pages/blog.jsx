@@ -31,7 +31,7 @@ const Blog = ({ posts }) => {
                 My Blog Posts
               </h1>
               <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
-                I love blogging about web development, the latest and great technologies that
+                I love blogging about web development, the latest and greatest technologies that
                 excites me.
               </p>
             </div>

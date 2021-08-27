@@ -1,8 +1,17 @@
-import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
-import Spinner from '@/public/icons/landing/spinner-icon.svg'
-import { useForm } from 'react-hook-form'
 import axios from 'axios'
+import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
+
+import Spinner from '@/public/icons/landing/spinner-icon.svg'
+import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
+
+const schema = yup.object().shape({
+  name: yup.string().min(2).max(32).required(),
+  email: yup.string().max(80).email().required(),
+  message: yup.string().min(8).max(300).required(),
+})
 
 const ContactForm = () => {
   const [openSnackbar] = useSnackbar()
@@ -12,14 +21,14 @@ const ContactForm = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm({ mode: 'onChange' })
+  } = useForm({ mode: 'onChange', resolver: yupResolver(schema) })
 
   const submit = async (data) => {
     try {
       const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/email`, {
         name: data.name,
         email: data.email,
-        msg: data.message,
+        message: data.message,
       })
 
       openSnackbar(res.data.msg)
@@ -53,12 +62,10 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Please type your name"
                   autoComplete="off"
-                  {...register('name', { required: true })}
+                  {...register('name')}
                 />
                 {errors.name && (
-                  <span className="text-red mb-20 italic text-red-400">
-                    Please fill out this field.
-                  </span>
+                  <span className="text-red mb-20 italic text-red-400">{errors.name?.message}</span>
                 )}
               </label>
             </div>
@@ -76,11 +83,11 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Please type your email address"
                   autoComplete="off"
-                  {...register('email', { required: true })}
+                  {...register('email')}
                 />
-                {errors.name && (
+                {errors.email && (
                   <span className="text-red mb-20 italic text-red-400">
-                    Please fill out this field.
+                    {errors.email?.message}
                   </span>
                 )}
               </label>
@@ -100,14 +107,14 @@ const ContactForm = () => {
                   rows="7"
                   placeholder="Please type your message!"
                   autoComplete="off"
-                  {...register('message', { required: true })}
+                  {...register('message')}
                 />
+                {errors.message && (
+                  <span className="text-red mb-20 italic text-red-400">
+                    {errors.message?.message}
+                  </span>
+                )}
               </label>
-              {errors.message && (
-                <span className="text-red mb-20 italic text-red-400">
-                  Please fill out this field.
-                </span>
-              )}
             </div>
           </div>
           <div className="flex justify-center mt-4">

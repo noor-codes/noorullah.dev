@@ -18,6 +18,7 @@ const ContactForm = () => {
     try {
       const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/email`, {
         name: data.name,
+        email: data.email,
         msg: data.message,
       })
 
@@ -50,9 +51,32 @@ const ContactForm = () => {
                   className="block w-full mt-2 rounded mb-2 text-gray-900 dark:text-gray-200 dark:bg-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="name"
                   type="text"
-                  placeholder="Jane Doe"
+                  placeholder="Please type your name"
                   autoComplete="off"
                   {...register('name', { required: true })}
+                />
+                {errors.name && (
+                  <span className="text-red mb-20 italic text-red-400">
+                    Please fill out this field.
+                  </span>
+                )}
+              </label>
+            </div>
+          </div>
+          <div className="-mx-3 md:justify-between mb-6">
+            <div className="px-3 mb-6 md:mb-0">
+              <label
+                className="block uppercase tracking-wide text-gray-700 dark:text-gray-200 text-xs font-bold mb-2 md:mb-4"
+                htmlFor="Email"
+              >
+                Email
+                <input
+                  className="block w-full mt-2 rounded mb-2 text-gray-900 dark:text-gray-200 dark:bg-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
+                  id="Email"
+                  type="text"
+                  placeholder="Please type your email address"
+                  autoComplete="off"
+                  {...register('email', { required: true })}
                 />
                 {errors.name && (
                   <span className="text-red mb-20 italic text-red-400">

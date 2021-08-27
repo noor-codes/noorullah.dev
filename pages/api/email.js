@@ -21,7 +21,7 @@ const Email = async (req, res) => {
       await sgMail.send({
         to: process.env.EMAIL,
         from: req.body.email,
-        subject: `Feedback`,
+        subject: req.body.name,
         html: `
         <html>
           <body style="margin:0;padding:0;">
@@ -33,7 +33,7 @@ const Email = async (req, res) => {
                                   <td>
                                       <div style="max-width:100%;box-sizing:border-box; background:#161616">
                                           <div style="width:100%;max-width:575px;min-width:300px;margin:auto;text-align:center;padding:15px">
-                                              <img src="/public/icons/javascript.png" style="height: 110px;">
+                                              <img src="/icons/javascript.png" style="height: 110px;">
                                           </div>
                                           <div style="width:100%;max-width:575px;min-width:300px;background:#fff;margin:auto;box-sizing:border-box;border-radius:4px;border-bottom-left-radius:0;border-bottom-right-radius:0;padding:50px 30px 10px;">
                                               <h1 style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';color:#3d4852;font-size:18px;font-weight:bold;margin-top:0;text-align:left">
@@ -74,7 +74,7 @@ const Email = async (req, res) => {
 
                                           <p style="text-align:center; font-family:verdana;">
                                             <p style="text-align:center;flex; align-items:center; justify-content:center;">
-                                              <img style="text-align:center" src="/public/icons/vscode.png" style="height:50px">
+                                              <img style="text-align:center" src="/icons/vscode.png" style="height:50px">
                                             </p>
                                             <a href="http://noorullah.dev/" style="text-align:center;font-size:14px;line-height:1.5;color:#999999; text-decoration: none; color: cornflowerblue;     display: flex; align-items: center; justify-content: center;">
                                               Noorullah Ahmadzai

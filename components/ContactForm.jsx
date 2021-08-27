@@ -37,9 +37,10 @@ const ContactForm = () => {
       if (err?.response?.data?.msg?.includes('100 emails')) {
         return openSnackbar(err.response.data.msg)
       }
-      openSnackbar(
-        'There is a good chance your internet connection is down! 🤯 Please try again later!'
-      )
+
+      if (err.message.includes('Network')) return openSnackbar('No internet connection!')
+
+      return openSnackbar('Something went wrong! Please try again later! 🤯')
     }
   }
   return (

@@ -21,7 +21,7 @@ const ContactForm = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm({ mode: 'onChange', resolver: yupResolver(schema) })
+  } = useForm({ mode: 'onBlur', resolver: yupResolver(schema) })
 
   const submit = async (data) => {
     try {

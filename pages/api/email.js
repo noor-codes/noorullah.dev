@@ -20,7 +20,7 @@ const Email = async (req, res) => {
       //. SEND EMAILS
       await sgMail.send({
         to: process.env.EMAIL,
-        from: req.body.email,
+        from: 'noorullah.ahmadzai76@gmail.com',
         subject: req.body.name,
         html: `
         <html>

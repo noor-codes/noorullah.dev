@@ -7,10 +7,6 @@
     "url": "https://noorullah.dev"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leerob/leerob.io.git"
-  },
   "version": "0.1.0",
   "private": true,
   "scripts": {

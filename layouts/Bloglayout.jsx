@@ -1,10 +1,12 @@
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { format, parseISO } from 'date-fns'
+import { motion } from 'framer-motion'
 
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
+import { fadeInVariant } from 'variants/fadeInVariant'
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
@@ -31,53 +33,72 @@ const Blog = (props) => {
 
       <Layout>
         <div className="mt-12 md:mt-20" />
-        <PageSection name="Blog" />
+        <motion.div
+          variants={fadeInVariant}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.1 }}
+        >
+          <PageSection name="Blog" />
+        </motion.div>
         <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
           <main className="xs:px-4 mx-auto md:pt-5">
-            <article className="mt-8 mb-4">
-              <h1 className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl text-gray-900 dark:text-gray-200">
-                {title}
-              </h1>
-            </article>
+            <motion.div
+              variants={fadeInVariant}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.1 }}
+            >
+              <article className="mt-8 mb-4">
+                <h1 className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl text-gray-900 dark:text-gray-200">
+                  {title}
+                </h1>
+              </article>
 
-            <div className="flex items-center">
-              <div className="h-12 w-12 mr-3 mt-2 xs:h-16 xs:w-16">
-                <Image
-                  className="rounded-full"
-                  src="/img/profile.jpg"
-                  alt="Noorullah Ahmadzai"
-                  width={100}
-                  height={100}
-                  layout="responsive"
-                />
-              </div>
+              <div className="flex items-center">
+                <div className="h-12 w-12 mr-3 mt-2 xs:h-16 xs:w-16">
+                  <Image
+                    className="rounded-full"
+                    src="/img/profile.jpg"
+                    alt="Noorullah Ahmadzai"
+                    width={100}
+                    height={100}
+                    layout="responsive"
+                  />
+                </div>
 
-              <div>
-                <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl">
-                  Noorullah Ahmadzai
-                </h2>
-                <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
-                  <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;
-                  <span>{readingTime.text} &nbsp; </span>
-                </p>
+                <div>
+                  <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl">
+                    Noorullah Ahmadzai
+                  </h2>
+                  <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
+                    <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;
+                    <span>{readingTime.text} &nbsp; </span>
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="mt-5 lg:mb-8">
-              <div className="flex flex-wrap text-center -mx-1">
-                {tags.map((name) => (
-                  <div
-                    key={name}
-                    className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
-                  >
-                    {name}
-                  </div>
-                ))}
+              <div className="mt-5 lg:mb-8">
+                <div className="flex flex-wrap text-center -mx-1">
+                  {tags.map((name) => (
+                    <div
+                      key={name}
+                      className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                    >
+                      {name}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            <article className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400 mt-10">
+            </motion.div>
+            <motion.article
+              variants={fadeInVariant}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.3 }}
+              className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400 mt-10"
+            >
               {props.children}
-            </article>
+            </motion.article>
           </main>
         </div>
 

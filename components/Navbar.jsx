@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
 import { useTheme } from 'next-themes'
+import { motion } from 'framer-motion'
 
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
@@ -14,8 +15,8 @@ const Navbar = () => {
   //. theme is accessed after it is mounted
   useEffect(() => setMounted(true), [])
 
+  //. Menu
   const [isOpen, setIsOpen] = useState(false)
-  const menuVisibility = isOpen ? '' : 'sr-only' // sr-only instead of hidden class for accessibility
 
   return (
     <>
@@ -118,77 +119,82 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div
-            className={`${menuVisibility} sm:hidden flex flex-col bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-900 px-2 pb-2 space-y-2`}
-          >
-            <a
-              className="hover:cursor-pointer"
-              onKeyDown={() => {
-                setIsOpen(!isOpen)
-                Router.push('/blog')
-              }}
-              onClick={() => {
-                setIsOpen(!isOpen)
-                Router.push('/blog')
-              }}
+          {isOpen && (
+            <motion.div
+              initial={{ x: -30 }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', stiffness: 100 }}
+              className="sm:hidden flex flex-col bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-900 px-2 pb-2 space-y-2"
             >
-              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
-                <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />
-                Blog
-              </div>
-            </a>
-
-            <a
-              href="https://twitter.com/Noorullah_Ah"
-              rel="noreferrer"
-              target="_blank"
-              aria-label="twitter"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
-                <TwitterIcon className="mr-2 h-6 w-6 fill-current dark:text-gray-900" />
-                Twitter
-              </div>
-            </a>
-
-            <button type="button" aria-label="dark mode" className="focus:outline-none">
               <a
-                href="#"
-                className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
-                onClick={() => {
-                  setTheme(theme === 'dark' ? 'light' : 'dark')
+                className="hover:cursor-pointer"
+                onKeyDown={() => {
                   setIsOpen(!isOpen)
+                  Router.push('/blog')
+                }}
+                onClick={() => {
+                  setIsOpen(!isOpen)
+                  Router.push('/blog')
                 }}
               >
-                {mounted && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    className="h-6 w-6 dark:text-gray-800 text-gray-200"
-                  >
-                    {theme === 'dark' ? (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                      />
-                    ) : (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1}
-                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                      />
-                    )}
-                  </svg>
-                )}
-                &nbsp; {mounted && theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                  <BlogIcon className="mr-2 h-6 w-6 dark:text-gray-900" />
+                  Blog
+                </div>
               </a>
-            </button>
-          </div>
+
+              <a
+                href="https://twitter.com/Noorullah_Ah"
+                rel="noreferrer"
+                target="_blank"
+                aria-label="twitter"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">
+                  <TwitterIcon className="mr-2 h-6 w-6 fill-current dark:text-gray-900" />
+                  Twitter
+                </div>
+              </a>
+
+              <button type="button" aria-label="dark mode" className="focus:outline-none">
+                <a
+                  href="#"
+                  className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded"
+                  onClick={() => {
+                    setTheme(theme === 'dark' ? 'light' : 'dark')
+                    setIsOpen(!isOpen)
+                  }}
+                >
+                  {mounted && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      className="h-6 w-6 dark:text-gray-800 text-gray-200"
+                    >
+                      {theme === 'dark' ? (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                      ) : (
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1}
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                        />
+                      )}
+                    </svg>
+                  )}
+                  &nbsp; {mounted && theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                </a>
+              </button>
+            </motion.div>
+          )}
         </div>
       </nav>
     </>

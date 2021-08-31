@@ -5,6 +5,8 @@ import ContactForm from '@/components/ContactForm'
 import TechStack from '@/components/TechStack'
 import RecentProjects from '@/components/RecentProjects'
 import { NextSeo } from 'next-seo'
+import { motion } from 'framer-motion'
+import { fadeInVariant } from 'variants/fadeInVariant'
 
 const Landing = () => {
   return (
@@ -27,7 +29,13 @@ const Landing = () => {
         }}
       />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
-        <main className="flex flex-col justify-center pt-10 sm:mt-10 md:mt-16 ">
+        <motion.main
+          variants={fadeInVariant}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.1 }}
+          className="flex flex-col justify-center pt-10 sm:mt-10 md:mt-16 "
+        >
           <div className="flex items-center mb-4">
             <div className="h-12 w-12 xs:w-14 xs:h-14">
               <Image
@@ -65,22 +73,30 @@ const Landing = () => {
               <Download className="h-5 w-5 fill-current ml-2" />
             </a>
           </div>
-        </main>
+        </motion.main>
       </div>
-      <LandingSections name="Specialty" />
-      <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
-        <div className="mb-2">
-          <h2 className="text-gray-900 dark:text-gray-200 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
-            Frameworks & Languages
-          </h2>
-          <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg dark:text-gray-200">
-            For the last couple of years, I&apos;ve been learning about modern web development and
-            building fast, reliable and quality websites. Here are the list of technologies I love
-            to work with.
-          </h3>
-          <TechStack />
+
+      <motion.div
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.2 }}
+      >
+        <LandingSections name="Specialty" />
+        <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
+          <div className="mb-2">
+            <h2 className="text-gray-900 dark:text-gray-200 text-lg mt-4 font-extrabold xs:text-xl sm:text-2xl xl:text-3xl">
+              Frameworks & Languages
+            </h2>
+            <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg dark:text-gray-200">
+              For the last couple of years, I&apos;ve been learning about modern web development and
+              building fast, reliable and quality websites. Here are the list of technologies I love
+              to work with.
+            </h3>
+            <TechStack />
+          </div>
         </div>
-      </div>
+      </motion.div>
 
       <LandingSections name="Work Experience" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">

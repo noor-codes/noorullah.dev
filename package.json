@@ -27,6 +27,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "axios": "^0.21.1",
     "date-fns": "^2.21.1",
+    "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.2",
     "mdx-prism": "^0.3.3",
     "next": "^11.1.0",

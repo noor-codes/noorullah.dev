@@ -1,15 +1,15 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
 
-//. All Pages
-const posts = [
-  { url: '/' },
-  { url: '/blog' },
-  { url: '/blog/portfolio-for-software-engineers' },
-  { url: '/blog/github-authentication' },
-]
-
 const Sitemap = async (req, res) => {
+  //. All Pages
+  const posts = [
+    { url: '/' },
+    { url: '/blog' },
+    { url: '/blog/portfolio-for-software-engineers' },
+    { url: '/blog/github-authentication' },
+  ]
+
   //. Read all the links and generate their links in the XML sitemap.
   const links = posts.map((post) => {
     return { url: `${post.url}`, changefreq: 'daily', priority: 0.3 }

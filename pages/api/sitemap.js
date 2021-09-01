@@ -1,6 +1,7 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
 
+//. All Pages
 const posts = [
   { url: '/' },
   { url: '/blog' },
@@ -9,9 +10,7 @@ const posts = [
 ]
 
 const Sitemap = async (req, res) => {
-  //. Fetch All Posts
-
-  //. Read the all the posts and generate their links in the XML sitemap.
+  //. Read all the links and generate their links in the XML sitemap.
   const links = posts.map((post) => {
     return { url: `${post.url}`, changefreq: 'daily', priority: 0.3 }
   })

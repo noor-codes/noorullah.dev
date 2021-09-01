@@ -2,6 +2,13 @@ import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
 import { getAllFilesFrontMatter } from '@/utils/mdx'
 
+const PostLinks = [
+  { url: `/` },
+  { url: `/blog/` },
+  { url: `/blog/portfolio-for-software-engineers` },
+  { url: `/blog/github-authentication` },
+]
+
 const Sitemap = async (req, res) => {
   //. Fetch All Posts
   const posts = await getAllFilesFrontMatter('blog')

@@ -1,7 +1,3 @@
-import { SitemapStream, streamToPromise } from 'sitemap'
-import { Readable } from 'stream'
-import { PostLinks } from '@/lib/SEO/links'
-
 const Sitemap = async (req, res) => {
   //. Read the all the posts and generate their links in the XML sitemap.
   const links = PostLinks.map((post) => {

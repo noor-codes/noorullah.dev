@@ -1,19 +1,20 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
-import { getAllFilesFrontMatter } from '@/utils/mdx'
+
+const posts = [
+  { url: '/' },
+  { url: '/blog' },
+  { url: '/blog/portfolio-for-software-engineers' },
+  { url: '/blog/github-authentication' },
+]
 
 const Sitemap = async (req, res) => {
   //. Fetch All Posts
-  const posts = await getAllFilesFrontMatter('blog')
 
   //. Read the all the posts and generate their links in the XML sitemap.
   const links = posts.map((post) => {
-    return { url: `/blog/${post.slug}`, changefreq: 'daily', priority: 0.3 }
+    return { url: `${post.url}`, changefreq: 'daily', priority: 0.3 }
   })
-
-  //. Push your own links into the mix if they are not on the blog array.
-  links.unshift({ url: `/blog/`, changefreq: 'daily', priority: 0.3 })
-  links.unshift({ url: `/`, changefreq: 'daily', priority: 0.3 })
 
   //. Create a stream using incoming domain.
   const stream = new SitemapStream({ hostname: `https://${req.headers.host}` })

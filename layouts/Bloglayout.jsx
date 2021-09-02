@@ -2,11 +2,13 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
+import ScrollToTop from 'react-scroll-to-top'
 
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
 import { fadeInVariant } from 'variants/fadeInVariant'
+import { ScrollBottom } from '@/components/ScrollBottom'
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
@@ -33,6 +35,7 @@ const Blog = (props) => {
 
       <Layout>
         <div className="mt-12 md:mt-20" />
+        <ScrollBottom />
         <motion.div
           variants={fadeInVariant}
           initial="hidden"

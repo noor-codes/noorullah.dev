@@ -7,6 +7,7 @@ import RecentProjects from '@/components/RecentProjects'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { fadeInVariant } from 'variants/fadeInVariant'
+import { bioData } from '@/lib/bioData'
 
 const Landing = () => {
   return (
@@ -48,18 +49,17 @@ const Landing = () => {
               />
             </div>
             <div className="ml-2 text-base xs:text-lg xl:text-xl xl:ml-4 font-medium text-gray-900 dark:text-gray-200">
-              @noorullah_ah
+              {bioData.profiles.twitter.handler}
             </div>
           </div>
 
           <div>
             <h1 className="text-xl font-extrabold mb-4 xs:text-2xl sm:text-3xl sm:mt-2 xl:text-4xl text-gray-900 dark:text-gray-200">
-              Hi, I am Noorullah Ahmadzai
+              Hi, I am {bioData.fullname}
             </h1>
 
             <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4 dark:text-gray-200">
-              Software Engineer, Web Developer, Writer and Bachelor of Computer Science. I am
-              passionate about building quality software that you would love and admire.
+              {bioData.landing_bio}
             </h2>
           </div>
 

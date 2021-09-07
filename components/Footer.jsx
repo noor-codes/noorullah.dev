@@ -1,39 +1,29 @@
 import Twitter from '@/public/icons/social/twitter-icon.svg'
-import LinkedIn from '@/public/icons/social/linkedin-icon.svg'
 import GitHub from '@/public/icons/social/github-icon.svg'
+import { bioData } from '@/lib/bioData'
 
 const Footer = () => {
   return (
     <footer className="flex flex-col justify-center py-10 bg-gray-100 dark:bg-black dark:bg-opacity-20 w-full mt-20 lg:h-44">
       <div className="flex justify-center flex-row-reverse space-x-2 space-x-reverse md:space-x-3 md:space-x-reverse">
         <a
-          href="https://github.com/Noorullah-Ahmadzai"
+          href={`${bioData.profiles.twitter.url}`}
           rel="noreferrer"
           target="_blank"
-          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900 "
-          aria-label="github"
-        >
-          <GitHub className="fill-current hover:opacity-50 dark:text-gray-200" />
-        </a>
-
-        <a
-          href="https://twitter.com/Noorullah_Ah"
-          rel="noreferrer"
-          target="_blank"
-          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900"
-          aria-label="twitter"
+          className="block mt-0.5 h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900"
+          aria-label={`${bioData.profiles.twitter.name}`}
         >
           <Twitter className="fill-current hover:opacity-50  dark:text-gray-200" />
         </a>
 
         <a
-          href="https://www.linkedin.com/in/noorullah-ahmadzai-4239a6160/"
+          href={`${bioData.profiles.github.url}`}
           rel="noreferrer"
           target="_blank"
-          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9"
-          aria-label="linkedin"
+          className="block h-7 w-7 xs:h-8 md:w-8 lg:h-9 lg:w-9 text-gray-900 "
+          aria-label={`${bioData.profiles.github.name}`}
         >
-          <LinkedIn className="fill-current hover:opacity-50 text-gray-900 dark:text-gray-200" />
+          <GitHub className="fill-current hover:opacity-50 dark:text-gray-200" />
         </a>
       </div>
       <p className="text-gray-900 text-base mx-10 text-center mt-1 dark:text-gray-200 md:text-lg lg:text-xl lg:mt-2">

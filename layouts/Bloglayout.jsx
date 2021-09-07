@@ -2,13 +2,13 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
-import ScrollToTop from 'react-scroll-to-top'
 
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
 import { fadeInVariant } from 'variants/fadeInVariant'
 import { ScrollBottom } from '@/components/ScrollBottom'
+import { bioData } from '@/lib/bioData'
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
@@ -123,9 +123,7 @@ const Blog = (props) => {
                 About the Author
               </h2>
               <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
-                Noorullah Ahmadzai is a Software Engineer, Web Developer, Writer and Bachelor of
-                Computer Science. He is passionate about building quality software that everyone
-                loves.
+                {bioData.about_author}
               </p>
             </div>
           </div>

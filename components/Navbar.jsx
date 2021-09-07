@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
+import { bioData } from '@/lib/bioData'
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false)
@@ -108,10 +109,10 @@ const Navbar = () => {
                 </button>
 
                 <a
-                  href="https://twitter.com/Noorullah_Ah"
+                  href={`${bioData.profiles.twitter.url}`}
                   rel="noreferrer"
                   target="_blank"
-                  aria-label="twitter"
+                  aria-label={`${bioData.profiles.twitter.name}`}
                 >
                   <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:opacity-50" />
                 </a>
@@ -144,10 +145,10 @@ const Navbar = () => {
               </a>
 
               <a
-                href="https://twitter.com/Noorullah_Ah"
+                href={`${bioData.profiles.twitter.url}`}
                 rel="noreferrer"
                 target="_blank"
-                aria-label="twitter"
+                aria-label={`${bioData.profiles.twitter.name}`}
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">

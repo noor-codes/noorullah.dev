@@ -16,7 +16,7 @@ const Blog = (props) => {
   return (
     <div>
       <NextSeo
-        title={`${title} - Noorullah Ahmadzai`}
+        title={`${title}`}
         description={summary}
         openGraph={{
           url: `https://noorullah.dev/blog/${slug}`,

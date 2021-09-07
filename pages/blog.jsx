@@ -4,6 +4,7 @@ import { getAllFilesFrontMatter } from '@/utils/mdx'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { fadeInVariant } from 'variants/fadeInVariant'
+import { bioData } from '@/lib/bioData'
 
 const Blog = ({ posts }) => {
   return (
@@ -39,8 +40,7 @@ const Blog = ({ posts }) => {
                 My Blog Posts
               </h1>
               <p className="text-gray-700 dark:text-gray-200 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
-                Web Development, The latest and greatest technologies. If you ask me a question
-                twice. I will blog about it.
+                {bioData.blog_intro}
               </p>
               <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-2">&nbsp;</div>
             </motion.div>

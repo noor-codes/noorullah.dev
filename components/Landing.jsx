@@ -9,6 +9,9 @@ import { motion } from 'framer-motion'
 import { fadeInVariant } from 'variants/fadeInVariant'
 import { bioData } from '@/lib/bioData'
 
+const { fullname, profile_picture, landing_bio } = bioData
+const { twitter } = bioData.profiles
+
 const Landing = () => {
   return (
     <>
@@ -42,24 +45,24 @@ const Landing = () => {
               <Image
                 height={100}
                 width={100}
-                src="/img/profile.jpg"
-                alt="Noorullah Ahmadzai"
+                src={`${profile_picture}`}
+                alt={`${fullname}`}
                 layout="responsive"
                 className="rounded-full"
               />
             </div>
             <div className="ml-2 text-base xs:text-lg xl:text-xl xl:ml-4 font-medium text-gray-900 dark:text-gray-200">
-              {bioData.profiles.twitter.handler}
+              {twitter.handler}
             </div>
           </div>
 
           <div>
             <h1 className="text-xl font-extrabold mb-4 xs:text-2xl sm:text-3xl sm:mt-2 xl:text-4xl text-gray-900 dark:text-gray-200">
-              Hi, I am {bioData.fullname}
+              Hi, I am {fullname}
             </h1>
 
             <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4 dark:text-gray-200">
-              {bioData.landing_bio}
+              {landing_bio}
             </h2>
           </div>
 

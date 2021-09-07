@@ -9,6 +9,8 @@ import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
 import { bioData } from '@/lib/bioData'
 
+const { twitter } = bioData.profiles
+
 const Navbar = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -109,10 +111,10 @@ const Navbar = () => {
                 </button>
 
                 <a
-                  href={`${bioData.profiles.twitter.url}`}
+                  href={`${twitter.url}`}
                   rel="noreferrer"
                   target="_blank"
-                  aria-label={`${bioData.profiles.twitter.name}`}
+                  aria-label={`${twitter.name}`}
                 >
                   <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:opacity-50" />
                 </a>
@@ -145,10 +147,10 @@ const Navbar = () => {
               </a>
 
               <a
-                href={`${bioData.profiles.twitter.url}`}
+                href={`${twitter.url}`}
                 rel="noreferrer"
                 target="_blank"
-                aria-label={`${bioData.profiles.twitter.name}`}
+                aria-label={`${twitter.name}`}
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <div className="flex items-center pr-1 text-sm hover:bg-gray-800 dark:hover:bg-white dark:hover:text-gray-900 px-2 py-2 rounded">

@@ -10,6 +10,8 @@ import { fadeInVariant } from 'variants/fadeInVariant'
 import { ScrollBottom } from '@/components/ScrollBottom'
 import { bioData } from '@/lib/bioData'
 
+const { fullname, profile_picture, about_author } = bioData
+
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
 
@@ -17,7 +19,7 @@ const Blog = (props) => {
     <div>
       <NextSeo
         title={`${title}`}
-        description={summary}
+        description={`${summary}`}
         openGraph={{
           url: `https://noorullah.dev/blog/${slug}`,
           images: [
@@ -62,8 +64,8 @@ const Blog = (props) => {
                 <div className="h-12 w-12 mr-3 mt-2 xs:h-16 xs:w-16">
                   <Image
                     className="rounded-full"
-                    src="/img/profile.jpg"
-                    alt="Noorullah Ahmadzai"
+                    src={`${profile_picture}`}
+                    alt={fullname}
                     width={100}
                     height={100}
                     layout="responsive"
@@ -111,8 +113,8 @@ const Blog = (props) => {
             <div className="h-24 w-24 xs:h-28 xs:w-28 md:h-32 md:w-32 md:mb-1 xl:h-40 xl:w-40">
               <Image
                 className="rounded-full"
-                src="/img/profile.jpg"
-                alt="Noorullah Ahmadzai"
+                src={`${profile_picture}`}
+                alt={`${fullname}`}
                 width={200}
                 height={200}
                 layout="responsive"
@@ -123,7 +125,7 @@ const Blog = (props) => {
                 About the Author
               </h2>
               <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
-                {bioData.about_author}
+                {about_author}
               </p>
             </div>
           </div>

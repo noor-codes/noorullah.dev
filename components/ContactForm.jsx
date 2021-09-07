@@ -6,6 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import Spinner from '@/public/icons/landing/spinner-icon.svg'
 import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
+import { fire_confetti } from '@/lib/Confetti'
 
 const schema = yup.object().shape({
   name: yup.string().min(2).max(32).required(),
@@ -33,6 +34,7 @@ const ContactForm = () => {
 
       openSnackbar(res.data.msg)
       reset()
+      fire_confetti()
     } catch (err) {
       if (err?.response?.data?.msg?.includes('100 emails')) {
         return openSnackbar(err.response.data.msg)

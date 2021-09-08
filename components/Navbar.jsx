@@ -15,10 +15,10 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  //. theme is accessed after it is mounted
+  //. Theme is available after it is mounted
   useEffect(() => setMounted(true), [])
 
-  //. Menu
+  //. Menu State
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -112,18 +112,20 @@ const Navbar = () => {
                   )}
                 </button>
 
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.07, rotate: 10, y: -1 }}
                   href={`${twitter.url}`}
                   rel="noreferrer"
                   target="_blank"
                   aria-label={`${twitter.name}`}
                 >
-                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current hover:opacity-50" />
-                </a>
+                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current" />
+                </motion.a>
               </div>
             </div>
           </div>
 
+          {/* //.Mobile Menu*/}
           {isOpen && (
             <motion.div
               initial={{ x: -30 }}

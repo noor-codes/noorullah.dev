@@ -113,7 +113,11 @@ const Navbar = () => {
                 </button>
 
                 <motion.a
-                  whileHover={{ scale: 1.07, rotate: 10, y: -1 }}
+                  whileHover={{
+                    scale: 1.1,
+                    rotate: -3,
+                    transition: { duration: 0.3 },
+                  }}
                   href={`${twitter.url}`}
                   rel="noreferrer"
                   target="_blank"

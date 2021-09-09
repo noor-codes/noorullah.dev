@@ -5,7 +5,11 @@ const Blogpost = ({ post }) => {
   const { title, summary, readingTime, slug } = post
 
   return (
-    <motion.div whileHover={{ x: -8, cursor: 'pointer' }} className="block pt-4">
+    <motion.div
+      whileTap={{ x: -8 }}
+      whileHover={{ x: -8, cursor: 'pointer' }}
+      className="block pt-4"
+    >
       <Link href={`/blog/${slug}`}>
         <div className="flex flex-col lg:justify-center h-full">
           <a>

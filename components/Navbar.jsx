@@ -84,7 +84,10 @@ const Navbar = () => {
                   className="focus:outline-none"
                 >
                   {mounted && (
-                    <motion.div whileHover={{ scale: 1.1, rotate: theme === 'dark' ? 50 : 8 }}>
+                    <motion.div
+                      whileTap={{ scale: 1.1, rotate: theme === 'dark' ? 50 : 8 }}
+                      whileHover={{ scale: 1.1, rotate: theme === 'dark' ? 50 : 8 }}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

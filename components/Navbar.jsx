@@ -7,9 +7,9 @@ import { motion } from 'framer-motion'
 import CodeIcon from '@/public/icons/menu/code-icon.svg'
 import BlogIcon from '@/public/icons/menu/blog-icon.svg'
 import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
-import { bioData } from '@/lib/bioData'
+import { bio } from '@/config/bio'
 
-const { twitter } = bioData.profiles
+const { twitter } = bio.profiles
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false)

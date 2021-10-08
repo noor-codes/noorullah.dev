@@ -7,10 +7,10 @@ import RecentProjects from '@/components/RecentProjects'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { fadeInVariant } from 'animations/fadeInVariant'
-import { bioData } from '@/lib/bioData'
+import { bio } from '@/config/bio'
 
-const { fullname, profile_picture, landing_bio } = bioData
-const { twitter } = bioData.profiles
+const { fullname, profile_picture, landing_bio } = bio
+const { twitter } = bio.profiles
 
 const Landing = () => {
   return (

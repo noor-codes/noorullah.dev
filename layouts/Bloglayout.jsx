@@ -8,9 +8,9 @@ import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
 import { fadeInVariant } from 'animations/fadeInVariant'
 import { ScrollBottom } from '@/components/ScrollBottom'
-import { bioData } from '@/lib/bioData'
+import { bio } from '@/config/bio'
 
-const { fullname, profile_picture, about_author } = bioData
+const { fullname, profile_picture, about_author } = bio
 
 const Blog = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter

@@ -1,8 +1,8 @@
 import Twitter from '@/public/icons/social/twitter-icon.svg'
 import GitHub from '@/public/icons/social/github-icon.svg'
-import { bioData } from '@/lib/bioData'
+import { bio } from '@/config/bio'
 
-const { twitter, github } = bioData.profiles
+const { twitter, github } = bio.profiles
 
 const Footer = () => {
   return (

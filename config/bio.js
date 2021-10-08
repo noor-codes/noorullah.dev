@@ -1,4 +1,4 @@
-export const bioData = {
+export const bio = {
   name: 'Noorullah',
   fullname: 'Noorullah Ahmadzai',
   description: 'Software Engineer, Web Developer, Writer and JavaScript Enthusiast',

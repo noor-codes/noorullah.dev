@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { GA_TRACKING_ID } from '@/lib/google-analytics/gtag'
+import { GA_TRACKING_ID } from '@/config/gtag'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

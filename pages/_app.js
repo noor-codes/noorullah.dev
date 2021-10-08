@@ -7,8 +7,8 @@ import Router, { useRouter } from 'next/router'
 import NProgressBar from 'nprogress'
 import SnackbarProvider from 'react-simple-snackbar'
 
-import SEO from '@/lib/SEO/global'
-import * as gtag from '@/lib/google-analytics/gtag'
+import seo from '@/config/seo'
+import * as gtag from '@/config/gtag'
 import MDXComponents from '@/components/mdx/MDXComponents'
 import '@/styles/globals.css'
 
@@ -70,7 +70,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider defaultTheme="system" attribute="class">
         <SnackbarProvider>
           <MDXProvider components={MDXComponents}>
-            <DefaultSeo {...SEO} />
+            <DefaultSeo {...seo} />
             <Component {...pageProps} />
           </MDXProvider>
         </SnackbarProvider>

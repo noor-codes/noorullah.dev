@@ -6,7 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import Spinner from '@/public/icons/landing/spinner-icon.svg'
 import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
-import { fire_confetti } from '@/lib/Confetti'
+import { fire_confetti } from '@/utils/confetti'
 
 const schema = yup.object().shape({
   name: yup.string().min(2).max(32).required(),

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import PageSection from '@/components/PageSection'
 import Sharing from '@/components/Sharing'
 import Layout from 'layouts/Layout'
-import { fadeInVariant } from 'variants/fadeInVariant'
+import { fadeInVariant } from 'animations/fadeInVariant'
 import { ScrollBottom } from '@/components/ScrollBottom'
 import { bioData } from '@/lib/bioData'
 

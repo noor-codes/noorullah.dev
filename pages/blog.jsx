@@ -3,7 +3,7 @@ import Layout from 'layouts/Layout'
 import { getAllFilesFrontMatter } from '@/utils/mdx'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
-import { fadeInVariant } from 'variants/fadeInVariant'
+import { fadeInVariant } from 'animations/fadeInVariant'
 import { bioData } from '@/lib/bioData'
 
 const Blog = ({ posts }) => {

@@ -6,7 +6,7 @@ import TechStack from '@/components/TechStack'
 import RecentProjects from '@/components/RecentProjects'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
-import { fadeInVariant } from 'variants/fadeInVariant'
+import { fadeInVariant } from 'animations/fadeInVariant'
 import { bioData } from '@/lib/bioData'
 
 const { fullname, profile_picture, landing_bio } = bioData

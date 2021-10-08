@@ -1,14 +1,14 @@
-import { SEO } from '@/config/seo'
-import { App_Head } from '@/config/Head'
+import { SEO } from 'config/seo'
+import { App_Head } from 'config/Head'
 import { DefaultSeo } from 'next-seo'
-import { nprogress } from '@/config/nprogress'
+import { nprogress } from 'config/nprogress'
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'next-themes'
-import { googe_analytics } from '@/config/googe_analytics'
+import { googe_analytics } from 'config/google_analytics'
 import SnackbarProvider from 'react-simple-snackbar'
-import MDXComponents from '@/components/mdx/MDXComponents'
+import MDXComponents from 'components/mdx/MDXComponents'
 
-import '@/styles/globals.css'
+import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   nprogress()

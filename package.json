@@ -51,12 +51,15 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@types/react": "^17.0.27",
     "autoprefixer": "^10.3.1",
-    "eslint": "^7.21.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
     "postcss": "^8.3.6",
     "prettier": "^2.2.1",
     "rehype": "^11.0.0",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.4.3"
   },
   "engines": {}
 }

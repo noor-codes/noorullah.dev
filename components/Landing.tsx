@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import LandingSections from '@/components/LandingSections'
-import Download from '@/public/icons/landing/download-icon.svg'
-import ContactForm from '@/components/ContactForm'
-import TechStack from '@/components/TechStack'
-import RecentProjects from '@/components/RecentProjects'
+import LandingSections from 'components/LandingSections'
+import Download from 'public/icons/landing/download-icon.svg'
+import ContactForm from 'components/ContactForm'
+import TechStack from 'components/TechStack'
+import RecentProjects from 'components/RecentProjects'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { fadeInVariant } from 'animations/fadeInVariant'
-import { bio } from '@/config/bio'
+import { bio } from 'config/bio'
 
 const { fullname, profile_picture, landing_bio } = bio
 const { twitter } = bio.profiles
@@ -19,7 +19,6 @@ const Landing = () => {
         openGraph={{
           url: 'https://noorullah.dev/',
           type: 'blog',
-          canonical: process.env.NEXT_PUBLIC_DOMAIN_URL,
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Landing.png`,

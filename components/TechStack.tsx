@@ -1,4 +1,4 @@
-import { details } from '@/components/icons/TechStackIcons'
+import { details } from 'components/icons/TechStackIcons'
 
 const TechStack = () => {
   return (

@@ -3,12 +3,12 @@ import Image from 'next/image'
 import { format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 
-import PageSection from '@/components/PageSection'
-import Sharing from '@/components/Sharing'
+import PageSection from 'components/PageSection'
+import Sharing from 'components/Sharing'
 import Layout from 'layouts/Layout'
 import { fadeInVariant } from 'animations/fadeInVariant'
-import { ScrollBottom } from '@/components/ScrollBottom'
-import { bio } from '@/config/bio'
+import { ScrollBottom } from 'components/ScrollBottom'
+import { bio } from 'config/bio'
 
 const { fullname, profile_picture, about_author } = bio
 

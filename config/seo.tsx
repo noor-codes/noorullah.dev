@@ -1,9 +1,9 @@
-import { bio } from '@/config/bio'
+import { bio } from 'config/bio'
 
 const { fullname, description } = bio
 const { twitter, website } = bio.profiles
 
-const SEO = {
+export const SEO = {
   title: fullname,
   description,
   openGraph: {
@@ -27,5 +27,3 @@ const SEO = {
     site: twitter.handler,
   },
 }
-
-export default SEO

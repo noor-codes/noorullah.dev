@@ -4,10 +4,10 @@ import Router from 'next/router'
 import { useTheme } from 'next-themes'
 import { motion } from 'framer-motion'
 
-import CodeIcon from '@/public/icons/menu/code-icon.svg'
-import BlogIcon from '@/public/icons/menu/blog-icon.svg'
-import TwitterIcon from '@/public/icons/social/twitter-icon.svg'
-import { bio } from '@/config/bio'
+import CodeIcon from 'public/icons/menu/code-icon.svg'
+import BlogIcon from 'public/icons/menu/blog-icon.svg'
+import TwitterIcon from 'public/icons/social/twitter-icon.svg'
+import { bio } from 'config/bio'
 
 const { twitter } = bio.profiles
 

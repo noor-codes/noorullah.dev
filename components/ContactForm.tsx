@@ -4,9 +4,9 @@ import { useSnackbar } from 'react-simple-snackbar'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
-import Spinner from '@/public/icons/landing/spinner-icon.svg'
-import Paperplane from '@/public/icons/landing/paperplane-icon.svg'
-import { fire_confetti } from '@/utils/confetti'
+import Spinner from 'public/icons/landing/spinner-icon.svg'
+import Paperplane from 'public/icons/landing/paperplane-icon.svg'
+import { fire_confetti } from 'utils/confetti'
 
 const schema = yup.object().shape({
   name: yup.string().min(2).max(32).required(),
@@ -14,7 +14,7 @@ const schema = yup.object().shape({
   message: yup.string().min(8).max(300).required(),
 })
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [openSnackbar] = useSnackbar()
 
   const {
@@ -106,8 +106,7 @@ const ContactForm = () => {
                 <textarea
                   className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 dark:text-gray-200 dark:bg-gray-900  shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="message"
-                  type="text"
-                  rows="7"
+                  rows={7}
                   placeholder="Please type your message!"
                   autoComplete="off"
                   {...register('message')}
@@ -141,5 +140,3 @@ const ContactForm = () => {
     </fieldset>
   )
 }
-
-export default ContactForm

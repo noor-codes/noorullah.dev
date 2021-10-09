@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-const Blogpost = ({ post }) => {
+export const Blogpost = ({ post }) => {
   const { title, summary, readingTime, slug } = post
 
   return (
@@ -10,7 +10,7 @@ const Blogpost = ({ post }) => {
       whileHover={{ x: -8, cursor: 'pointer' }}
       className="block pt-4"
     >
-      <Link href={`/blog/${slug}`}>
+      <Link href={`/blog/${slug}`} passHref>
         <div className="flex flex-col lg:justify-center h-full">
           <a>
             <h1 className="mb-2 leading-6  font-bold text-base text-gray-900 dark:text-gray-200  xs:leading-6 max-w-xl xs:text-lg sm:text-xl md:text-2xl md:leading-10 xl:font-bold">
@@ -29,5 +29,3 @@ const Blogpost = ({ post }) => {
     </motion.div>
   )
 }
-
-export default Blogpost

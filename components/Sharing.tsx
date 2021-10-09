@@ -1,9 +1,9 @@
-import Facebook from '@/public/icons/social/facebook-icon.svg'
-import Twitter from '@/public/icons/social/twitter-icon.svg'
-import LinkedIn from '@/public/icons/social/linkedin-icon.svg'
-import Email from '@/public/icons/social/email-icon.svg'
+import Facebook from 'public/icons/social/facebook-icon.svg'
+import Twitter from 'public/icons/social/twitter-icon.svg'
+import LinkedIn from 'public/icons/social/linkedin-icon.svg'
+import Email from 'public/icons/social/email-icon.svg'
 
-const Sharing = ({ slug, title }) => (
+export const Sharing = ({ slug, title }) => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
     <div className="flex items-center">
       <div className="h-1.5 bg-gray-900 dark:bg-gray-200 w-20 xs:w-24 mr-2 md:h-2 md:w-32 lg:w-52">
@@ -57,5 +57,3 @@ const Sharing = ({ slug, title }) => (
     </div>
   </div>
 )
-
-export default Sharing

@@ -1,6 +1,6 @@
 {
-  "extends": "next",
+  "extends": "next/core-web-vitals",
   "rules": {
-    "eslintreact/display-name": "off"
+    "@next/next/no-document-import-in-page": "off"
   }
 }

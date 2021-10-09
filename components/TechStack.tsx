@@ -1,6 +1,6 @@
-import { details } from '@/components/icons/TechStackIcons'
+import { details } from 'components/icons/TechStackIcons'
 
-const TechStack = () => {
+export const TechStack = () => {
   return (
     <div className="flex flex-wrap -mx-3 justify-center xs:justify-start text-center mt-8">
       {details.map((tech) => {
@@ -16,5 +16,3 @@ const TechStack = () => {
     </div>
   )
 }
-
-export default TechStack

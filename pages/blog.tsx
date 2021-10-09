@@ -1,10 +1,10 @@
-import Blogpost from '@/components/Blogpost'
-import Layout from 'layouts/Layout'
-import { getAllFilesFrontMatter } from '@/utils/mdx'
+import { Blogpost } from 'components/Blogpost'
+import { Layout } from 'layouts/Layout'
+import { getAllFilesFrontMatter } from 'utils/mdx'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'
 import { fadeInVariant } from 'animations/fadeInVariant'
-import { bio } from '@/config/bio'
+import { bio } from 'config/bio'
 
 const Blog = ({ posts }) => {
   return (
@@ -26,6 +26,7 @@ const Blog = ({ posts }) => {
           ],
         }}
       />
+
       <Layout>
         <div className="container min-w-xs mx-auto mt-14 xs:mt-20 px-6 sm:px-10 md:max-w-3xl lg:flex  xl:max-w-4xl">
           <main className="mx-auto">

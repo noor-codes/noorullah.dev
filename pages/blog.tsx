@@ -26,6 +26,7 @@ const Blog = ({ posts }) => {
           ],
         }}
       />
+
       <Layout>
         <div className="container min-w-xs mx-auto mt-14 xs:mt-20 px-6 sm:px-10 md:max-w-3xl lg:flex  xl:max-w-4xl">
           <main className="mx-auto">

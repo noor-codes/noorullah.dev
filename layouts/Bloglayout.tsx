@@ -55,7 +55,10 @@ const Blog = (props) => {
               transition={{ delay: 0.1 }}
             >
               <article className="mt-8 mb-4">
-                <h1 className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl text-gray-900 dark:text-gray-200">
+                <h1
+                  className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl
+                text-gray-900 dark:text-gray-200"
+                >
                   {title}
                 </h1>
               </article>
@@ -73,7 +76,10 @@ const Blog = (props) => {
                 </div>
 
                 <div>
-                  <h2 className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide xs:text-lg md:text-xl">
+                  <h2
+                    className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide
+                    xs:text-lg md:text-xl"
+                  >
                     Noorullah Ahmadzai
                   </h2>
                   <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
@@ -87,7 +93,9 @@ const Blog = (props) => {
                   {tags.map((name) => (
                     <div
                       key={name}
-                      className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none md:text-sm md:px-4 md:py-2"
+                      className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl
+                       flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none
+                       md:text-sm md:px-4 md:py-2"
                     >
                       {name}
                     </div>
@@ -121,10 +129,16 @@ const Blog = (props) => {
               />
             </div>
             <div>
-              <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3 xs:text-lg md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4">
+              <h2
+                className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3 xs:text-lg
+                md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4"
+              >
                 About the Author
               </h2>
-              <p className="text-sm mt-1 text-gray-500 dark:text-gray-300 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg">
+              <p
+                className="text-sm mt-1 text-gray-500 dark:text-gray-300
+                tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg"
+              >
                 {about_author}
               </p>
             </div>

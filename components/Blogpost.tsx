@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-const Blogpost = ({ post }) => {
+export const Blogpost = ({ post }) => {
   const { title, summary, readingTime, slug } = post
 
   return (
@@ -29,5 +29,3 @@ const Blogpost = ({ post }) => {
     </motion.div>
   )
 }
-
-export default Blogpost

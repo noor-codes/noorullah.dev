@@ -11,7 +11,7 @@ import { bio } from 'config/bio'
 
 const { twitter } = bio.profiles
 
-const Navbar = () => {
+export const Navbar = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -214,5 +214,3 @@ const Navbar = () => {
     </>
   )
 }
-
-export default Navbar

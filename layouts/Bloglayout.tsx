@@ -1,18 +1,18 @@
-import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 import { format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 
-import PageSection from 'components/PageSection'
-import Sharing from 'components/Sharing'
-import Layout from 'layouts/Layout'
+import { PageSection } from 'components/PageSection'
+import { Sharing } from 'components/Sharing'
+import { Layout } from 'layouts/Layout'
 import { fadeInVariant } from 'animations/fadeInVariant'
 import { ScrollBottom } from 'components/ScrollBottom'
 import { bio } from 'config/bio'
 
 const { fullname, profile_picture, about_author } = bio
 
-const Blog = (props) => {
+export const BlogLayout = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
 
   return (
@@ -148,4 +148,3 @@ const Blog = (props) => {
     </div>
   )
 }
-export default Blog

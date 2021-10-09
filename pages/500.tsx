@@ -1,6 +1,6 @@
-import PageSection from 'components/PageSection'
-import Layout from 'layouts/Layout'
 import { NextSeo } from 'next-seo'
+import { Layout } from 'layouts/Layout'
+import { PageSection } from 'components/PageSection'
 
 const NotFound = () => {
   return (

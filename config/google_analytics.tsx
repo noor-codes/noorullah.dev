@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import * as gtag from 'config/gtag'
 
-export const googe_analytics = () => {
+export const Googe_Analytics = () => {
   const router = useRouter()
 
   useEffect(() => {

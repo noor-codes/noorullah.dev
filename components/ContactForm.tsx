@@ -14,7 +14,7 @@ const schema = yup.object().shape({
   message: yup.string().min(8).max(300).required(),
 })
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [openSnackbar] = useSnackbar()
 
   const {
@@ -140,5 +140,3 @@ const ContactForm = () => {
     </fieldset>
   )
 }
-
-export default ContactForm

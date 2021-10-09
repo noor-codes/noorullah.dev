@@ -1,5 +1,5 @@
-import Blogpost from 'components/Blogpost'
-import Layout from 'layouts/Layout'
+import { Blogpost } from 'components/Blogpost'
+import { Layout } from 'layouts/Layout'
 import { getAllFilesFrontMatter } from 'utils/mdx'
 import { NextSeo } from 'next-seo'
 import { motion } from 'framer-motion'

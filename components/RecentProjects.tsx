@@ -2,7 +2,7 @@ import Inventory from 'public/icons/landing/projects/inventory-icon.svg'
 import Portfolio from 'public/icons/landing/projects/portfolio-icon.svg'
 import CarbidNow from 'public/icons/landing/projects/carbidnow-icon.svg'
 
-const RecentProjects = () => {
+export const RecentProjects = () => {
   return (
     <>
       <div className="flex flex-wrap -mx-3 justify-center xs:justify-start text-center mt-8 mb-10">
@@ -30,5 +30,3 @@ const RecentProjects = () => {
     </>
   )
 }
-
-export default RecentProjects

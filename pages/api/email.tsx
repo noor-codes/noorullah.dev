@@ -4,7 +4,7 @@ import { format } from 'date-fns'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-const Email = async (req, res) => {
+export const Email = async (req, res) => {
   if (req.method === 'POST') {
     //.1 Check If there is a name
     if (!req.body.name) {
@@ -117,5 +117,3 @@ export const config = {
     },
   },
 }
-
-export default Email

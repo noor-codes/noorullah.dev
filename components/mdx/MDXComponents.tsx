@@ -23,7 +23,7 @@ const CustomLink = (props) => {
   )
 }
 
-const MDXComponents = {
+export const MDXComponents = {
   Image,
   a: CustomLink,
   h1: (props) => <h1 className="text-gray-900 dark:text-gray-200" {...props} />,
@@ -33,5 +33,3 @@ const MDXComponents = {
   h5: (props) => <h5 className="text-gray-900 dark:text-gray-200" {...props} />,
   h6: (props) => <h6 className="text-gray-900 dark:text-gray-200" {...props} />,
 }
-
-export default MDXComponents

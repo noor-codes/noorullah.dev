@@ -6,20 +6,23 @@ import { motion } from 'framer-motion'
 import { fadeInVariant } from 'animations/fadeInVariant'
 import { bio } from 'config/bio'
 
+const { fullname, profiles } = bio
+const { url } = profiles.website
+
 const Blog = ({ posts }) => {
   return (
     <>
       <NextSeo
-        title="Noorullah Ahmadzai - Blog"
+        title={`${fullname} - Blog`}
         openGraph={{
-          url: 'https://noorullah.dev/blog',
+          url: `${url}/blog`,
           type: 'blog',
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Blog.png`,
               width: 1920,
               height: 1060,
-              alt: 'Noorullah Ahmadzai',
+              alt: `${fullname}`,
             },
 
             { url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/img/SEO/Blog.png` },

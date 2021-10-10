@@ -10,6 +10,7 @@ import TwitterIcon from 'public/icons/social/twitter-icon.svg'
 import { bio } from 'config/bio'
 
 const { twitter } = bio.profiles
+const { name } = bio
 
 export const Navbar = () => {
   const [mounted, setMounted] = useState(false)
@@ -36,7 +37,7 @@ export const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       onKeyDown={() => setIsOpen(false)}
                     >
-                      Noorullah
+                      {name}
                     </div>
                   </a>
                 </Link>

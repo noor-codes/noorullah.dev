@@ -1,12 +1,15 @@
 import axios from 'axios'
+import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
-import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
 import Spinner from 'public/icons/landing/spinner-icon.svg'
 import Paperplane from 'public/icons/landing/paperplane-icon.svg'
 import { fire_confetti } from 'utils/confetti'
+import { bio } from 'config/bio'
+
+const { url } = bio.profiles.website
 
 const schema = yup.object().shape({
   name: yup.string().min(2).max(32).required(),
@@ -26,7 +29,7 @@ export const ContactForm = () => {
 
   const submit = async (data) => {
     try {
-      const res = await axios.post(`https://noorullah.dev/api/email`, {
+      const res = await axios.post(`${url}/api/email`, {
         name: data.name,
         email: data.email,
         msg: data.message,

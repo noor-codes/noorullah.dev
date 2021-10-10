@@ -10,7 +10,8 @@ import { fadeInVariant } from 'animations/fadeInVariant'
 import { ScrollBottom } from 'components/ScrollBottom'
 import { bio } from 'config/bio'
 
-const { fullname, profile_picture, about_author } = bio
+const { fullname, profile_picture, about_author, profiles } = bio
+const { url } = profiles.website
 
 export const BlogLayout = (props) => {
   const { publishedAt, slug, summary, readingTime, title, tags, banner } = props.frontMatter
@@ -21,7 +22,7 @@ export const BlogLayout = (props) => {
         title={`${title}`}
         description={`${summary}`}
         openGraph={{
-          url: `https://noorullah.dev/blog/${slug}`,
+          url: `${url}/blog/${slug}`,
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_ASSETS_URL}/blogs${banner}`,
@@ -80,7 +81,7 @@ export const BlogLayout = (props) => {
                     className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide
                     xs:text-lg md:text-xl"
                   >
-                    Noorullah Ahmadzai
+                    {fullname}
                   </h2>
                   <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
                     <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;

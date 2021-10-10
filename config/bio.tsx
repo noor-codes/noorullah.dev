@@ -2,6 +2,7 @@ import { bio_types } from 'types/bio'
 
 export const bio: bio_types = {
   name: 'Noorullah',
+  lastname: 'Ahmadzai',
   fullname: 'Noorullah Ahmadzai',
   description: 'Software Engineer, Web Developer, Writer and JavaScript Enthusiast',
   profile_picture: '/img/profile.jpg',

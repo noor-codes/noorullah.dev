@@ -1,5 +1,6 @@
 export interface bio_types {
   name: string
+  lastname: string
   fullname: string
   description: string
   profile_picture: string

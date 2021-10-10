@@ -2,6 +2,10 @@ import Facebook from 'public/icons/social/facebook-icon.svg'
 import Twitter from 'public/icons/social/twitter-icon.svg'
 import LinkedIn from 'public/icons/social/linkedin-icon.svg'
 import Email from 'public/icons/social/email-icon.svg'
+import { bio } from 'config/bio'
+
+const { url } = bio.profiles.website
+const { name, lastname } = bio
 
 export const Sharing = ({ slug, title }) => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
@@ -16,7 +20,7 @@ export const Sharing = ({ slug, title }) => (
 
     <div className="flex items-center flex-col pr-8 space-y-2 xs:flex-row xs:space-y-0 xs:space-x-3 md:pr-28 lg:pr-52 lg:space-x-4">
       <a
-        href={`https://twitter.com/intent/tweet?text=${title}&url=https://noorullah.dev/blog/${slug}`}
+        href={`https://twitter.com/intent/tweet?text=${title}&url=${url}/blog/${slug}`}
         rel="noreferrer noopener"
         target="_blank"
         aria-label="twitter"
@@ -26,7 +30,7 @@ export const Sharing = ({ slug, title }) => (
       </a>
 
       <a
-        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://noorullah.dev/blog/${slug}`}
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${url}/blog/${slug}`}
         rel="noreferrer noopener"
         target="_blank"
         aria-label="linkedin"
@@ -36,7 +40,7 @@ export const Sharing = ({ slug, title }) => (
       </a>
 
       <a
-        href={`https://www.facebook.com/sharer/sharer.php?u=https://noorullah.dev/blog/${slug}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=${url}/blog/${slug}`}
         rel="noreferrer noopener"
         target="_blank"
         aria-label="facebook"
@@ -46,7 +50,7 @@ export const Sharing = ({ slug, title }) => (
       </a>
 
       <a
-        href={`mailto:?&subject=%22${title}%22%20a%20blog%20by%20Noorullah%20Ahmadzai&body=https://noorullah.dev/blog/${slug}`}
+        href={`mailto:?&subject=%22${title}%22%20a%20blog%20by%20${name}%20${lastname}&body=${url}/blog/${slug}`}
         rel="noreferrer noopener"
         target="_blank"
         aria-label="facebook"

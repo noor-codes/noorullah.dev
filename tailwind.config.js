@@ -20,9 +20,9 @@ module.exports = {
           css: {
             color: '#333',
             a: {
-              color: '#1100ff',
+              color: '#3b82f6',
               '&:hover': {
-                color: '#1100ffa8',
+                color: '#60a5fa',
               },
             },
           },

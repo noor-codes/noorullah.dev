@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
-import { yupResolver } from '@hookform/resolvers/yup'
+import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
 
 import Spinner from 'public/icons/landing/spinner-icon.svg'
 import Paperplane from 'public/icons/landing/paperplane-icon.svg'

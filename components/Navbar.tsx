@@ -24,7 +24,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 bg-gray-900 text-white w-full z-50 dark:text-gray-900 dark:bg-gray-200">
+      <nav className="sticky top-0 bg-gray-900 text-white w-full z-50 dark:text-gray-900 dark:bg-gray-200 print:hidden">
         <div className="min-w-xs mx-auto sm:px-10 md:max-w-4xl xl:max-w-6xl">
           <div className="flex py-4 px-4 sm:py-6">
             <div className="flex justify-between w-full items-center">

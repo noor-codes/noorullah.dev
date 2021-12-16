@@ -6,7 +6,7 @@ const { twitter, github } = bio.profiles
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center py-10 bg-gray-100 dark:bg-black dark:bg-opacity-20 w-full mt-20 lg:h-44">
+    <footer className="flex flex-col justify-center py-10 bg-gray-100 dark:bg-black dark:bg-opacity-20 w-full mt-20 lg:h-44 print:hidden">
       <div className="flex justify-center flex-row-reverse space-x-2 space-x-reverse md:space-x-3 md:space-x-reverse">
         <a
           href={`${twitter.url}`}

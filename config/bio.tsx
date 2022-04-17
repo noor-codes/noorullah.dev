@@ -6,6 +6,7 @@ export const bio: bio_types = {
   fullname: 'Noorullah Ahmadzai',
   description: 'Software Engineer, Web Developer, Writer and JavaScript Enthusiast',
   profile_picture: '/img/profile.jpg',
+  cv_url: '/cv',
 
   about_author: `Noorullah Ahmadzai is a Software Engineer, Web Developer, Writer and Bachelor of
   Computer Science. He is passionate about building quality software that everyone

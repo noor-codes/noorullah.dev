@@ -7,6 +7,7 @@ export interface bio_types {
   about_author: string
   landing_bio: string
   blog_intro: string
+  cv_url: string
 
   profiles: {
     website: {

@@ -13,7 +13,7 @@ export const bio: bio_types = {
   loves.`,
 
   landing_bio: `Software Engineer, Web Developer, Writer and Bachelor of Computer Science. I am
-  passionate about building quality software that you would loves.`,
+  passionate about building quality software.`,
   blog_intro: `Web Technologies, JAMStack, General Information. If you ask me a question twice. I will blog about it.`,
 
   profiles: {

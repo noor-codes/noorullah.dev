@@ -58,7 +58,7 @@ export const BlogLayout = (props) => {
               <article className="mt-8 mb-4">
                 <h1
                   className="font-bold leading-tight text-2xl capitalize md:text-3xl lg:4xl
-                text-gray-900 dark:text-gray-200"
+                text-gray-900"
                 >
                   {title}
                 </h1>
@@ -78,12 +78,12 @@ export const BlogLayout = (props) => {
 
                 <div>
                   <h2
-                    className="text-md font-semibold text-gray-600 dark:text-gray-300 tacking-wide
+                    className="text-md font-semibold text-gray-600 tacking-wide
                     xs:text-lg md:text-xl"
                   >
                     {fullname}
                   </h2>
-                  <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 dark:text-gray-400 xs:text-sm">
+                  <p className="flex flex-wrap text-xs mt-0.5 text-gray-500 xs:text-sm">
                     <span>{format(parseISO(publishedAt), 'MMMM, do yyyy')}</span> &nbsp;-&nbsp;
                     <span>{readingTime.text} &nbsp; </span>
                   </p>
@@ -94,8 +94,8 @@ export const BlogLayout = (props) => {
                   {tags.map((name) => (
                     <div
                       key={name}
-                      className="bg-gray-100 m-1 whitespace-nowrap dark:bg-gray-800 px-2 text-2xl
-                       flex-1 text-gray-600 dark:text-gray-200 rounded-sm text-tiny select-none
+                      className="bg-gray-100 m-1 whitespace-nowrap px-2 text-2xl
+                       flex-1 text-gray-600 rounded-sm text-tiny select-none
                        md:text-sm md:px-4 md:py-2"
                     >
                       {name}
@@ -109,7 +109,7 @@ export const BlogLayout = (props) => {
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.3 }}
-              className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 dark:text-gray-400 mt-10"
+              className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 mt-10"
             >
               {props.children}
             </motion.article>
@@ -131,13 +131,13 @@ export const BlogLayout = (props) => {
             </div>
             <div>
               <h2
-                className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-3 xs:text-lg
+                className="text-lg font-semibold text-gray-800 mt-3 xs:text-lg
                 md:text-2xl xs:mt-4 xl:text-2xl xl:mt-4"
               >
                 About the Author
               </h2>
               <p
-                className="text-sm mt-1 text-gray-500 dark:text-gray-300
+                className="text-sm mt-1 text-gray-500
                 tracking-tight leading-5 xs:max-w-xs md:max-w-lg md:text-base xl:max-w-xl xl:text-lg"
               >
                 {about_author}

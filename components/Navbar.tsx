@@ -12,11 +12,6 @@ const { twitter } = bio.profiles
 const { name } = bio
 
 export const Navbar = () => {
-  const [mounted, setMounted] = useState(false)
-
-  //. Theme is available after it is mounted
-  useEffect(() => setMounted(true), [])
-
   //. Menu State
   const [isOpen, setIsOpen] = useState(false)
 

@@ -26,7 +26,7 @@ export const App_Head = () => {
         href="/pwa/apple-touch-icon-ipad-retina-152x152.png"
       />
       <link rel="apple-touch-icon" href="/apple-icon.png" />
-      <meta name="theme-color" content="#000000" />
+      <meta name="theme-color" content="#111827" />
     </Head>
   )
 }

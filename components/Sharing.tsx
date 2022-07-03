@@ -10,10 +10,10 @@ const { name, lastname } = bio
 export const Sharing = ({ slug, title }) => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
     <div className="flex items-center">
-      <div className="h-1.5 bg-gray-900 dark:bg-gray-200 w-20 xs:w-24 mr-2 md:h-2 md:w-32 lg:w-52">
+      <div className="h-1.5 bg-gray-900 w-20 xs:w-24 mr-2 md:h-2 md:w-32 lg:w-52">
         &nbsp;
       </div>
-      <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase md:font-bold lg:text-xl text-gray-900 dark:text-gray-200">
+      <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase md:font-bold lg:text-xl text-gray-900">
         Sharing is Caring
       </div>
     </div>
@@ -24,7 +24,7 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="twitter"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <Twitter />
       </a>
@@ -34,7 +34,7 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="linkedin"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <LinkedIn />
       </a>
@@ -44,7 +44,7 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="facebook"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <Facebook />
       </a>
@@ -54,7 +54,7 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="facebook"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black dark:text-gray-200"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
       >
         <Email />
       </a>

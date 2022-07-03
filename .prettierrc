@@ -3,11 +3,5 @@
   "printWidth": 100,
   "trailing": false,
   "endOfLine": "auto",
-  "semi": false,
-  "overrides": [
-    {
-      "files": "",
-      "options": {}
-    }
-  ]
+  "semi": false
 }

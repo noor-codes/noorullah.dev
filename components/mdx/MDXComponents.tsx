@@ -8,7 +8,7 @@ const CustomLink = (props) => {
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a className="text-red-500 dark:text-blue-500 dark:hover:text-blue-400" {...props} />
+        <a className="text-red-500" {...props} />
       </Link>
     )
   }
@@ -17,7 +17,7 @@ const CustomLink = (props) => {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className="text-red-500 dark:text-blue-500 dark:hover:text-blue-400"
+      className="text-red-500"
       {...props}
     />
   )
@@ -26,10 +26,10 @@ const CustomLink = (props) => {
 export const MDXComponents = {
   Image,
   a: CustomLink,
-  h1: (props) => <h1 className="text-gray-900 dark:text-gray-200" {...props} />,
-  h2: (props) => <h2 className="text-gray-900 dark:text-gray-200" {...props} />,
-  h3: (props) => <h3 className="text-gray-900 dark:text-gray-200" {...props} />,
-  h4: (props) => <h4 className="text-gray-900 dark:text-gray-200" {...props} />,
-  h5: (props) => <h5 className="text-gray-900 dark:text-gray-200" {...props} />,
-  h6: (props) => <h6 className="text-gray-900 dark:text-gray-200" {...props} />,
+  h1: (props) => <h1 className="text-gray-900" {...props} />,
+  h2: (props) => <h2 className="text-gray-900" {...props} />,
+  h3: (props) => <h3 className="text-gray-900" {...props} />,
+  h4: (props) => <h4 className="text-gray-900" {...props} />,
+  h5: (props) => <h5 className="text-gray-900" {...props} />,
+  h6: (props) => <h6 className="text-gray-900" {...props} />,
 }

@@ -12,8 +12,7 @@ export const bio: bio_types = {
   Computer Science. He is passionate about building quality software that everyone
   loves.`,
 
-  landing_bio: `Software Engineer, Web Developer, Writer and Bachelor of Computer Science. I am
-  passionate about building quality software.`,
+  landing_bio: `I am a software engineer, web developer, writer and bachelor of computer science. I have experience in a wide variety of programming languages and software development tools. I am passionate about developing software that is reliable, efficient, and user-friendly. I am always looking to improve my skills and learn new technologies.`,
   blog_intro: `Web Technologies, JAMStack, General Information. If you ask me a question twice. I will blog about it.`,
 
   profiles: {

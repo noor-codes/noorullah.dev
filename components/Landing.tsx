@@ -59,9 +59,7 @@ const Landing = () => {
               Hi, I am {fullname}
             </h1>
 
-            <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4">
-              {landing_bio}
-            </h2>
+            <h2 className="text-gray-600 text-sm xs:text-base sm:text-lg xl:mt-4">{landing_bio}</h2>
           </div>
 
           <div className="flex justify-center mt-6 mb-2 xs:mt-8 sm:w-60">
@@ -128,7 +126,7 @@ const Landing = () => {
 
       <div className="bg-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6 xl:py-8">
         <div className="flex items-center justify-between container min-w-xs mx-auto sm:px-4 md:max-w-2xl xl:max-w-3xl">
-          Need a full stack developer?
+          Need a full stack web developer?
           <a
             href="#contact"
             className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 xl:text-base mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white  hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"

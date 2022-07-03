@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
-import { useTheme } from 'next-themes'
 import { motion } from 'framer-motion'
 import { bio } from 'config/bio'
 
@@ -14,7 +13,6 @@ const { name } = bio
 
 export const Navbar = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
 
   //. Theme is available after it is mounted
   useEffect(() => setMounted(true), [])

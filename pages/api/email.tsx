@@ -1,6 +1,7 @@
 /* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
 import { format } from 'date-fns'
+import { af } from 'date-fns/locale'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
@@ -52,7 +53,9 @@ const Email = async (req, res) => {
 
                                           <p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:16px;line-height:1.5em;margin-top:0;text-align:left">
                                             From: ${req.body.email}<br>
-                                            ${format(new Date(), 'MMMM, do yyyy - p')}
+                                            ${format(new Date(), 'MMMM, do yyyy - p', {
+                                              locale: af,
+                                            })}
                                           </p>
                                       </div>
                                   </td>

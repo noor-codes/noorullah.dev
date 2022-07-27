@@ -53,9 +53,6 @@ const Email = async (req, res) => {
 
                                           <p style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-size:16px;line-height:1.5em;margin-top:0;text-align:left">
                                             From: ${req.body.email}<br>
-                                            ${format(new Date(), 'MMMM, do yyyy - p', {
-                                              locale: af,
-                                            })}
                                           </p>
                                       </div>
                                   </td>
@@ -76,9 +73,6 @@ const Email = async (req, res) => {
                                           </p>
 
                                           <p style="text-align:center; font-family:verdana;">
-                                            <p style="text-align:center;flex; align-items:center; justify-content:center;">
-                                              <img style="text-align:center" src="https://noorullah.dev/icons/vscode.png" style="height:50px">
-                                            </p>
                                             <a href="http://noorullah.dev/" style="text-align:center;font-size:14px;line-height:1.5;color:#999999; text-decoration: none; color: cornflowerblue;     display: flex; align-items: center; justify-content: center;">
                                               Noorullah Ahmadzai
                                             </a>

@@ -33,9 +33,6 @@ const Email = async (req, res) => {
                               <tr>
                                   <td>
                                       <div style="max-width:100%;box-sizing:border-box; background:#161616">
-                                          <div style="width:100%;max-width:575px;min-width:300px;margin:auto;text-align:center;padding:15px">
-                                              <img src="https://noorullah.dev/icons/javascript.png" style="height: 110px;">
-                                          </div>
                                           <div style="width:100%;max-width:575px;min-width:300px;background:#fff;margin:auto;box-sizing:border-box;border-radius:4px;border-bottom-left-radius:0;border-bottom-right-radius:0;padding:50px 30px 10px;">
                                               <h1 style="box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';color:#3d4852;font-size:18px;font-weight:bold;margin-top:0;text-align:left">
                                                 ${req.body.name}

@@ -1,6 +1,6 @@
 import { ContactForm } from 'components/ContactForm'
 import Download from 'public/icons/landing/download-icon.svg'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { LandingSections } from 'components/LandingSections'
 import { NextSeo } from 'next-seo'
 import { RecentProjects } from 'components/RecentProjects'

@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns'
 
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Layout } from 'layouts/Layout'
 import { NextSeo } from 'next-seo'
 import { PageSection } from 'components/PageSection'

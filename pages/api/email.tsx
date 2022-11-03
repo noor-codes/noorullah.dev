@@ -1,7 +1,7 @@
+import { af } from 'date-fns/locale'
+import { format } from 'date-fns'
 /* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
-import { format } from 'date-fns'
-import { af } from 'date-fns/locale'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 

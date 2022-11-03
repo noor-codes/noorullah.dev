@@ -1,4 +1,5 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
+
 import { Readable } from 'stream'
 
 const Sitemap = async (req, res) => {

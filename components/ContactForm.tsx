@@ -1,13 +1,13 @@
-import axios from 'axios'
 import * as yup from 'yup'
+
+import Paperplane from 'public/icons/landing/paperplane-icon.svg'
+import Spinner from 'public/icons/landing/spinner-icon.svg'
+import axios from 'axios'
+import { bio } from 'config/bio'
+import { fire_confetti } from 'utils/confetti'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
 import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
-
-import Spinner from 'public/icons/landing/spinner-icon.svg'
-import Paperplane from 'public/icons/landing/paperplane-icon.svg'
-import { fire_confetti } from 'utils/confetti'
-import { bio } from 'config/bio'
 
 const { url } = bio.profiles.website
 

@@ -1,3 +1,4 @@
+import { MDXComponents } from 'components/mdx/MDXComponents'
 /* eslint-disable global-require */
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -5,8 +6,6 @@ import mdxPrism from 'mdx-prism'
 import path from 'path'
 import readingTime from 'reading-time'
 import renderToString from 'next-mdx-remote/render-to-string'
-
-import { MDXComponents } from 'components/mdx/MDXComponents'
 
 const root = process.cwd()
 

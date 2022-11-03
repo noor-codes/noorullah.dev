@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const CustomLink = (props) => {
   const href = props.href
@@ -13,14 +13,7 @@ const CustomLink = (props) => {
     )
   }
 
-  return (
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-red-500"
-      {...props}
-    />
-  )
+  return <a target="_blank" rel="noopener noreferrer" className="text-red-500" {...props} />
 }
 
 export const MDXComponents = {

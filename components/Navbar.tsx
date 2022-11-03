@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
+
+import BlogIcon from 'public/icons/menu/blog-icon.svg'
+import CodeIcon from 'public/icons/menu/code-icon.svg'
 import Link from 'next/link'
 import Router from 'next/router'
-import { motion } from 'framer-motion'
-import { bio } from 'config/bio'
-
-import CodeIcon from 'public/icons/menu/code-icon.svg'
-import BlogIcon from 'public/icons/menu/blog-icon.svg'
 import TwitterIcon from 'public/icons/social/twitter-icon.svg'
+import { bio } from 'config/bio'
+import { motion } from 'framer-motion'
 
 const { twitter } = bio.profiles
 const { name } = bio

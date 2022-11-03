@@ -1,6 +1,6 @@
+import CarbidNow from 'public/icons/landing/projects/carbidnow-icon.svg'
 import Inventory from 'public/icons/landing/projects/inventory-icon.svg'
 import Portfolio from 'public/icons/landing/projects/portfolio-icon.svg'
-import CarbidNow from 'public/icons/landing/projects/carbidnow-icon.svg'
 
 export const RecentProjects = () => {
   return (

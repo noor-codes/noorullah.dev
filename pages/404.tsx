@@ -1,5 +1,5 @@
-import { PageSection } from 'components/PageSection'
 import { Layout } from 'layouts/Layout'
+import { PageSection } from 'components/PageSection'
 
 const NotFound = () => {
   return (

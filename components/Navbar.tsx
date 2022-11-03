@@ -22,22 +22,22 @@ export const Navbar = () => {
           <div className="flex py-4 px-4 sm:py-6">
             <div className="flex justify-between w-full items-center">
               <div className="flex items-center">
-                <Link href="/">
-                  <a className="flex items-center hover:opacity-60">
-                    <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
-                    <div
-                      className="font-bold sm:text-lg lg:text-xl"
-                      onClick={() => setIsOpen(false)}
-                      onKeyDown={() => setIsOpen(false)}
-                    >
-                      {name}
-                    </div>
-                  </a>
+                <Link href="/" className="flex items-center hover:opacity-60" passHref>
+                  <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
+                  <div
+                    className="font-bold sm:text-lg lg:text-xl"
+                    onClick={() => setIsOpen(false)}
+                    onKeyDown={() => setIsOpen(false)}
+                  >
+                    {name}
+                  </div>
                 </Link>
-                <Link href="/blog">
-                  <a className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:opacity-60">
-                    Blog
-                  </a>
+                <Link
+                  href="/blog"
+                  className="hidden sm:block ml-4 sm:text-lg xl:ml-6 lg:text-xl hover:opacity-60"
+                  passHref
+                >
+                  Blog
                 </Link>
               </div>
               <button

@@ -1,23 +1,19 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-
   "redirects": [
     {
       "source": "/cv",
       "destination": "/cv.pdf"
     },
-
     {
       "source": "/twitter",
       "destination": "https://twitter.com/noor_codes"
     },
-
     {
       "source": "/github",
       "destination": "https://github.com/noor-codes"
     },
-
     {
       "source": "/facebook",
       "destination": "https://www.facebook.com/1Noorullah.Ahmadzai"

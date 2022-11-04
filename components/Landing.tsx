@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import Download from 'public/icons/landing/download-icon.svg'
-import { LandingSections } from 'components/LandingSections'
 import { ContactForm } from 'components/ContactForm'
-import { TechStack } from 'components/TechStack'
-import { RecentProjects } from 'components/RecentProjects'
+import Download from 'public/icons/landing/download-icon.svg'
+import Image from 'next/legacy/image'
+import { LandingSections } from 'components/LandingSections'
 import { NextSeo } from 'next-seo'
-import { motion } from 'framer-motion'
-import { fadeInVariant } from 'animations/fadeInVariant'
+import { RecentProjects } from 'components/RecentProjects'
+import { TechStack } from 'components/TechStack'
 import { bio } from 'config/bio'
+import { fadeInVariant } from 'animations/fadeInVariant'
+import { motion } from 'framer-motion'
 
 const { fullname, profile_picture, landing_bio } = bio
 const { website, twitter } = bio.profiles

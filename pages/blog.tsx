@@ -1,10 +1,10 @@
 import { Blogpost } from 'components/Blogpost'
 import { Layout } from 'layouts/Layout'
-import { getAllFilesFrontMatter } from 'utils/mdx'
 import { NextSeo } from 'next-seo'
-import { motion } from 'framer-motion'
-import { fadeInVariant } from 'animations/fadeInVariant'
 import { bio } from 'config/bio'
+import { fadeInVariant } from 'animations/fadeInVariant'
+import { getAllFilesFrontMatter } from 'utils/mdx'
+import { motion } from 'framer-motion'
 
 const { fullname, profiles } = bio
 const { url } = profiles.website

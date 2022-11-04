@@ -1,7 +1,7 @@
-import Facebook from 'public/icons/social/facebook-icon.svg'
-import Twitter from 'public/icons/social/twitter-icon.svg'
-import LinkedIn from 'public/icons/social/linkedin-icon.svg'
 import Email from 'public/icons/social/email-icon.svg'
+import Facebook from 'public/icons/social/facebook-icon.svg'
+import LinkedIn from 'public/icons/social/linkedin-icon.svg'
+import Twitter from 'public/icons/social/twitter-icon.svg'
 import { bio } from 'config/bio'
 
 const { url } = bio.profiles.website
@@ -10,9 +10,7 @@ const { name, lastname } = bio
 export const Sharing = ({ slug, title }) => (
   <div className="flex items-center justify-between mt-16 xl:pt-10">
     <div className="flex items-center">
-      <div className="h-1.5 bg-gray-900 w-20 xs:w-24 mr-2 md:h-2 md:w-32 lg:w-52">
-        &nbsp;
-      </div>
+      <div className="h-1.5 bg-gray-900 w-20 xs:w-24 mr-2 md:h-2 md:w-32 lg:w-52">&nbsp;</div>
       <div className="font-sans font-semibold tracking-wider text-sm leading-5 uppercase md:font-bold lg:text-xl text-gray-900">
         Sharing is Caring
       </div>

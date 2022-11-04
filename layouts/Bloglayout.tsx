@@ -1,14 +1,14 @@
-import Image from 'next/image'
-import { NextSeo } from 'next-seo'
 import { format, parseISO } from 'date-fns'
-import { motion } from 'framer-motion'
 
-import { PageSection } from 'components/PageSection'
-import { Sharing } from 'components/Sharing'
+import Image from 'next/legacy/image'
 import { Layout } from 'layouts/Layout'
-import { fadeInVariant } from 'animations/fadeInVariant'
+import { NextSeo } from 'next-seo'
+import { PageSection } from 'components/PageSection'
 import { ScrollBottom } from 'components/ScrollBottom'
+import { Sharing } from 'components/Sharing'
 import { bio } from 'config/bio'
+import { fadeInVariant } from 'animations/fadeInVariant'
+import { motion } from 'framer-motion'
 
 const { fullname, profile_picture, about_author, profiles } = bio
 const { url } = profiles.website

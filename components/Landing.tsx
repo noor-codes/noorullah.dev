@@ -6,8 +6,6 @@ import { NextSeo } from 'next-seo'
 import { RecentProjects } from 'components/RecentProjects'
 import { TechStack } from 'components/TechStack'
 import { bio } from 'config/bio'
-import { fadeInVariant } from 'animations/fadeInVariant'
-import { motion } from 'framer-motion'
 
 const { fullname, profile_picture, landing_bio } = bio
 const { website, twitter } = bio.profiles
@@ -31,13 +29,7 @@ const Landing = () => {
         }}
       />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
-        <motion.main
-          variants={fadeInVariant}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.1 }}
-          className="flex flex-col justify-center pt-10 sm:mt-10 md:mt-16 "
-        >
+        <main className="flex flex-col justify-center pt-10 sm:mt-10 md:mt-16 ">
           <div className="flex items-center mb-4">
             <div className="h-12 w-12 xs:w-14 xs:h-14">
               <Image
@@ -73,15 +65,10 @@ const Landing = () => {
               <Download className="h-5 w-5 fill-current ml-2" />
             </a>
           </div>
-        </motion.main>
+        </main>
       </div>
 
-      <motion.div
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 0.2 }}
-      >
+      <div>
         <LandingSections name="Specialty" />
         <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">
           <div className="mb-2">
@@ -96,7 +83,7 @@ const Landing = () => {
             <TechStack />
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <LandingSections name="Work Experience" />
       <div className="container min-w-xs mx-auto px-6 sm:px-10 md:max-w-2xl xl:max-w-3xl">

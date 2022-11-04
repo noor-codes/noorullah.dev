@@ -8,6 +8,10 @@ import { MDXProvider } from '@mdx-js/react'
 import { SEO } from 'config/seo'
 import SnackbarProvider from 'react-simple-snackbar'
 import { nprogress } from 'config/nprogress'
+import splitbee from '@splitbee/web'
+
+// This initiliazes Splitbee.js
+splitbee.init()
 
 function MyApp({ Component, pageProps }) {
   nprogress()

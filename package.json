@@ -20,6 +20,7 @@
     "@hookform/resolvers": "^2.9.10",
     "@mdx-js/react": "^1.6.22",
     "@sendgrid/mail": "^7.4.2",
+    "@splitbee/web": "^0.3.0",
     "@svgr/webpack": "^5.5.0",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.3.0",

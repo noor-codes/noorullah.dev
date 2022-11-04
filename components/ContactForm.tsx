@@ -7,7 +7,7 @@ import { bio } from 'config/bio'
 import { fire_confetti } from 'utils/confetti'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
-import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
+import { yupResolver } from '@hookform/resolvers/yup'
 
 const { url } = bio.profiles.website
 

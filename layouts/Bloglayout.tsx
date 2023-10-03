@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo'
 import { PageSection } from 'components/PageSection'
 import { ScrollBottom } from 'components/ScrollBottom'
 import { Sharing } from 'components/Sharing'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 import { fadeInVariant } from 'animations/fadeInVariant'
 import { motion } from 'framer-motion'
 

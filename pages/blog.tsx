@@ -1,7 +1,7 @@
 import { Blogpost } from 'components/Blogpost'
 import { Layout } from 'layouts/Layout'
 import { NextSeo } from 'next-seo'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 import { fadeInVariant } from 'animations/fadeInVariant'
 import { getAllFilesFrontMatter } from 'utils/mdx'
 import { motion } from 'framer-motion'

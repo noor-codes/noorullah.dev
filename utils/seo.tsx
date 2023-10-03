@@ -1,4 +1,4 @@
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 
 const { fullname, description } = bio
 const { twitter, website } = bio.profiles

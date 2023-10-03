@@ -5,7 +5,7 @@ import { LandingSections } from 'components/LandingSections'
 import { NextSeo } from 'next-seo'
 import { RecentProjects } from 'components/RecentProjects'
 import { TechStack } from 'components/TechStack'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 
 const { fullname, profile_picture, landing_bio } = bio
 const { website, twitter } = bio.profiles

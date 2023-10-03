@@ -2,7 +2,7 @@ import Email from 'public/icons/social/email-icon.svg'
 import Facebook from 'public/icons/social/facebook-icon.svg'
 import LinkedIn from 'public/icons/social/linkedin-icon.svg'
 import Twitter from 'public/icons/social/twitter-icon.svg'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 
 const { url } = bio.profiles.website
 const { name, lastname } = bio

@@ -1,6 +1,6 @@
 import GitHub from 'public/icons/social/github-icon.svg'
 import Twitter from 'public/icons/social/twitter-icon.svg'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 
 const { twitter, github } = bio.profiles
 

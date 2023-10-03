@@ -1,14 +1,15 @@
 import 'styles/globals.css'
 
+import { SEO } from 'utils/seo'
+import { App_Head } from 'utils/Head'
 import { Analytics } from '@vercel/analytics/react'
-import { App_Head } from 'config/Head'
+import { nprogress } from 'utils/nprogress'
 import { DefaultSeo } from 'next-seo'
-import { MDXComponents } from 'components/mdx/MDXComponents'
 import { MDXProvider } from '@mdx-js/react'
-import { SEO } from 'config/seo'
-import SnackbarProvider from 'react-simple-snackbar'
-import { nprogress } from 'config/nprogress'
+import { MDXComponents } from 'components/mdx/MDXComponents'
+
 import splitbee from '@splitbee/web'
+import SnackbarProvider from 'react-simple-snackbar'
 
 // This initiliazes Splitbee.js
 splitbee.init()

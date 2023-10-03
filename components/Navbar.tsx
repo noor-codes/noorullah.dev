@@ -5,7 +5,7 @@ import CodeIcon from 'public/icons/menu/code-icon.svg'
 import Link from 'next/link'
 import Router from 'next/router'
 import TwitterIcon from 'public/icons/social/twitter-icon.svg'
-import { bio } from 'config/bio'
+import { bio } from 'utils/bio'
 import { motion } from 'framer-motion'
 
 const { twitter } = bio.profiles

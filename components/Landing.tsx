@@ -118,7 +118,7 @@ const Landing = () => {
             href="#contact"
             className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 xl:text-base mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white  hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
           >
-            Shoot me a message
+            Get in touch
           </a>
         </div>
       </div>

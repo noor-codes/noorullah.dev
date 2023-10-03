@@ -52,7 +52,7 @@ export const ContactForm = () => {
     <fieldset id="contact" onSubmit={handleSubmit(submit)} disabled={isSubmitting}>
       <form className="mt-20 lg:mt-32">
         <h2 className="text-2xl text-center font-bold xs:text-3xl lg:mb-2 text-gray-900">
-          Get in Touch
+          Message
         </h2>
         <div className="pt-4 pb-8 mb-4 my-2">
           <div className="-mx-3 md:justify-between mb-6">
@@ -109,7 +109,7 @@ export const ContactForm = () => {
                 <textarea
                   className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="message"
-                  rows={7}
+                  rows={9}
                   placeholder="Please type your message!"
                   autoComplete="off"
                   {...register('message')}

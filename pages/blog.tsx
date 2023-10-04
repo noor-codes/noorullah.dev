@@ -43,7 +43,7 @@ const Blog = ({ posts }) => {
               <h1 className="xl:mt-8 font-bold leading-normal mb-5 text-2xl xs:text-3xl xs:leading-10 md:text-5xl md:mb-6 lg:leading-snug text-gray-900">
                 My Blog Posts
               </h1>
-              <p className="text-gray-700 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:-mt-2  sm:text-lg xl:max-w-2xl">
+              <p className="text-gray-700 text-sm -mt-5 xs:text-base xs:-mt-3 md:text-xl md:mb-3 md:-mt-2  sm:text-lg xl:max-w-2xl">
                 {bio.blog_intro}
               </p>
               <div className="border-b-2 border-gray-100 -mt-5 md:-mt-4 lg:mb-2">&nbsp;</div>

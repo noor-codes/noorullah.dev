@@ -76,9 +76,10 @@ const Landing = () => {
               Frameworks & Languages
             </h2>
             <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">
-              For the last couple of years, I&apos;ve been learning about modern web development and
-              building fast, reliable and quality websites. Here are the list of technologies I love
-              to work with.
+              Over the past 6 years, I have dedicated myself to mastering a comprehensive set of
+              tools and technologies to excel in modern web development. My expertise encompasses a
+              wide range of frameworks, languages, and tools, enabling me to craft fast, reliable,
+              and high-quality websites. Here is a curated list of them.
             </h3>
             <TechStack />
           </div>
@@ -92,9 +93,13 @@ const Landing = () => {
             Experience
           </h2>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">
-            I explored different fields in Computer Science and finally settled with Software
-            Engineering. I studied modern Web Development in details. I have ever since learnt a lot
-            and built various projects. I have 3 years of professional web development experience.
+            With over five years of web development experience, including three years in
+            professional roles with companies in Europe and America, I offer a strong background in
+            this field. Holding a Bachelor&lsquo;s degree in Computer Science, my expertise is
+            rooted in a solid theoretical foundation and hands-on experience. Throughout my career,
+            I have consistently honed my web development skills, staying current with industry
+            trends and best practices. I am passionate about creating high-quality web solutions and
+            look forward to leveraging my experience to contribute effectively to future projects.
           </h3>
         </div>
       </div>
@@ -104,8 +109,8 @@ const Landing = () => {
         <div>
           <h3 className="text-gray-600 text-sm mt-2 xs:text-base sm:text-lg">
             These are some of my latest projects I have worked on. A very small Inventory Management
-            System, My personal portfolio and contributed to international project
-            &quot;CarBidNow&quot; at Risa Hall Web Inc.
+            System, My personal portfolio, contributed to international project CarBidNow at Risa
+            Hall Web Inc and built a game publishing and management platform for Gamerina SRL.
           </h3>
         </div>
         <RecentProjects />
@@ -113,10 +118,10 @@ const Landing = () => {
 
       <div className="bg-gray-900 text-white py-3 pl-6 font-semibold xs:text-lg sm:text-xl sm:py-4 lg:text-2xl lg:py-6 xl:py-8">
         <div className="flex items-center justify-between container min-w-xs mx-auto sm:px-4 md:max-w-2xl xl:max-w-3xl">
-          Need a full stack web developer?
+          Need a fullstack JavaScript web dev?
           <a
             href="#contact"
-            className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 xl:text-base mr-8 border-2 select-none border-gray-400 hover:border-gray-900 text-white  hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
+            className="sm:flex hidden items-center text-sm px-6 xl:py-3 xl:px-8 xl:text-base border-2 select-none border-gray-400 hover:border-gray-900 text-white  hover:bg-gray-100 hover:text-gray-900 cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-opacity-50 focus:ring-offset-gray-900 transform active:scale-95"
           >
             Get in touch
           </a>

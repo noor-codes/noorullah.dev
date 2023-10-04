@@ -1,3 +1,4 @@
+import CMS from 'public/icons/landing/projects/gamerina-cms.svg'
 import CarbidNow from 'public/icons/landing/projects/carbidnow-icon.svg'
 import Inventory from 'public/icons/landing/projects/inventory-icon.svg'
 import Portfolio from 'public/icons/landing/projects/portfolio-icon.svg'
@@ -25,6 +26,13 @@ export const RecentProjects = () => {
             <CarbidNow className="h-16 w-16 sm:h-20 sm:w-20 fill-current" />
           </div>
           <div className="text-sm text-gray-500 mt-2">CarBidNow</div>
+        </div>
+
+        <div>
+          <div className="flex justify-center items-center m-3 bg-gray-100 h-24 w-24 sm:h-28 sm:w-28 text-2xl text-gray-600 rounded-md">
+            <CMS className="h-16 w-16 sm:h-20 sm:w-20 fill-current" />
+          </div>
+          <div className="text-sm text-gray-500 mt-2">Games CMS</div>
         </div>
       </div>
     </>

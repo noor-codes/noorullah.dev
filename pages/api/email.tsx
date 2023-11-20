@@ -1,5 +1,3 @@
-import { af } from 'date-fns/locale'
-import { format } from 'date-fns'
 /* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
 

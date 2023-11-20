@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import BlogIcon from 'public/icons/menu/blog-icon.svg'
 import CodeIcon from 'public/icons/menu/code-icon.svg'

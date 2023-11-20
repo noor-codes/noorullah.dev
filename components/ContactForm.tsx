@@ -63,7 +63,7 @@ export const ContactForm = () => {
               >
                 Name
                 <input
-                  className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
+                  className="block w-full font-normal mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="name"
                   type="text"
                   placeholder="Please type your name"
@@ -84,7 +84,7 @@ export const ContactForm = () => {
               >
                 Email
                 <input
-                  className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
+                  className="block w-full font-normal mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="Email"
                   type="text"
                   placeholder="Please type your email address"
@@ -107,7 +107,7 @@ export const ContactForm = () => {
               >
                 Message
                 <textarea
-                  className="block w-full mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
+                  className="block w-full font-normal mt-2 rounded mb-2 text-gray-900 border-gray-300 shadow-sm focus:border-gray-400 focus:ring-gray-400 disabled:cursor-not-allowed"
                   id="message"
                   rows={9}
                   placeholder="Please type your message!"

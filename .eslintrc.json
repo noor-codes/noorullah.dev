@@ -1,6 +1,12 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "@next/next/no-document-import-in-page": "off"
+    "no-unused-vars": [
+      "warn",
+      {
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
+      }
+    ]
   }
 }

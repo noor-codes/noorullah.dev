@@ -3,12 +3,11 @@
   "description": "Web Developer, Blogger, Tech Enthusiast",
   "author": {
     "name": "Noorullah Ahmadzai",
-    "email": "Noorullah.Ahmadzai@outlook.com",
+    "email": "Noorullah.Ahmadzai76@gmail.com",
     "url": "https://noorullah.dev"
   },
   "license": "MIT",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,16 +18,15 @@
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "@mdx-js/react": "^1.6.22",
-    "@sendgrid/mail": "^7.4.2",
+    "@sendgrid/mail": "^7.7.0",
     "@splitbee/web": "^0.3.0",
     "@svgr/webpack": "^5.5.0",
     "@tailwindcss/forms": "^0.4.0",
-    "@tailwindcss/line-clamp": "^0.3.0",
     "@tailwindcss/typography": "^0.5.0",
     "@vercel/analytics": "^0.1.3",
     "axios": "^0.21.1",
     "canvas-confetti": "^1.4.0",
-    "date-fns": "^2.21.1",
+    "date-fns": "^2.30.0",
     "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.2",
     "mdx-prism": "^0.3.3",
@@ -47,18 +45,19 @@
     "remark-slug": "^6.0.0",
     "sharp": "^0.32.6",
     "sitemap": "^7.0.0",
-    "yup": "^0.32.9"
+    "yup": "^1.3.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.27",
-    "autoprefixer": "^10.4.0",
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.2",
-    "postcss": "^8.4.5",
-    "prettier": "^2.2.1",
-    "rehype": "^11.0.0",
-    "tailwindcss": "^3.0.5",
-    "typescript": "^5.2.2"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "autoprefixer": "latest",
+    "rehype": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   },
   "engines": {
     "node": "^18"

@@ -6,7 +6,7 @@ import hydrate from 'next-mdx-remote/hydrate'
 
 export default function Blog({ mdxSource, frontMatter }) {
   const content = hydrate(mdxSource, {
-    components: MDXComponents,
+    components: MDXComponents as any,
   })
 
   return <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>

@@ -71,7 +71,9 @@ export const ContactForm = () => {
                   {...register('name')}
                 />
                 {errors.name && (
-                  <span className="text-red mb-20 italic text-red-400">{errors.name?.message}</span>
+                  <span className="text-red mb-20 italic text-red-400">
+                    {errors.name?.message as any}
+                  </span>
                 )}
               </label>
             </div>
@@ -93,7 +95,7 @@ export const ContactForm = () => {
                 />
                 {errors.email && (
                   <span className="text-red mb-20 italic text-red-400">
-                    {errors.email?.message}
+                    {errors.email?.message as any}
                   </span>
                 )}
               </label>
@@ -116,7 +118,7 @@ export const ContactForm = () => {
                 />
                 {errors.message && (
                   <span className="text-red mb-20 italic text-red-400">
-                    {errors.message?.message}
+                    {errors.message?.message as any}
                   </span>
                 )}
               </label>

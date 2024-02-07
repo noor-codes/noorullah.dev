@@ -17,6 +17,10 @@
     {
       "source": "/facebook",
       "destination": "https://www.facebook.com/1Noorullah.Ahmadzai"
+    },
+    {
+      "source": "/meeting",
+      "destination": "bit.ly/noor-codes"
     }
   ]
 }

@@ -23,6 +23,10 @@
       "destination": "https://www.facebook.com/1Noorullah.Ahmadzai"
     },
     {
+      "source": "/telegram",
+      "destination": "https://t.me/noor_codes"
+    },
+    {
       "source": "/meeting",
       "destination": "https://bit.ly/noor-codes"
     }

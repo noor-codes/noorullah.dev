@@ -11,6 +11,10 @@
       "destination": "https://twitter.com/noor_codes"
     },
     {
+      "source": "/x",
+      "destination": "https://x.com/noor_codes"
+    },
+    {
       "source": "/github",
       "destination": "https://github.com/noor-codes"
     },

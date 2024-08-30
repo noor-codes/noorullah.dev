@@ -29,6 +29,10 @@
     {
       "source": "/meeting",
       "destination": "https://bit.ly/noor-codes"
+    },
+    {
+      "source": "/books",
+      "destination": "https://goodreads.com/noor_codes"
     }
   ]
 }

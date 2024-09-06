@@ -51,15 +51,12 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "autoprefixer": "latest",
-    "rehype": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
     "prettier": "latest",
+    "rehype": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
-  },
-  "engines": {
-    "node": "^18"
   }
 }

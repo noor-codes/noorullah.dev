@@ -58,5 +58,8 @@
     "rehype": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
+  },
+  "engines": {
+    "node": "^22"
   }
 }

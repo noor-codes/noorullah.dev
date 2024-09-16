@@ -23,6 +23,18 @@
       "destination": "https://www.facebook.com/1Noorullah.Ahmadzai"
     },
     {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/noor_codes"
+    },
+    {
+      "source": "/tiktok",
+      "destination": "https://www.tiktok.com/@noor_codes"
+    },
+    {
+      "source": "/twitch",
+      "destination": "https://twitch.tv/noor_codes"
+    },
+    {
       "source": "/telegram",
       "destination": "https://t.me/noor_codes"
     },

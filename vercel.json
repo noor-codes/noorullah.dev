@@ -39,6 +39,10 @@
       "destination": "https://t.me/noor_codes"
     },
     {
+      "source": "/whatsup",
+      "destination": "https://api.whatsapp.com/send/?phone=764131756&text&type=phone_number&app_absent=0"
+    },
+    {
       "source": "/meeting",
       "destination": "https://bit.ly/noor-codes"
     },

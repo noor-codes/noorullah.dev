@@ -39,7 +39,19 @@
       "destination": "https://t.me/noor_codes"
     },
     {
+      "source": "/WhatsApp",
+      "destination": "https://api.whatsapp.com/send/?phone=764131756&text&type=phone_number&app_absent=0"
+    },
+    {
       "source": "/whatsApp",
+      "destination": "https://api.whatsapp.com/send/?phone=764131756&text&type=phone_number&app_absent=0"
+    },
+    {
+      "source": "/whatsapp",
+      "destination": "https://api.whatsapp.com/send/?phone=764131756&text&type=phone_number&app_absent=0"
+    },
+    {
+      "source": "/whatsup",
       "destination": "https://api.whatsapp.com/send/?phone=764131756&text&type=phone_number&app_absent=0"
     },
     {

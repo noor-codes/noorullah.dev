@@ -1,19 +1,96 @@
 import { useState } from 'react'
-
-import BlogIcon from 'public/icons/menu/blog-icon.svg'
-import CodeIcon from 'public/icons/menu/code-icon.svg'
 import Link from 'next/link'
-import Router from 'next/router'
-import TwitterIcon from 'public/icons/social/twitter-icon.svg'
+import Image from 'next/image'
 import { bio } from 'utils/bio'
 import { motion } from 'framer-motion'
 
 const { twitter } = bio.profiles
 const { name } = bio
 
+interface MenuButtonProps {
+  isOpen: boolean
+  onClick: () => void
+}
+
+const MENU_STATES = {
+  OPEN: {
+    src: '/icons/menu/close-menu.svg',
+    alt: 'Close Menu',
+  },
+  CLOSED: {
+    src: '/icons/menu/hamburger-menu.svg',
+    alt: 'Open Menu',
+  },
+} as const
+
+const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {
+  const menuState = isOpen ? MENU_STATES.OPEN : MENU_STATES.CLOSED
+
+  return (
+    <button
+      type="button"
+      aria-label="menu"
+      onClick={onClick}
+      className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
+    >
+      <div className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2">
+        <Image src={menuState.src} alt={menuState.alt} width={20} height={20} className="invert" />
+      </div>
+    </button>
+  )
+}
+
+const menuVariants = {
+  open: {
+    opacity: 1,
+    height: 'auto',
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+      mass: 0.8,
+      staggerChildren: 0.07,
+      delayChildren: 0.2,
+    },
+  },
+  closed: {
+    opacity: 0,
+    height: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+      mass: 0.8,
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+}
+
+const menuItemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+  closed: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+}
+
 export const Navbar = () => {
-  //. Menu State
   const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
     <>
@@ -23,7 +100,13 @@ export const Navbar = () => {
             <div className="flex justify-between w-full items-center">
               <div className="flex items-center">
                 <Link href="/" className="flex items-center hover:opacity-60" passHref>
-                  <CodeIcon className="h-6 w-6 mr-2 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
+                  <Image
+                    src="/icons/menu/code-icon.svg"
+                    alt="Code Icon"
+                    width={24}
+                    height={24}
+                    className="w-5 h-5 mr-2 sm:w-6 sm:h-6 lg:w-7 lg:h-7 invert"
+                  />
                   <div
                     className="font-bold sm:text-lg lg:text-xl"
                     onClick={() => setIsOpen(false)}
@@ -40,36 +123,7 @@ export const Navbar = () => {
                   Blog
                 </Link>
               </div>
-              <button
-                type="button"
-                aria-label="menu"
-                className="sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 focus:rounded-full"
-              >
-                <svg
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="hover:cursor-pointer hover:bg-gray-700 hover:rounded-full h-9 w-9 p-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {isOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="{2}"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
-              </button>
+              <MenuButton isOpen={isOpen} onClick={toggleMenu} />
               <div className="sm:flex sm:items-center space-x-4 hidden">
                 <motion.a
                   whileHover={{
@@ -82,51 +136,67 @@ export const Navbar = () => {
                   target="_blank"
                   aria-label={`${twitter.name}`}
                 >
-                  <TwitterIcon className="inline h-6 w-6 sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 fill-current" />
+                  <Image
+                    src="/icons/social/twitter-icon.svg"
+                    alt="Twitter"
+                    width={32}
+                    height={32}
+                    className="inline sm:w-7 sm:h-7 lg:h-8 lg:w-8 lg:ml-2 invert"
+                  />
                 </motion.a>
               </div>
             </div>
           </div>
 
-          {/* //.Mobile Menu*/}
-          {isOpen && (
-            <motion.div
-              initial={{ x: -30 }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 100 }}
-              className="sm:hidden flex flex-col bg-gray-900 text-white px-2 pb-2 space-y-2"
-            >
-              <a
-                className="hover:cursor-pointer"
-                onKeyDown={() => {
-                  setIsOpen(!isOpen)
-                  Router.push('/blog')
-                }}
-                onClick={() => {
-                  setIsOpen(!isOpen)
-                  Router.push('/blog')
-                }}
-              >
-                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                  <BlogIcon className="mr-2 h-6 w-6" />
-                  Blog
-                </div>
-              </a>
+          {/* Mobile Menu */}
+          <motion.div
+            initial="closed"
+            animate={isOpen ? 'open' : 'closed'}
+            variants={menuVariants}
+            className="sm:hidden overflow-hidden bg-gray-900 border-t border-gray-800"
+          >
+            <div className="flex flex-col text-white px-4 py-2 space-y-1">
+              <motion.div variants={menuItemVariants}>
+                <a
+                  href={`${twitter.url}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:cursor-pointer block"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div className="flex items-center text-sm hover:bg-gray-800 px-3 py-2.5 rounded-md transition-colors duration-200">
+                    <Image
+                      src="/icons/social/twitter-icon.svg"
+                      alt="Twitter"
+                      width={24}
+                      height={24}
+                      className="w-5 h-5 mr-3 invert"
+                    />
+                    Twitter
+                  </div>
+                </a>
+              </motion.div>
 
-              <a
-                href={`${twitter.url}`}
-                rel="noreferrer"
-                target="_blank"
-                aria-label={`${twitter.name}`}
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                <div className="flex items-center pr-1 text-sm hover:bg-gray-800 px-2 py-2 rounded">
-                  <TwitterIcon className="mr-2 h-6 w-6 fill-current" />
-                  Twitter
-                </div>
-              </a>
-            </motion.div>
-          )}
+              <motion.div variants={menuItemVariants}>
+                <Link
+                  href="/blog"
+                  className="hover:cursor-pointer block"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div className="flex items-center text-sm hover:bg-gray-800 px-3 py-2.5 rounded-md transition-colors duration-200">
+                    <Image
+                      src="/icons/menu/blog-icon.svg"
+                      alt="Blog"
+                      width={24}
+                      height={24}
+                      className="w-5 h-5 mr-3 invert"
+                    />
+                    Blog
+                  </div>
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </nav>
     </>

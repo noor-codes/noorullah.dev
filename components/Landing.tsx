@@ -1,6 +1,5 @@
 import { ContactForm } from 'components/ContactForm'
-import Download from 'public/icons/landing/download-icon.svg'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import { LandingSections } from 'components/LandingSections'
 import { NextSeo } from 'next-seo'
 import { RecentProjects } from 'components/RecentProjects'
@@ -37,7 +36,6 @@ const Landing = () => {
                 width={100}
                 src={`${profile_picture}`}
                 alt={`${fullname}`}
-                layout="responsive"
                 className="rounded-full"
               />
             </div>
@@ -62,7 +60,13 @@ const Landing = () => {
               className="flex items-center justify-center w-full py-2 select-none bg-gray-900 text-white rounded hover:bg-gray-700 cursor-pointer transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95"
             >
               Download Resume
-              <Download className="h-5 w-5 fill-current ml-2" />
+              <Image
+                src="/icons/landing/download-icon.svg"
+                alt="Download Resume"
+                width={20}
+                height={20}
+                className="h-5 w-5 ml-2 brightness-0 invert"
+              />
             </a>
           </div>
         </main>

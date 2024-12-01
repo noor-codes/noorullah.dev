@@ -16,10 +16,16 @@ export const theme = {
       DEFAULT: {
         css: {
           color: '#333',
+          strong: {
+            color: '#111827',
+            fontWeight: '700',
+          },
           a: {
-            color: '#3b82f6',
+            color: '#111827',
+            textDecoration: 'none',
+            fontWeight: '700',
             '&:hover': {
-              color: '#60a5fa',
+              color: '#374151',
             },
           },
         },

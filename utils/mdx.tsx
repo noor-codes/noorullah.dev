@@ -3,9 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 import mdxPrism from 'mdx-prism'
 import readingTime from 'reading-time'
-import renderToString from 'next-mdx-remote/render-to-string'
-
-import { MDXComponents } from 'components/mdx/MDXComponents'
+import { serialize } from 'next-mdx-remote/serialize'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import remarkCodeTitles from 'remark-code-titles'
+import remarkGfm from 'remark-gfm'
 
 const root = process.cwd()
 
@@ -19,15 +21,22 @@ export async function getFileBySlug(type, slug) {
     : fs.readFileSync(path.join(root, 'md', `${type}.mdx`), 'utf8')
 
   const { data, content } = matter(source)
-  const mdxSource = await renderToString(content, {
-    components: MDXComponents as any,
+  const mdxSource = await serialize(content, {
     mdxOptions: {
-      remarkPlugins: [
-        require('remark-autolink-headings'),
-        require('remark-slug'),
-        require('remark-code-titles'),
+      remarkPlugins: [remarkGfm, remarkCodeTitles],
+      rehypePlugins: [
+        mdxPrism,
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'wrap',
+            properties: {
+              className: ['anchor'],
+            },
+          },
+        ],
       ],
-      rehypePlugins: [mdxPrism],
     },
   })
 
@@ -52,8 +61,7 @@ export async function getAllFilesFrontMatter(type) {
     return [
       {
         ...data,
-        slug: postSlug.replace('.mdx', ''),
-        wordCount: content.split(/\s+/gu).length,
+        slug: postSlug.replace(/\.mdx/, ''),
         readingTime: readingTime(content),
       },
       ...allPosts,

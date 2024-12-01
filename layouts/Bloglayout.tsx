@@ -109,7 +109,7 @@ export const BlogLayout = (props) => {
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.3 }}
-              className="prose prose-sm sm:prose-md md:prose-lg text-gray-900 mt-10"
+              className="prose prose-sm sm:prose-md md:prose-lg prose-headings:text-gray-900 prose-headings:font-bold mt-10"
             >
               {props.children}
             </motion.article>

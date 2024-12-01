@@ -7,8 +7,8 @@ const CustomLink = (props) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a className="" {...props} />
+      <Link href={href} {...props}>
+        {props.children}
       </Link>
     )
   }
@@ -19,6 +19,7 @@ const CustomLink = (props) => {
 export const MDXComponents = {
   Image,
   a: CustomLink,
+  strong: (props) => <strong className="font-bold text-gray-900" {...props} />,
   h1: (props) => <h1 className="text-gray-900" {...props} />,
   h2: (props) => <h2 className="text-gray-900" {...props} />,
   h3: (props) => <h3 className="text-gray-900" {...props} />,

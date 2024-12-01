@@ -1,7 +1,4 @@
-import Email from 'public/icons/social/email-icon.svg'
-import Facebook from 'public/icons/social/facebook-icon.svg'
-import LinkedIn from 'public/icons/social/linkedin-icon.svg'
-import Twitter from 'public/icons/social/twitter-icon.svg'
+import Image from 'next/image'
 import { bio } from 'utils/bio'
 
 const { url } = bio.profiles.website
@@ -22,9 +19,15 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="twitter"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 hover:opacity-60"
       >
-        <Twitter />
+        <Image
+          src="/icons/social/twitter-icon.svg"
+          alt="Share on Twitter"
+          width={40}
+          height={40}
+          className="w-full h-full"
+        />
       </a>
 
       <a
@@ -32,9 +35,15 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="linkedin"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 hover:opacity-60"
       >
-        <LinkedIn />
+        <Image
+          src="/icons/social/linkedin-icon.svg"
+          alt="Share on LinkedIn"
+          width={40}
+          height={40}
+          className="w-full h-full"
+        />
       </a>
 
       <a
@@ -42,19 +51,31 @@ export const Sharing = ({ slug, title }) => (
         rel="noreferrer noopener"
         target="_blank"
         aria-label="facebook"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 hover:opacity-60"
       >
-        <Facebook />
+        <Image
+          src="/icons/social/facebook-icon.svg"
+          alt="Share on Facebook"
+          width={40}
+          height={40}
+          className="w-full h-full"
+        />
       </a>
 
       <a
         href={`mailto:?&subject=%22${title}%22%20a%20blog%20by%20${name}%20${lastname}&body=${url}/blog/${slug}`}
         rel="noreferrer noopener"
         target="_blank"
-        aria-label="facebook"
-        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 fill-current hover:opacity-60 text-black"
+        aria-label="email"
+        className="block h-8 w-8 md:h-9 md:w-8 lg:h-10 lg:w-10 hover:opacity-60"
       >
-        <Email />
+        <Image
+          src="/icons/social/email-icon.svg"
+          alt="Share via Email"
+          width={40}
+          height={40}
+          className="w-full h-full"
+        />
       </a>
     </div>
   </div>

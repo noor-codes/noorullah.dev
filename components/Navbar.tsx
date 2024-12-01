@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { bio } from 'utils/bio'
 import { motion } from 'framer-motion'
+import { menuItemVariants, menuVariants } from 'animations/menu'
 
 const { twitter } = bio.profiles
 const { name } = bio
@@ -38,54 +39,6 @@ const MenuButton = ({ isOpen, onClick }: MenuButtonProps) => {
       </div>
     </button>
   )
-}
-
-const menuVariants = {
-  open: {
-    opacity: 1,
-    height: 'auto',
-    transition: {
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
-      mass: 0.8,
-      staggerChildren: 0.07,
-      delayChildren: 0.2,
-    },
-  },
-  closed: {
-    opacity: 0,
-    height: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
-      mass: 0.8,
-      staggerChildren: 0.05,
-      staggerDirection: -1,
-    },
-  },
-}
-
-const menuItemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
-    },
-  },
-  closed: {
-    opacity: 0,
-    y: 20,
-    transition: {
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
-    },
-  },
 }
 
 export const Navbar = () => {

@@ -1,9 +1,28 @@
-/* eslint-disable quotes */
 import sgMail from '@sendgrid/mail'
+import { NextApiRequest, NextApiResponse } from 'next'
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-const Email = async (req, res) => {
+const Email = async (req: NextApiRequest, res: NextApiResponse) => {
+  const origin = req.headers.origin
+  const allowedOrigins = ['http://localhost:3000', 'https://noorullah.dev']
+  
+  if (origin && allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Credentials', 'true')
+    res.setHeader('Access-Control-Allow-Origin', origin)
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+    )
+  }
+
+  // Handle preflight request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end()
+    return
+  }
+
   if (req.method === 'POST') {
     //.1 Check If there is a name
     if (!req.body.name) {

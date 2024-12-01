@@ -1,19 +1,24 @@
-import * as yup from 'yup'
+import { z } from 'zod'
 import Image from 'next/image'
 import axios from 'axios'
-import { bio } from 'utils/bio'
 import { fire_confetti } from 'utils/confetti'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
-import { yupResolver } from '@hookform/resolvers/yup'
+import { zodResolver } from '@hookform/resolvers/zod'
 
-const { url } = bio.profiles.website
-
-const schema = yup.object().shape({
-  name: yup.string().min(2).max(32).required(),
-  email: yup.string().max(80).email().required(),
-  message: yup.string().min(8).max(300).required(),
+const schema = z.object({
+  name: z
+    .string()
+    .min(2, 'Name must be at least 2 characters')
+    .max(32, 'Name must be less than 32 characters'),
+  email: z.string().max(80, 'Email must be less than 80 characters').email('Invalid email address'),
+  message: z
+    .string()
+    .min(8, 'Message must be at least 8 characters')
+    .max(300, 'Message must be less than 300 characters'),
 })
+
+type FormData = z.infer<typeof schema>
 
 export const ContactForm = () => {
   const [openSnackbar] = useSnackbar()
@@ -23,11 +28,14 @@ export const ContactForm = () => {
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useForm({ mode: 'onBlur', resolver: yupResolver(schema) })
+  } = useForm<FormData>({
+    mode: 'onBlur',
+    resolver: zodResolver(schema),
+  })
 
-  const submit = async (data) => {
+  const submit = async (data: FormData) => {
     try {
-      const res = await axios.post(`${url}/api/email`, {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/email`, {
         name: data.name,
         email: data.email,
         msg: data.message,

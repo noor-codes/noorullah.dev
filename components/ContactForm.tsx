@@ -6,7 +6,6 @@ import { fire_confetti } from 'utils/confetti'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
 import { yupResolver } from '@hookform/resolvers/yup'
-import Paperplane from 'public/icons/landing/paperplane-icon.svg'
 
 const { url } = bio.profiles.website
 
@@ -144,7 +143,13 @@ export const ContactForm = () => {
                 ) : (
                   <>
                     Submit
-                    <Paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
+                    <Image
+                      src="/icons/landing/paperplane-icon.svg"
+                      alt="Paper plane"
+                      width={16}
+                      height={20}
+                      className="ml-1 -mt-1 group-hover:brightness-0 group-hover:invert"
+                    />
                   </>
                 )}
               </span>

@@ -1,13 +1,12 @@
 import * as yup from 'yup'
-
-import Paperplane from 'public/icons/landing/paperplane-icon.svg'
-import Spinner from 'public/icons/landing/spinner-icon.svg'
+import Image from 'next/image'
 import axios from 'axios'
 import { bio } from 'utils/bio'
 import { fire_confetti } from 'utils/confetti'
 import { useForm } from 'react-hook-form'
 import { useSnackbar } from 'react-simple-snackbar'
 import { yupResolver } from '@hookform/resolvers/yup'
+import Paperplane from 'public/icons/landing/paperplane-icon.svg'
 
 const { url } = bio.profiles.website
 
@@ -128,16 +127,27 @@ export const ContactForm = () => {
             <button
               name="submit button"
               type="submit"
-              className="flex items-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed disabled:px-12"
+              className="group flex items-center justify-center text-sm px-6 border-2 select-none border-gray-400 hover:border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white cursor-pointer rounded-md py-2 transition duration-500 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black focus:ring-opacity-50 focus:ring-offset-white transform active:scale-95 disabled:bg-gray-200 disabled:hover:text-gray-700 disabled:hover:border-gray-400 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? (
-                <Spinner className="ml-1 h-5 w-4 animate-spin" />
-              ) : (
-                <>
-                  Submit
-                  <Paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
-                </>
-              )}
+              <span className="flex items-center min-w-[70px] justify-center">
+                {isSubmitting ? (
+                  <>
+                    <span className="opacity-0">Submit</span>
+                    <Image
+                      src="/icons/landing/spinner-icon.svg"
+                      alt="Loading spinner"
+                      width={16}
+                      height={20}
+                      className="ml-1 animate-spin absolute"
+                    />
+                  </>
+                ) : (
+                  <>
+                    Submit
+                    <Paperplane className="ml-1 h-5 w-4 fill-current -mt-1" />
+                  </>
+                )}
+              </span>
             </button>
           </div>
         </div>

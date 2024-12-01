@@ -8,7 +8,7 @@ const CustomLink = (props) => {
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a className="text-red-500" {...props} />
+        <a className="" {...props} />
       </Link>
     )
   }
